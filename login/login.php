@@ -1,8 +1,8 @@
-<?php include('login/server.php') ?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V2</title>
+	<title>Transafe - Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -34,7 +34,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method="post" action="../login/login.php">
-					<?php include('../login/errors.php'); ?>
+					<?php include('errors.php'); ?>
 					<span class="login100-form-title p-b-26">
 						Welcome
 					</span>
@@ -58,7 +58,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
+							<button class="login100-form-btn" type="submit" name="login_user">
 								Login
 							</button>
 						</div>

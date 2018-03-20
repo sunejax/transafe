@@ -12,7 +12,7 @@
 	
 	<form method="post" action="../login/register.php">
 
-		<?php include('login/errors.php'); ?>
+		<?php include('errors.php'); ?>
 
 		<div class="input-group">
 			<label>Username</label>
