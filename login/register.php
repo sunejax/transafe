@@ -1,9 +1,16 @@
 <?php include('server.php');
 require('../vendor/autoload.php');
+use Aws\S3\S3Client;
 // this will simply read AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from env vars
-$s3 = Aws\S3\S3Client::factory(array(
-        'profile'=>'rootkey.csv'
-));
+$s3 = new S3Client([
+    'version'     => 'latest',
+    'region'      => 'us-west-2',
+    'credentials' => [
+        'key'    => 'AKIAJFPPYA63IIRKDU2Q',
+        'secret' => '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',
+    ],
+
+]);
 $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
 ?>
 <!DOCTYPE html>
@@ -51,9 +58,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['userfile']) && $_FILES
     // FIXME: add more validation, e.g. using ext/fileinfo
     try {
         // FIXME: do not use 'name' for upload (that's the original filename from the user's computer)
-        $upload = $s3->upload($bucket, $_FILES['userfile']['name'], fopen($_FILES['userfile']['tmp_name'], 'rb'), 'public-read');
+        //$upload = $s3->upload($bucket, $_FILES['userfile']['name'], fopen($_FILES['userfile']['tmp_name'], 'rb'), 'public-read');
+        $result = $s3->putObject([
+            'Bucket'     => $bucket,
+            'Key'        => $_FILES['userfile']['name'],
+            'SourceFile' => $_FILES['userfile'],
+        ]);
         ?>
-        <p>Upload <a href="<?=htmlspecialchars($upload->get('ObjectURL'))?>">successful</a> :)</p>
+        <p>Upload <a href="<?=htmlspecialchars($result->get('ObjectURL'))?>">successful</a> :)</p>
     <?php } catch(Exception $e) { echo $e;?>
         <p>Upload error :(</p>
     <?php } } ?>
