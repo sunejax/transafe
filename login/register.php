@@ -61,7 +61,7 @@
                     <input class="input100" type="password" name="password_2">
                     <span class="focus-input100" data-placeholder="Confirm Password"></span>
                 </div>
-                <div class="wrap-input100 validate-input">
+                <div class="wrap-input100 validate-input" data-validate="Enter Emergency Contact">
                     <input class="input100" type="text" name="em_no">
                     <span class="focus-input100" data-placeholder="Emergency Contact"></span>
                 </div>
