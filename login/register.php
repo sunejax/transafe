@@ -13,7 +13,8 @@ $s3 = S3Client::factory(array(
     'key'    => 'AKIAJFPPYA63IIRKDU2Q',
     'secret' => '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'
 ));
-$bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
+//$bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
+$bucket='transafedocs'
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,33 +27,33 @@ $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!'
 		<h2>Register</h2>
 	</div>
 	
-	<form method="post" action="../login/register.php">
+<!--	<form enctype="multipart/form-data" action="--><?//=$_SERVER['PHP_SELF']?><!--" method="POST">-->
+<!---->
+<!--		--><?php //include('errors.php'); ?>
+<!---->
+<!--		<div class="input-group">-->
+<!--			<label>Username</label>-->
+<!--			<input type="text" name="username" value="--><?php //echo $name; ?><!--">-->
+<!--		</div>-->
+<!--		<div class="input-group">-->
+<!--			<label>Email</label>-->
+<!--			<input type="email" name="email" value="--><?php //echo $email; ?><!--">-->
+<!--		</div>-->
+<!--		<div class="input-group">-->
+<!--			<label>Password</label>-->
+<!--			<input type="password" name="password_1">-->
+<!--		</div>-->
+<!--		<div class="input-group">-->
+<!--			<label>Confirm password</label>-->
+<!--			<input type="password" name="password_2">-->
+<!--		</div>-->
+<!--		<div class="input-group">-->
+<!--			<button type="submit" class="btn" name="reg_user">Register</button>-->
+<!--		</div>-->
+<!--		<p>-->
+<!--			Already a member? <a href="login.php">Sign in</a>-->
+<!--		</p>-->
 
-		<?php include('errors.php'); ?>
-
-		<div class="input-group">
-			<label>Username</label>
-			<input type="text" name="username" value="<?php echo $name; ?>">
-		</div>
-		<div class="input-group">
-			<label>Email</label>
-			<input type="email" name="email" value="<?php echo $email; ?>">
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="password" name="password_1">
-		</div>
-		<div class="input-group">
-			<label>Confirm password</label>
-			<input type="password" name="password_2">
-		</div>
-		<div class="input-group">
-			<button type="submit" class="btn" name="reg_user">Register</button>
-		</div>
-		<p>
-			Already a member? <a href="login.php">Sign in</a>
-		</p>
-	</form>
 
 
 <?php
@@ -72,8 +73,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['userfile']) && $_FILES
         <p>Upload error :(</p>
     <?php } } ?>
 <h2>Upload a file</h2>
-<form enctype="multipart/form-data" action="<?=$_SERVER['PHP_SELF']?>" method="POST">
-    <input name="userfile" type="file"><input type="submit" value="Upload">
+    <form enctype="multipart/form-data" action="<?=$_SERVER['PHP_SELF']?>" method="POST">
+    <input name="userfile" type="file"><input type="submit" value="Upload" name="">
 </form>
 </body>
 </html>
