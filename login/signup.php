@@ -11,6 +11,7 @@ $IAM_KEY = 'AKIAJFPPYA63IIRKDU2Q';
 $IAM_SECRET = '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';
 
 // Connect to AWS
+if(isset($_POST['uploadFiles'])) {
 try {
     // You may need to change the region. It will say in the URL when the bucket is open
     // and on creation.
@@ -30,7 +31,7 @@ try {
     die("Error: " . $e->getMessage());
 }
 
-if(isset($_POST['uploadFiles'])) {
+
 // For this, I would generate a unqiue random string for the key name. But you can do whatever.
     $keyName = 'test_example/' . basename($_FILES["fileToUpload"]['tmp_name']);
     $pathInS3 = 'https://s3.us-east-2.amazonaws.com/' . $bucketName . '/' . $keyName;
