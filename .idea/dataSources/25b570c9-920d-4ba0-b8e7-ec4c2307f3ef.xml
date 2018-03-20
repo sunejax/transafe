@@ -955,7 +955,6 @@
     <column id="237" parent="227" name="ad_rights">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="238" parent="227" name="cr_at">
