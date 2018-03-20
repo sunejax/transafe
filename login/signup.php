@@ -55,19 +55,21 @@ if(isset($_POST['uploadFiles'])) {
     } catch (Exception $e) {
         die('Error:' . $e->getMessage());
     }
+    echo 'Done';
 }
 
-echo 'Done';
+
 
 // Now that you have it working, I recommend adding some checks on the files.
 // Example: Max size, allowed file types, etc.
 ?>
 <html>
 <body>
-<form action="" method='post' enctype="multipart/form-data">
+<form action="signup.php" method='post' enctype="multipart/form-data">
     <h3>Upload Image</h3><br/>
     <input type='file' name="fileToUpload"/>
     <input type='submit' name="uploadFiles" value='Upload'/>
+
 </form>
 </body>
 </html>
