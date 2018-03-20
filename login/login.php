@@ -1,3 +1,4 @@
+<?php include('login/server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +33,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post" action="../login/login.php">
+					<?php include('../login/errors.php'); ?>
 					<span class="login100-form-title p-b-26">
 						Welcome
 					</span>
@@ -67,7 +69,7 @@
 							Don’t have an account?
 						</span>
 
-						<a class="txt2" href="#">
+						<a class="txt2" href="register.php">
 							Sign Up
 						</a>
 					</div>
