@@ -40,6 +40,7 @@
                     <input class="input100" type="text" name="username">
                     <span class="focus-input100" data-placeholder="Name"></span>
                 </div>
+
                 <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
                     <input class="input100" type="text" name="email">
                     <span class="focus-input100" data-placeholder="Email"></span>
@@ -52,12 +53,17 @@
                     <input class="input100" type="password" name="password_1">
                     <span class="focus-input100" data-placeholder="Password"></span>
                 </div>
+
                 <div class="wrap-input100 validate-input" data-validate="Enter password">
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
                     <input class="input100" type="password" name="password_2">
                     <span class="focus-input100" data-placeholder="Confirm Password"></span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="em_no">
+                    <span class="focus-input100" data-placeholder="Emergency Contact"></span>
                 </div>
 
                 <div class="container-login100-form-btn">
