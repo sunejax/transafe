@@ -1,7 +1,7 @@
 <?php
 include('login/server.php');
 include('phpqrcode/qrlib.php');
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 
 if (!isset($_SESSION['username'])) {
