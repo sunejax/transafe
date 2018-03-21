@@ -16,24 +16,28 @@ if (isset($_GET['logout'])) {
     header("location: login/login.php");
 }
 $bucket='transafe';
-//$client = S3Client::factory();
-//$result = $client->putObject(array(
-//    'Bucket'     => $bucket,
-//    'Key'        => ,
-//    'SourceFile' => $pathToFile,
-//    'Metadata'   => array(
-//        'Foo' => 'abc',
-//        'Baz' => '123'
-//    )
-//));
+
+$client = S3Client::factory();
+if(isset($_POST['uploadFile'])){
+    $pathToFile=$_FILES["fileToUpload"]['tmp_name'];
+    $key=$_SESSION['r']['uid'].'rc'.'.jpeg';
+    $result = $client->putObject(array(
+        'Bucket'     => $bucket,
+        'Key'        => $key,
+        'SourceFile' => $pathToFile,
+
+));
+}
 
 ?>
 <html>
 <body>
 
-<form>
+<form method="post" action="profile.php">
     <? if(!isset($_SESSION['r']['doc_rc']))
-        echo "<input type='file'> </input>"?>
+        echo "<input type='file' name='fileToUpload'>
+              <input type='button' name='uploadFile' value='Upload'>
+            "?>'
 </form>
 <form method="get" action="qr.php">
     <button type="submit">Generate QR Code</button>
