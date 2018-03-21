@@ -12,11 +12,11 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-QRcode::png($_SESSION['r'], 'qr.png', 'L', 4, 2);
+
 
 ?>
 <html>
 <body>
-<img src="qr.png">
+<?php QRcode::png($_SESSION['r'], 'qr.png', 'L', 4, 2);?>
 </body>
 </html>
