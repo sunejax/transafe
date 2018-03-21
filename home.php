@@ -114,56 +114,6 @@ if (isset($_GET['logout'])) {
 </div>
 <!-- //banner -->
 <div id="map"></div>
-<!-- about -->
-<div class="tabs" id="about">
-    <div class="container">
-        <div class="col-md-6 tabs-left">
-            <div class="col-xs-2 tab-grid-left"> <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#Tab1" data-toggle="tab">Tab1</a></li>
-                    <li><a href="#Tab2" data-toggle="tab">Tab2</a></li>
-                    <li><a href="#Tab3" data-toggle="tab">Tab3</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-10 tab-grid-right">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="Tab1">
-                        <div class="w3-text">
-                            <h3 class="title">AboutUs</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.
-                                <span>Nam vitae tellus posuere, auctor metus eget, imperdiet augue. Morbi at dui tortor. Maecenas in lacus gravida, elementum est vitae, laoreet ex.</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Tab2">
-                        <div class="w3-text">
-                            <h3 class="title">Offers</h3>
-                            <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Vivamus feugiat suscipit velit posuere ornare.</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Tab3">
-                        <div class="w3-text">
-                            <h3 class="title">Advantages</h3>
-                            <p>Qapiente itaque earum rerum hic tenetur a delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos et accusamus et iusto odio praesentium voluptatum
-                                <span>Curabitur ac auctor nunc. Praesent vitae tortor ac leo commodo laoreet nec non nisi. Fusce ornare, augue tristique ornare dictum, elit magna viverra elit</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="col-md-6 tabs-right ">
-            <img src="images/2.jpg" alt="">
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<!-- //about -->
 
 <!-- team -->
 <div class="team" id="team">
