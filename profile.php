@@ -6,7 +6,8 @@ if (!isset($_SESSION['username'])) {
     header('location: login/login.php');
 
 }
-QRcode::png(implode(",",$_SESSION['r']));
+$str=$_SESSION['r']['name'].' '.$_SESSION['r']['em_no'].' '.$_SESSION['r']['em_msg'];
+QRcode::png($str);
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['username']);
