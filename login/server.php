@@ -29,7 +29,7 @@
 
 		$q="SELECT * FROM user WHERE email='$email'";
 		$r=mysqli_query($db,$q);
-        if (mysqli_num_rows($r)){array_push($errors, "Email already registered, contact admin for if you have forgotten the password");}
+        if (mysqli_num_rows($r)){array_push($errors, "Email already registered, contact admin if you have forgotten the password");}
 
 		// register user if there are no errors in the form
 		if (count($errors) == 0) {
