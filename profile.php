@@ -42,11 +42,11 @@ if(isset($_POST['uploadFile'])) {
 <html>
 <body>
 
-<form method="post" action="profile.php">
+<form method="post" action="profile.php" enctype="multipart/form-data">
     <? if(!isset($_SESSION['r']['doc_rc']))
         echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile' value='Upload'>
-            "?>'
+            "?>
 </form>
 <form method="get" action="qr.php">
     <button type="submit">Generate QR Code</button>
