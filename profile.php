@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$bucket='transafedocs';
+$bucket='transafe';
 $client = S3Client::factory();
 $result = $client->putObject(array(
     'Bucket' => $bucket,
