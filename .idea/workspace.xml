@@ -74,21 +74,21 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            <state relative-caret-position="160">
+              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#98#118#0#PHP" expanded="true" />
-                <marker date="1521636754265" expanded="true" signature="1004:1037" ph="INSERT INTO user... " />
-                <marker date="1521636754265" expanded="true" signature="1004:1044" ph="INSERT INTO user... " />
-                <marker date="1521636754265" expanded="true" signature="1004:1057" ph="INSERT INTO user... " />
-                <marker date="1521636754265" expanded="true" signature="1004:1058" ph="INSERT INTO user... " />
-                <marker date="1521636754265" expanded="true" signature="1004:1062" ph="INSERT INTO user... " />
-                <marker date="1521636754265" expanded="true" signature="1101:1109" ph="..." />
-                <marker date="1521636754265" expanded="true" signature="1101:1179" ph="..." />
-                <marker date="1521636754265" expanded="true" signature="1101:1455" ph="..." />
-                <marker date="1521636754265" expanded="true" signature="1108:1109" ph="..." />
-                <marker date="1521636754265" expanded="true" signature="1151:1179" ph="..." />
-                <marker date="1521636754265" expanded="true" signature="1379:1439" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1005:1038" ph="INSERT INTO user... " />
+                <marker date="1521636879211" expanded="true" signature="1005:1045" ph="INSERT INTO user... " />
+                <marker date="1521636879211" expanded="true" signature="1005:1058" ph="INSERT INTO user... " />
+                <marker date="1521636879211" expanded="true" signature="1005:1059" ph="INSERT INTO user... " />
+                <marker date="1521636879211" expanded="true" signature="1005:1063" ph="INSERT INTO user... " />
+                <marker date="1521636879211" expanded="true" signature="1102:1110" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1102:1180" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1102:1456" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1109:1110" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1152:1180" ph="..." />
+                <marker date="1521636879211" expanded="true" signature="1380:1440" ph="..." />
               </folding>
             </state>
           </provider>
@@ -296,12 +296,12 @@
       <workItem from="1521450979674" duration="15388000" />
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
-      <workItem from="1521621342443" duration="10063000" />
+      <workItem from="1521621342443" duration="10197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51413000" />
+    <option name="totallyTimeSpent" value="51547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -440,17 +440,17 @@
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="e#98#118#0#PHP" expanded="true" />
-            <marker date="1521636754265" expanded="true" signature="1004:1037" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1044" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1057" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1058" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1062" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1101:1109" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1101:1179" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1101:1455" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1108:1109" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1151:1179" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1379:1439" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1005:1038" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1045" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1058" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1059" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1063" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1102:1110" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1102:1180" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1102:1456" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1109:1110" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1152:1180" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1380:1440" ph="..." />
           </folding>
         </state>
       </provider>
@@ -723,21 +723,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state relative-caret-position="160">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#98#118#0#PHP" expanded="true" />
-            <marker date="1521636754265" expanded="true" signature="1004:1037" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1044" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1057" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1058" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1004:1062" ph="INSERT INTO user... " />
-            <marker date="1521636754265" expanded="true" signature="1101:1109" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1101:1179" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1101:1455" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1108:1109" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1151:1179" ph="..." />
-            <marker date="1521636754265" expanded="true" signature="1379:1439" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1005:1038" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1045" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1058" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1059" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1005:1063" ph="INSERT INTO user... " />
+            <marker date="1521636879211" expanded="true" signature="1102:1110" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1102:1180" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1102:1456" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1109:1110" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1152:1180" ph="..." />
+            <marker date="1521636879211" expanded="true" signature="1380:1440" ph="..." />
           </folding>
         </state>
       </provider>

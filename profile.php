@@ -45,7 +45,7 @@ if(isset($_POST['uploadFile'])) {
 <form method="post" action="profile.php">
     <? if(!isset($_SESSION['r']['doc_rc']))
         echo "<input type='file' name='fileToUpload'>
-              <input type='button' name='uploadFile' value='Upload'>
+              <input type='submit' name='uploadFile' value='Upload'>
             "?>'
 </form>
 <form method="get" action="qr.php">
