@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/login/register.php" afterPath="$PROJECT_DIR$/login/register.php" />
-    </list>
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user" pinned="false" current-in-tab="true">
         <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -112,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="63" column="96" lean-forward="false" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
+            <state relative-caret-position="250">
+              <caret line="61" column="92" lean-forward="true" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
               <folding>
                 <marker date="1521582628460" expanded="true" signature="52:98" ph="..." />
                 <marker date="1521582628460" expanded="true" signature="59:98" ph="..." />
@@ -274,12 +272,12 @@
       <updated>1521450976178</updated>
       <workItem from="1521450979674" duration="15388000" />
       <workItem from="1521539578826" duration="9081000" />
-      <workItem from="1521554774705" duration="10263000" />
+      <workItem from="1521554774705" duration="10634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34732000" />
+    <option name="totallyTimeSpent" value="35103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -547,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
@@ -593,12 +584,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="63" column="96" lean-forward="false" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
+        <state relative-caret-position="250">
+          <caret line="61" column="92" lean-forward="true" selection-start-line="61" selection-start-column="92" selection-end-line="61" selection-end-column="92" />
           <folding>
             <marker date="1521582628460" expanded="true" signature="52:98" ph="..." />
             <marker date="1521582628460" expanded="true" signature="59:98" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
