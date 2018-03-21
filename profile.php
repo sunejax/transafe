@@ -19,7 +19,7 @@ if (isset($_GET['logout'])) {
 <body>
 <?php
 $qr=$_SESSION['r']['name'];
-QRcode::png($qr);
+//QRcode::png($qr);
 echo $_SESSION['r'];
 ?>
 
