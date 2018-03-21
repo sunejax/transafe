@@ -61,9 +61,9 @@
 			$password = md5($password);
 			$query = "SELECT * FROM user WHERE email='$username' AND password='$password'";
 			$results = mysqli_query($db, $query);
-
+            $row = $results->fetch_array(MYSQLI_ASSOC);
 			if (mysqli_num_rows($results) == 1) {
-				$_SESSION['username'] = $results['name'];
+				$_SESSION['username'] = $row['name'];
 				$_SESSION['success'] = "You are now logged in";
 				header('location: index.php');
 			}else {
