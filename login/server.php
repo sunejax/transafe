@@ -67,6 +67,7 @@
             $row = $results->fetch_array(MYSQLI_ASSOC);
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $row['name'];
+				$_SESSION['email']=$row['email'];
 				$_SESSION['success'] = "You are now logged in";
 				header('location: ../home.php');
 			}else {
