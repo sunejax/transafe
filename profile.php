@@ -16,16 +16,16 @@ if (isset($_GET['logout'])) {
     header("location: login/login.php");
 }
 $bucket='transafe';
-$client = S3Client::factory();
-$result = $client->putObject(array(
-    'Bucket'     => $bucket,
-    'Key'        => ,
-    'SourceFile' => $pathToFile,
-    'Metadata'   => array(
-        'Foo' => 'abc',
-        'Baz' => '123'
-    )
-));
+//$client = S3Client::factory();
+//$result = $client->putObject(array(
+//    'Bucket'     => $bucket,
+//    'Key'        => ,
+//    'SourceFile' => $pathToFile,
+//    'Metadata'   => array(
+//        'Foo' => 'abc',
+//        'Baz' => '123'
+//    )
+//));
 
 ?>
 <html>
