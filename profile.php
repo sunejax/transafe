@@ -18,14 +18,23 @@ if (isset($_GET['logout'])) {
 $bucket='transafe';
 $client = S3Client::factory();
 $result = $client->putObject(array(
-    'Bucket' => $bucket,
-    'Key'    => 'data.txt',
-    'Body'   => 'Hello!'
+    'Bucket'     => $bucket,
+    'Key'        => ,
+    'SourceFile' => $pathToFile,
+    'Metadata'   => array(
+        'Foo' => 'abc',
+        'Baz' => '123'
+    )
 ));
 
 ?>
 <html>
 <body>
+
+<form>
+    <? if(!isset($_SESSION['r']['doc_rc']))
+        echo "<input type='file'> </input>"?>
+</form>
 <form method="get" action="qr.php">
     <button type="submit">Generate QR Code</button>
 </form>
