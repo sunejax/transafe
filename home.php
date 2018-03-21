@@ -68,19 +68,19 @@ if (isset($_GET['logout'])) {
 <div class="header">
     <h2>Home Page</h2>
 </div>
-<div class="content">
-
-    <!-- notification message -->
-    <?php if (isset($_SESSION['success'])) : ?>
-        <div class="error success" >
-            <h3>
-                <?php
-                echo $_SESSION['success'];
-                unset($_SESSION['success']);
-                ?>
-            </h3>
-        </div>
-    <?php endif ?>
+<!--<div class="content">-->
+<!---->
+<!--    <!-- notification message -->-->
+<!--    --><?php //if (isset($_SESSION['success'])) : ?>
+<!--        <div class="error success" >-->
+<!--            <h3>-->
+<!--                --><?php
+//                echo $_SESSION['success'];
+//                unset($_SESSION['success']);
+//                ?>
+<!--            </h3>-->
+<!--        </div>-->
+<!--    --><?php //endif ?>
 
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
@@ -109,7 +109,7 @@ if (isset($_GET['logout'])) {
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
-                        <li><a href="login/register.php">Sign Up</a></li>
+                        <li><a href="home.php?logout='1'">Logout</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#news" class="scroll">News</a></li>
                         <li><a href="#contact" class="scroll">Contact Us</a></li>
