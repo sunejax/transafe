@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
     header('location: login/login.php');
 
 }
-
+QRcode::png('hello');
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['username']);
@@ -17,6 +17,6 @@ if (isset($_GET['logout'])) {
 ?>
 <html>
 <body>
-<?php QRcode::png('hello');?>
+<?php ;?>
 </body>
 </html>
