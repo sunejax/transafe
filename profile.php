@@ -3,6 +3,7 @@ include('login/server.php');
 include('phpqrcode/qrlib.php');
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
+use Aws\S3\Exception\S3Exception;
 
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
@@ -18,17 +19,24 @@ if (isset($_GET['logout'])) {
 $bucket='transafe';
 
 $client = S3Client::factory();
-if(isset($_POST['uploadFile'])){
-    $pathToFile=$_FILES["fileToUpload"]['tmp_name'];
-    $key=$_SESSION['r']['uid'].'rc'.'.jpeg';
-    $result = $client->putObject(array(
-        'Bucket'     => $bucket,
-        'Key'        => $key,
-        'SourceFile' => $pathToFile,
-
-));
+if(isset($_POST['uploadFile'])) {
+    try {
+        $pathToFile = $_FILES["fileToUpload"]['tmp_name'];
+        $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
+        $result = $client->putObject(array(
+            'Bucket' => $bucket,
+            'Key' => $key,
+            'SourceFile' => $pathToFile,
+        ));
+    } catch (S3Exception $e) {
+        die('Error:' . $e->getMessage());
+    } catch (Exception $e) {
+        die('Error:' . $e->getMessage());
+    }
+    $url=$result['ObjectURL'];
+    $em=$_SESSION['r']['email']
+    $q = "INSERT INTO user (doc_rc) VALUES('$url') WHERE email='$em'";
 }
-
 ?>
 <html>
 <body>
