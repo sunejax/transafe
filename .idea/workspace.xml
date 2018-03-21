@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/qr.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,11 +76,11 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="162">
+              <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding>
-                <marker date="1521629362569" expanded="true" signature="346:354" ph="..." />
-                <marker date="1521629362569" expanded="true" signature="353:354" ph="..." />
+                <marker date="1521629515566" expanded="true" signature="358:366" ph="..." />
+                <marker date="1521629515566" expanded="true" signature="365:366" ph="..." />
               </folding>
             </state>
           </provider>
@@ -292,12 +290,12 @@
       <workItem from="1521450979674" duration="15388000" />
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
-      <workItem from="1521621342443" duration="3488000" />
+      <workItem from="1521621342443" duration="3641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44838000" />
+    <option name="totallyTimeSpent" value="44991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -438,8 +436,8 @@
         <state relative-caret-position="198">
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
-            <marker date="1521629362569" expanded="true" signature="346:354" ph="..." />
-            <marker date="1521629362569" expanded="true" signature="353:354" ph="..." />
+            <marker date="1521629515566" expanded="true" signature="358:366" ph="..." />
+            <marker date="1521629515566" expanded="true" signature="365:366" ph="..." />
           </folding>
         </state>
       </provider>
@@ -713,11 +711,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="162">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
-            <marker date="1521629362569" expanded="true" signature="346:354" ph="..." />
-            <marker date="1521629362569" expanded="true" signature="353:354" ph="..." />
+            <marker date="1521629515566" expanded="true" signature="358:366" ph="..." />
+            <marker date="1521629515566" expanded="true" signature="365:366" ph="..." />
           </folding>
         </state>
       </provider>

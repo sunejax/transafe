@@ -19,7 +19,7 @@ if (isset($_GET['logout'])) {
 <html>
 <body>
 <form method="get" action="qr.php">
-    <button type="submit"></button>
+    <button type="submit">Generate QR Code</button>
 </form>
 </body>
 </html>
