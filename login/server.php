@@ -68,6 +68,7 @@
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $row['name'];
 				$_SESSION['email']=$row['email'];
+				$_SESSION['r']=$row;
 				$_SESSION['success'] = "You are now logged in";
 				header('location: ../home.php');
 			}else {

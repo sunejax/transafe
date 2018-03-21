@@ -11,6 +11,6 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-echo $_SESSION['email'];
+echo $_SESSION['r']['em_no'];
 
 ?>
