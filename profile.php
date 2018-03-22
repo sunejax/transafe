@@ -38,7 +38,7 @@ if(isset($_POST['uploadFile'])) {
     } catch (Exception $e) {
         die('Error:' . $e->getMessage());
     }
-    $url=$result['ObjectURL'];
+    $url=$result->get('ObjectURL');
     $em=$_SESSION['r']['email'];
     $em=(string)$em;
 
