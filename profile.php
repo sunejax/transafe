@@ -22,13 +22,16 @@ $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
         $pathToFile = $_FILES["fileToUpload"]['name'];
+        echo("<script>
+            alert($pathToFile);
+                </script>");
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
         $result = $client->putObject(array(
             'Bucket' => $bucket,
             'Key' => $key,
             'SourceFile' => $pathToFile,
             'ContentType'=> 'image/jpeg'
-            ));
+        ));
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
@@ -137,37 +140,37 @@ if(isset($_POST['uploadFile'])) {
         </ul>
     </div>
     <div class ="col-sm-6 input-group">
-    <form method="post" action="profile.php" enctype="multipart/form-data">
-        <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
-                echo "<input type='file' name='fileToUpload'>
+        <form method="post" action="profile.php" enctype="multipart/form-data">
+            <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
+                    echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
-            if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-            else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-            else echo "<p>Status Check here</p>";?>
-        </div>
-        <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
-                echo "<input type='file' name='fileToUpload_1'>
+                if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
+                else echo "<p>Status Check here</p>";?>
+            </div>
+            <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
+                    echo "<input type='file' name='fileToUpload_1'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
-            if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-            else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-            else echo "<p>Status Check here</p>";?>
-        </div>
-        <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
-                echo "<input type='file' name='fileToUpload_2'>
+                if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Confirmed</p>";
+                else echo "<p>Status Check here</p>";?>
+            </div>
+            <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
+                    echo "<input type='file' name='fileToUpload_2'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
-            if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-            else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-            else echo "<p>Status Check here</p>";
-            ?>
+                if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Confirmed</p>";
+                else echo "<p>Status Check here</p>";
+                ?>
 
-        </div>
-    </form>
-    <form method="get" action="qr.php">
-        <button type="submit">Generate QR Code</button>
-    </form>
+            </div>
+        </form>
+        <form method="get" action="qr.php">
+            <button type="submit">Generate QR Code</button>
+        </form>
     </div>
 </div>
 <!-- //banner -->
