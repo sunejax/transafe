@@ -1,5 +1,6 @@
 <?php
-include('login/server.php');
+//include('login/server.php');
+session_start();
 include('phpqrcode/qrlib.php');
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
@@ -17,7 +18,7 @@ if (isset($_GET['logout'])) {
     header("location: login/login.php");
 }
 $bucket='transafe';
-
+$db = mysqli_connect('transafedb.cdccbxx5nlwo.us-east-2.rds.amazonaws.com', 'transafe', 'transafe1234', 'transafe',3306);
 $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
