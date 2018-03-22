@@ -35,6 +35,7 @@ if(isset($_POST['uploadFile'])) {
     }
     $url=$result['ObjectURL'];
     $em=$_SESSION['r']['email'];
+
     $q = "INSERT INTO user (doc_rc) VALUES('$url') WHERE email='$em'";
     mysqli_query($db,$q);
     unset($_POST['uploadFile']);
@@ -60,7 +61,7 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Transafe</title>
+    <title>Transafe <?php echo $_SESSION['r']['name']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
