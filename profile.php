@@ -176,7 +176,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 else echo "<p>Status Check here</p>";?>
             </div>
         </form>
-        <form>
+        <form method="post" action="profile.php" enctype="multipart/form-data">
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
                     echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
@@ -186,7 +186,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 else echo "<p>Status Check here</p>";?>
             </div>
         </form>
-        <form>
+        <form method="post" action="profile.php" enctype="multipart/form-data">
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
                     echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
