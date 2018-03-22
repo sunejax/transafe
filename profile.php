@@ -22,9 +22,6 @@ $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
         $pathToFile = $_FILES["fileToUpload"]['name'];
-        echo("<script>
-            alert($pathToFile);
-                </script>");
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
         $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
