@@ -26,12 +26,13 @@ if(isset($_POST['uploadFile'])) {
             alert($pathToFile);
                 </script>");
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
-        $result = $client->putObject(array(
-            'Bucket' => $bucket,
-            'Key' => $key,
-            'SourceFile' => $pathToFile,
-            'ContentType'=> 'image/jpeg'
-        ));
+//        $result = $client->putObject(array(
+//            'Bucket' => $bucket,
+//            'Key' => $key,
+//            'SourceFile' => $pathToFile,
+//            'ContentType'=> 'image/jpeg'
+//        ));
+        $result = $s3->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
