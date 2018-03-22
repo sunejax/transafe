@@ -27,7 +27,8 @@ if(isset($_POST['uploadFile'])) {
             'Bucket' => $bucket,
             'Key' => $key,
             'Body' => fopen($pathToFile,'rb'),
-        ));
+            'ContentType'=> 'image/jpeg'
+            ));
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
