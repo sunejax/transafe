@@ -44,7 +44,7 @@ if(isset($_POST['uploadFile'])) {
 
 <form method="post" action="profile.php" enctype="multipart/form-data">
     <div><p>Registration Certificate:</p><? if(!isset($_SESSION['r']['doc_rc']))
-        echo "<input type='file' name='fileToUpload'>
+            echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile' value='Upload'>
             "?>
     </div>
@@ -56,7 +56,12 @@ if(isset($_POST['uploadFile'])) {
     <div><p>AADHAR</p><? if(!isset($_SESSION['r']['doc_aa']))
             echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile' value='Upload'>
-            "?>
+            ";
+        if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+        else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Confirmed</p>";
+        else echo "<p>Status Check here</p>";
+        ?>
+
     </div>
 
 </form>
