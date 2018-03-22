@@ -22,14 +22,13 @@ $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
         $pathToFile = $_FILES["fileToUpload"]['name'];
-        echo "<script>console.log(<?=$pathToFile?>)</script>;";
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
-        /*$result = $client->putObject(array(
+        $result = $client->putObject(array(
             'Bucket' => $bucket,
             'Key' => $key,
             'SourceFile' => $pathToFile,
             'ContentType'=> 'image/jpeg'
-            ));*/
+            ));
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
@@ -148,7 +147,7 @@ if(isset($_POST['uploadFile'])) {
             else echo "<p>Status Check here</p>";?>
         </div>
         <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
-                echo "<input type='file' name='fileToUpload'>
+                echo "<input type='file' name='fileToUpload_1'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
             if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
@@ -156,7 +155,7 @@ if(isset($_POST['uploadFile'])) {
             else echo "<p>Status Check here</p>";?>
         </div>
         <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
-                echo "<input type='file' name='fileToUpload'>
+                echo "<input type='file' name='fileToUpload_2'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
             if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
