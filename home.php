@@ -86,7 +86,7 @@ if (isset($_GET['logout'])) {
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
                         <li><a href="home.php?logout='1'">Logout</a></li>
-                        <li><a href="http://driving-tests.in/learners-licence-practice-test-1/" class="scroll">Take a Test</a></li>
+                        <li><a href="http://driving-tests.in/learners-licence-practice-test-1/">Take a Test</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#news" class="scroll">News</a></li>
                         <li><a href="#contact" class="scroll">Contact Us</a></li>
