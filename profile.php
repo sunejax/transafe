@@ -31,7 +31,7 @@ if(isset($_POST['uploadFile'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_rc =$url WHERE uid=$uid";
+    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
     unset($_POST['uploadFile']);
 }
