@@ -40,6 +40,7 @@ if(isset($_POST['uploadFile'])) {
     }
     $url=$result['ObjectURL'];
     $em=$_SESSION['r']['email'];
+    $em=(string)$em;
 
     $q = "INSERT INTO user (doc_rc) VALUES('$url') WHERE email='$em'";
     mysqli_query($db,$q);
