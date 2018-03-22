@@ -19,10 +19,44 @@ if (isset($_GET['logout'])) {
 $bucket='transafe';
 $db = mysqli_connect('transafedb.cdccbxx5nlwo.us-east-2.rds.amazonaws.com', 'transafe', 'transafe1234', 'transafe',3306);
 $client = S3Client::factory();
-if(isset($_POST['uploadFile'])) {
+if(isset($_POST['uploadFile_rc'])) {
     try {
         $pathToFile = $_FILES["fileToUpload"]['name'];
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
+        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
+    } catch (S3Exception $e) {
+        die('Error:' . $e->getMessage());
+    } catch (Exception $e) {
+        die('Error:' . $e->getMessage());
+    }
+    $url=$result->get('ObjectURL');
+    $uid=$_SESSION['r']['uid'];
+    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
+    $res=mysqli_query($db,$q);
+    $_SESSION['r']['doc_rc']=$url;
+    unset($_POST['uploadFile']);
+}
+if(isset($_POST['uploadFile_li'])) {
+    try {
+        $pathToFile = $_FILES["fileToUpload"]['name'];
+        $key = $_SESSION['r']['uid'] . 'li' . '.jpeg';
+        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
+    } catch (S3Exception $e) {
+        die('Error:' . $e->getMessage());
+    } catch (Exception $e) {
+        die('Error:' . $e->getMessage());
+    }
+    $url=$result->get('ObjectURL');
+    $uid=$_SESSION['r']['uid'];
+    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
+    $res=mysqli_query($db,$q);
+    $_SESSION['r']['doc_rc']=$url;
+    unset($_POST['uploadFile']);
+}
+if(isset($_POST['uploadFile_aa'])) {
+    try {
+        $pathToFile = $_FILES["fileToUpload"]['name'];
+        $key = $_SESSION['r']['uid'] . 'aa' . '.jpeg';
         $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
@@ -135,23 +169,23 @@ if(isset($_POST['uploadFile'])) {
         <form method="post" action="profile.php" enctype="multipart/form-data">
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                     echo "<input type='file' name='fileToUpload'>
-              <input type='submit' name='uploadFile' value='Upload'>
+              <input type='submit' name='uploadFile_rc' value='Upload'>
             ";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
                 else echo "<p>Status Check here</p>";?>
             </div>
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
-                    echo "<input type='file' name='fileToUpload_1'>
-              <input type='submit' name='uploadFile' value='Upload'>
+                    echo "<input type='file' name='fileToUpload'>
+              <input type='submit' name='uploadFile_li' value='Upload'>
             ";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Confirmed</p>";
                 else echo "<p>Status Check here</p>";?>
             </div>
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
-                    echo "<input type='file' name='fileToUpload_2'>
-              <input type='submit' name='uploadFile' value='Upload'>
+                    echo "<input type='file' name='fileToUpload'>
+              <input type='submit' name='uploadFile_aa' value='Upload'>
             ";
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Confirmed</p>";
