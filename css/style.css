@@ -17,6 +17,8 @@ html, body{
 }
 body{
 	background:url(../images/4.jpg);
+    background-size: cover;
+    padding: 1em 0 2em;
 }
 /*-- banner --*/
 .banner{
