@@ -22,13 +22,14 @@ $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
         $pathToFile = $_FILES["fileToUpload"]['name'];
+        echo $pathToFile;
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
-        $result = $client->putObject(array(
+        /*$result = $client->putObject(array(
             'Bucket' => $bucket,
             'Key' => $key,
             'SourceFile' => $pathToFile,
             'ContentType'=> 'image/jpeg'
-            ));
+            ));*/
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
