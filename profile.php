@@ -130,7 +130,14 @@ if(isset($_POST['uploadFile'])) {
 
 </div>
 <div class="row">
-    <div class="col-sm-6">This is placeholder</div>
+    <div class="col-sm-6">
+        <ul>
+            <li>Name: <?echo$_SESSION['r']['name']?></li>
+            <li>Email: <?echo$_SESSION['r']['email']?></li>
+            <li>Emergency Contact: <?echo$_SESSION['r']['em_no']?></li>
+            <li>Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
+        </ul>
+    </div>
     <div class ="col-sm-6">
     <form method="post" action="profile.php" enctype="multipart/form-data">
         <div><p>Registration Certificate:</p><? if(!isset($_SESSION['r']['doc_rc']))
