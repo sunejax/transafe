@@ -95,7 +95,7 @@ if(isset($_POST['uploadFile'])) {
 </head>
 <body>
 <!-- banner -->
-<div >
+<div class="banner">
     <!--header-->
     <div class="header">
         <div class="container">
