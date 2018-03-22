@@ -175,6 +175,8 @@ if(isset($_POST['uploadFile_aa'])) {
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
                 else echo "<p>Status Check here</p>";?>
             </div>
+        </form>
+        <form>
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
                     echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile_li' value='Upload'>
@@ -183,6 +185,8 @@ if(isset($_POST['uploadFile_aa'])) {
                 else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Confirmed</p>";
                 else echo "<p>Status Check here</p>";?>
             </div>
+        </form>
+        <form>
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
                     echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
