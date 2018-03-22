@@ -21,7 +21,7 @@ $bucket='transafe';
 $client = S3Client::factory();
 if(isset($_POST['uploadFile'])) {
     try {
-        $pathToFile = $_FILES["fileToUpload"]['tmp_name'];
+        $pathToFile = $_FILES["fileToUpload"]['name'];
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
         $result = $client->putObject(array(
             'Bucket' => $bucket,
