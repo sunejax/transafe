@@ -48,9 +48,9 @@ if(isset($_POST['uploadFile_li'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
+    $q = "UPDATE user SET doc_li ='$url' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
-    $_SESSION['r']['doc_rc']=$url;
+    $_SESSION['r']['doc_li']=$url;
     unset($_POST['uploadFile']);
 }
 if(isset($_POST['uploadFile_aa'])) {
@@ -65,9 +65,9 @@ if(isset($_POST['uploadFile_aa'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
+    $q = "UPDATE user SET doc_aa ='$url' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
-    $_SESSION['r']['doc_rc']=$url;
+    $_SESSION['r']['doc_aa']=$url;
     unset($_POST['uploadFile']);
 }
 ?>
