@@ -31,7 +31,7 @@ if(isset($_POST['uploadFile_rc'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_rc ='$url' WHERE uid='$uid'";
+    $q = "UPDATE user SET doc_rc ='$url',doc_rc_s='1' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
     $_SESSION['r']['doc_rc']=$url;
     unset($_POST['uploadFile_rc']);
@@ -48,7 +48,7 @@ if(isset($_POST['uploadFile_li'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_li ='$url' WHERE uid='$uid'";
+    $q = "UPDATE user SET doc_li ='$url',doc_li_s='1' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
     $_SESSION['r']['doc_li']=$url;
     unset($_POST['uploadFile_li']);
@@ -65,7 +65,7 @@ if(isset($_POST['uploadFile_aa'])) {
     }
     $url=$result->get('ObjectURL');
     $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_aa ='$url' WHERE uid='$uid'";
+    $q = "UPDATE user SET doc_aa ='$url',doc_aa_s='1' WHERE uid='$uid'";
     $res=mysqli_query($db,$q);
     $_SESSION['r']['doc_aa']=$url;
     unset($_POST['uploadFile_aa']);
@@ -172,8 +172,8 @@ if(isset($_POST['uploadFile_aa'])) {
               <input type='submit' name='uploadFile_rc' value='Upload'>
             ";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-                else echo "<p>Status Check here</p>";?>
+                else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
+               ?>
             </div>
         </form>
         <form method="post" action="profile.php" enctype="multipart/form-data">
@@ -182,8 +182,8 @@ if(isset($_POST['uploadFile_aa'])) {
               <input type='submit' name='uploadFile_li' value='Upload'>
             ";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-                else echo "<p>Status Check here</p>";?>
+                else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                ?>
             </div>
         </form>
         <form method="post" action="profile.php" enctype="multipart/form-data">
@@ -192,8 +192,8 @@ if(isset($_POST['uploadFile_aa'])) {
               <input type='submit' name='uploadFile_aa' value='Upload'>
             ";
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-                else echo "<p>Status Check here</p>";
+                else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
+
                 ?>
 
             </div>
