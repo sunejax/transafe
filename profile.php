@@ -138,11 +138,11 @@ if(isset($_POST['uploadFile'])) {
             <li>Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
         </ul>
     </div>
-    <div class ="col-sm-6">
+    <div class ="col-sm-6 input-group">
     <form method="post" action="profile.php" enctype="multipart/form-data">
         <div><span>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                 echo "<input type='file' name='fileToUpload'>
-              <input type='submit' name='uploadFile' value='Upload'>
+              <input class='input-group-btn' type='submit' name='uploadFile' value='Upload'>
             ";
             if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
