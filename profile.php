@@ -112,9 +112,9 @@ if(isset($_POST['uploadFile'])) {
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="home.php" >Home</a></li>
                         <li><a href="profile.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
-                        <li><a href="home.php?logout='1'">Logout</a></li>
+                        <li><a href="profile.php?logout='1'">Logout</a></li>
                         <li><a href="test.php" class="scroll">Take a Test</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#news" class="scroll">News</a></li>
