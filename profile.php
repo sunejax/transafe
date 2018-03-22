@@ -1,6 +1,5 @@
 <?php
-//include('login/server.php');
-session_start();
+include('login/server.php');
 include('phpqrcode/qrlib.php');
 require 'vendor/autoload.php';
 use Aws\S3\S3Client;
@@ -31,14 +30,9 @@ if(isset($_POST['uploadFile'])) {
         die('Error:' . $e->getMessage());
     }
     $url=$result->get('ObjectURL');
-    echo($result);
-    echo($url);
-    $em=$_SESSION['r']['email'];
-    $em=(string)$em;
-
-    $q1 = "INSERT INTO user (doc_rc) VALUES('$url') WHERE uid='1'";
-    $res=mysqli_query($db,$q1);
-    echo $res;
+    $uid=$_SESSION['r']['uid'];
+    $q = "UPDATE user SET doc_rc =$url WHERE uid=$uid";
+    $res=mysqli_query($db,$q);
     unset($_POST['uploadFile']);
 }
 ?>
