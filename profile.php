@@ -61,7 +61,7 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Transafe <?php echo $_SESSION['r']['name']?></title>
+    <title>Transafe - <?php echo $_SESSION['r']['name']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -123,13 +123,13 @@ if (isset($_GET['logout'])) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="index.html">Transafe</a></h1>
+                    <h1><a  href="home.php">Transafe</a></h1>
                 </div>
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="profile.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
                         <li><a href="home.php?logout='1'">Logout</a></li>
                         <li><a href="test.php" class="scroll">Take a Test</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
@@ -140,22 +140,10 @@ if (isset($_GET['logout'])) {
                 </div>
             </nav>
         </div>
-        <div class="cd-main-header">
-            <ul class="cd-header-buttons">
-                <li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-            </ul> <!-- cd-header-buttons -->
-        </div>
-        <div id="cd-search" class="cd-search">
-            <form action="#" method="post">
-                <input name="Search" type="search" placeholder="Search...">
-            </form>
-        </div>
+
     </div>
     <!--//header-->
-    <div class="w3layouts-banner-info">
-        <label></label>
-        <a class="scroll down" href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
-    </div>
+
 </div>
 <div>
     <form method="post" action="profile.php" enctype="multipart/form-data">
