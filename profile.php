@@ -26,7 +26,7 @@ if(isset($_POST['uploadFile'])) {
         $result = $client->putObject(array(
             'Bucket' => $bucket,
             'Key' => $key,
-            'Body' => fopen($pathToFile,'rb'),
+            'SourceFile' => $pathToFile,
             'ContentType'=> 'image/jpeg'
             ));
     } catch (S3Exception $e) {
