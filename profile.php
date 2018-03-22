@@ -129,7 +129,7 @@ if(isset($_POST['uploadFile'])) {
     <!--//header-->
 
 </div>
-<div class="row">
+<div class="row dis">
     <div class="col-sm-6">
         <ul>
             <li>Name: <?echo$_SESSION['r']['name']?></li>
