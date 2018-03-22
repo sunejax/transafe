@@ -21,9 +21,9 @@ $db = mysqli_connect('transafedb.cdccbxx5nlwo.us-east-2.rds.amazonaws.com', 'tra
 $client = S3Client::factory();
 if(isset($_POST['uploadFile_rc'])) {
     try {
-        $pathToFile = $_FILES["fileToUpload"]['name'];
+        $pathToFile = $_FILES["fileToUpload_rc"]['name'];
         $key = $_SESSION['r']['uid'] . 'rc' . '.jpeg';
-        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
+        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload_rc']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
@@ -38,9 +38,9 @@ if(isset($_POST['uploadFile_rc'])) {
 }
 if(isset($_POST['uploadFile_li'])) {
     try {
-        $pathToFile = $_FILES["fileToUpload"]['name'];
+        $pathToFile = $_FILES["fileToUpload_li"]['name'];
         $key = $_SESSION['r']['uid'] . 'li' . '.jpeg';
-        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
+        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload_li']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
@@ -55,9 +55,9 @@ if(isset($_POST['uploadFile_li'])) {
 }
 if(isset($_POST['uploadFile_aa'])) {
     try {
-        $pathToFile = $_FILES["fileToUpload"]['name'];
+        $pathToFile = $_FILES["fileToUpload_aa"]['name'];
         $key = $_SESSION['r']['uid'] . 'aa' . '.jpeg';
-        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload']['tmp_name'], 'rb'), 'public-read');
+        $result = $client->upload($bucket, $key, fopen($_FILES['fileToUpload_aa']['tmp_name'], 'rb'), 'public-read');
     } catch (S3Exception $e) {
         die('Error:' . $e->getMessage());
     } catch (Exception $e) {
@@ -168,7 +168,7 @@ if(isset($_POST['uploadFile_aa'])) {
     <div class ="col-sm-6 input-group">
         <form method="post" action="profile.php" enctype="multipart/form-data">
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
-                    echo "<input type='file' name='fileToUpload'>
+                    echo "<input type='file' name='fileToUpload_rc'>
               <input type='submit' name='uploadFile_rc' value='Upload'>
             ";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
@@ -178,7 +178,7 @@ if(isset($_POST['uploadFile_aa'])) {
         </form>
         <form>
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
-                    echo "<input type='file' name='fileToUpload'>
+                    echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
             ";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
@@ -188,7 +188,7 @@ if(isset($_POST['uploadFile_aa'])) {
         </form>
         <form>
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
-                    echo "<input type='file' name='fileToUpload'>
+                    echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
             ";
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
