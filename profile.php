@@ -38,7 +38,7 @@ if(isset($_POST['uploadFile'])) {
     $em=$_SESSION['r']['email'];
     $em=(string)$em;
 
-    $q = "INSERT INTO user (doc_rc) VALUES('$url') WHERE email='new@email.com'";
+    $q = "INSERT INTO user (doc_rc) VALUES('$url') WHERE uid=1";
     mysqli_query($db,$q);
     unset($_POST['uploadFile']);
 }
