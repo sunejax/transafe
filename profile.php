@@ -140,13 +140,13 @@ if(isset($_POST['uploadFile'])) {
     </div>
     <div class ="col-sm-6">
     <form method="post" action="profile.php" enctype="multipart/form-data">
-        <div><p>Registration Certificate:</p><? if(!isset($_SESSION['r']['doc_rc']))
+        <div><span>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                 echo "<input type='file' name='fileToUpload'>
               <input type='submit' name='uploadFile' value='Upload'>
             ";
             if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Confirmed</p>";
-            else echo "<p>Status Check here</p>";?>
+            else echo "<p>Status Check here</p>";?></span>
         </div>
         <div><p>Driving License</p><? if(!isset($_SESSION['r']['doc_li']))
                 echo "<input type='file' name='fileToUpload'>
