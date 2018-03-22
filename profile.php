@@ -145,7 +145,9 @@ if (isset($_GET['logout'])) {
     <!--//header-->
 
 </div>
-<div>
+<div class="row">
+    <div class="col-sm-6">This is placeholder</div>
+    <div class ="col-sm-6">
     <form method="post" action="profile.php" enctype="multipart/form-data">
         <div><p>Registration Certificate:</p><? if(!isset($_SESSION['r']['doc_rc']))
                 echo "<input type='file' name='fileToUpload'>
@@ -177,6 +179,7 @@ if (isset($_GET['logout'])) {
     <form method="get" action="qr.php">
         <button type="submit">Generate QR Code</button>
     </form>
+    </div>
 </div>
 <!-- //banner -->
 <!-- footer -->
