@@ -188,7 +188,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                     echo "<input type='file' name='fileToUpload_rc'>
               <input type='submit' name='uploadFile_rc' value='Upload'>
-            ";else echo "<img src ='$url_rc' class='proimage'>";
+            ";else echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                ?>
@@ -198,7 +198,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
                     echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
-            "; else echo "<img src ='$url_li' class='proimage'>";
+            "; else echo "<a target='_blank' href='$url_li'><img src ='$url_li' class='proimage'></a>";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
                 ?>
@@ -208,7 +208,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
                     echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
-            ";else echo "<img src ='$url_aa' class='proimage'>";
+            ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
 
