@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/rto.php" afterPath="$PROJECT_DIR$/rto.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,10 +118,10 @@
         <entry file="file://$PROJECT_DIR$/rto.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="122" column="61" lean-forward="true" selection-start-line="122" selection-start-column="61" selection-end-line="122" selection-end-column="61" />
+              <caret line="122" column="44" lean-forward="false" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
               <folding>
-                <marker date="1521777517737" expanded="true" signature="302:356" ph="Select (name... user" />
-                <marker date="1521777517737" expanded="true" signature="302:380" ph="Select name,... user" />
+                <marker date="1521777666688" expanded="true" signature="302:356" ph="Select (name... user" />
+                <marker date="1521777666688" expanded="true" signature="302:380" ph="Select name,... user" />
               </folding>
             </state>
           </provider>
@@ -326,12 +329,12 @@
       <workItem from="1521450979674" duration="15388000" />
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
-      <workItem from="1521621342443" duration="44883000" />
+      <workItem from="1521621342443" duration="44961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86233000" />
+    <option name="totallyTimeSpent" value="86311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -828,10 +831,10 @@
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="122" column="61" lean-forward="true" selection-start-line="122" selection-start-column="61" selection-end-line="122" selection-end-column="61" />
+          <caret line="122" column="44" lean-forward="false" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
           <folding>
-            <marker date="1521777517737" expanded="true" signature="302:356" ph="Select (name... user" />
-            <marker date="1521777517737" expanded="true" signature="302:380" ph="Select name,... user" />
+            <marker date="1521777666688" expanded="true" signature="302:356" ph="Select (name... user" />
+            <marker date="1521777666688" expanded="true" signature="302:380" ph="Select name,... user" />
           </folding>
         </state>
       </provider>

@@ -120,7 +120,7 @@ $results=mysqli_query($db,$q);
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="profile.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
+                        <li><a href="rto.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
                         <li><a href="rto.php?logout='1'">Logout</a></li>
                     </ul>
                     <div class="clearfix"> </div>
