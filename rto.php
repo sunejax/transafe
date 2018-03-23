@@ -8,7 +8,7 @@ if (!isset($_SESSION['username'])) {
 
 }
 
-$q="Select name,email,em_no,doc_rc,doc_li,doc_aa from user";
+$q="Select name,email,em_no,doc_rc,doc_li,doc_aa from user WHERE ad_rights !=1";
 $results=mysqli_query($db,$q);
 ?>
 <html>
