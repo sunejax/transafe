@@ -51,8 +51,8 @@ if(isset($_POST['uploadFile_li'])) {
         die('Error:' . $e->getMessage());
     }
     $url=$result->get('ObjectURL');
-    $uid=$_SESSION['r']['uid'];
-    $q = "UPDATE user SET doc_li ='$url',doc_li_s='1' WHERE uid='$uid'";
+    $uid=$_SESSION['r']['email'];
+    $q = "UPDATE user SET doc_li ='$url',doc_li_s='1' WHERE email='$uid'";
     $res=mysqli_query($db,$q);
     $_SESSION['r']['doc_li']=$url;
     $_SESSION['r']['doc_li_s']=1;
@@ -126,6 +126,18 @@ if(isset($_POST['uploadFile_aa'])) {
             height: 100%;
             margin: 0;
             padding: 0;
+        }
+    </style>
+    <style>
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
     </style>
 </head>
