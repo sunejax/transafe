@@ -10,11 +10,33 @@ if (!isset($_SESSION['username'])) {
 
 $q="Select name,email,em_no,doc_rc,doc_li,doc_aa from user";
 $results=mysqli_query($db,$q);
-echo "<table>";
+?>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<table>
+   <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
     //output a row here
     echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['doc_rc'])."</td><td>".($row_users['doc_li'])."</td><td>".($row_users['doc_aa'])."</td></tr>";
-}
+    }?>
+</table>
+</body>
 
-echo "</table>";
+</html>
+
+
+
+
