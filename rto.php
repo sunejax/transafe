@@ -41,7 +41,11 @@ $results=mysqli_query($db,$q);
 <table>
    <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
     //output a row here
-    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['doc_rc'])."</td><td>".($row_users['doc_li'])."</td><td>".($row_users['doc_aa'])."</td></tr>";
+       $rc=$row_users['doc_rc'];
+       $li=$row_users['doc_li'];
+       $aa=$row_users['doc_aa'];
+
+    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href='$li'><img src =$li></a></td><td><a target='_blank' href='$aa'><img src =$aa></a></td></tr>";
     }?>
 </table>
 </body>
