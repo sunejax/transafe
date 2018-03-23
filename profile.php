@@ -164,11 +164,11 @@ if(isset($_POST['uploadFile_aa'])) {
 </div>
 <div class="row dis ">
     <div class="col-sm-6">
-        <ul>
-            <li>Name: <?echo$_SESSION['r']['name']?></li>
-            <li>Email: <?echo$_SESSION['r']['email']?></li>
-            <li>Emergency Contact: <?echo$_SESSION['r']['em_no']?></li>
-            <li>Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
+        <ul class="list-group">
+            <li class="list-group-item">Name: <?echo$_SESSION['r']['name']?></li>
+            <li class="list-group-item">Email: <?echo$_SESSION['r']['email']?></li>
+            <li class="list-group-item">Emergency Contact: <?echo$_SESSION['r']['em_no']?></li>
+            <li class="list-group-item">Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
         </ul>
     </div>
     <div class ="col-sm-6 input-group">
