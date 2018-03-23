@@ -76,26 +76,26 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+            <state relative-caret-position="314">
+              <caret line="195" column="57" lean-forward="false" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
               <folding>
                 <element signature="e#98#118#0#PHP" expanded="true" />
-                <marker date="1521762889725" expanded="true" signature="1093:1117" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="1093:1119" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="1093:1147" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="1093:1148" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="1093:1153" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="1766:1826" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="2439:2499" ph="UPDATE user... " />
-                <marker date="1521762889725" expanded="true" signature="2609:9902" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="2609:9917" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="6936:6950" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="7042:7055" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="7544:7558" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="7650:7663" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="8143:8157" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="8249:8262" ph="..." />
-                <marker date="1521762889725" expanded="true" signature="8718:8751" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="1093:1117" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="1093:1119" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="1093:1147" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="1093:1148" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="1093:1153" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="1800:1860" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="2507:2567" ph="UPDATE user... " />
+                <marker date="1521770895327" expanded="true" signature="2711:10021" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="2711:10036" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="7086:7100" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="7192:7205" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="7705:7719" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="7811:7824" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="8315:8329" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="8421:8434" ph="..." />
+                <marker date="1521770895327" expanded="true" signature="8837:8870" ph="..." />
               </folding>
             </state>
           </provider>
@@ -302,12 +302,12 @@
       <workItem from="1521450979674" duration="15388000" />
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
-      <workItem from="1521621342443" duration="36315000" />
+      <workItem from="1521621342443" duration="38282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77665000" />
+    <option name="totallyTimeSpent" value="79632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -318,11 +318,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33754513" sideWeight="0.5060606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19855596" sideWeight="0.4939394" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19855596" sideWeight="0.4939394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11893939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25454545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25454545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -335,25 +335,26 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.4969697" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33754513" sideWeight="0.5060606" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33754513" sideWeight="0.4939394" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33754513" sideWeight="0.5060606" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19855596" sideWeight="0.4939394" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11893939" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25454545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25454545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,22 +451,22 @@
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="e#98#118#0#PHP" expanded="true" />
-            <marker date="1521762889725" expanded="true" signature="1093:1117" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1119" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1147" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1148" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1153" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1766:1826" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="2439:2499" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="2609:9902" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="2609:9917" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="6936:6950" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7042:7055" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7544:7558" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7650:7663" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8143:8157" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8249:8262" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8718:8751" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="1093:1117" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1119" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1147" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1148" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1153" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1800:1860" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="2507:2567" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="2711:10021" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="2711:10036" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7086:7100" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7192:7205" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7705:7719" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7811:7824" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8315:8329" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8421:8434" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8837:8870" ph="..." />
           </folding>
         </state>
       </provider>
@@ -752,26 +753,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state relative-caret-position="314">
+          <caret line="195" column="57" lean-forward="false" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
           <folding>
             <element signature="e#98#118#0#PHP" expanded="true" />
-            <marker date="1521762889725" expanded="true" signature="1093:1117" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1119" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1147" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1148" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1093:1153" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="1766:1826" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="2439:2499" ph="UPDATE user... " />
-            <marker date="1521762889725" expanded="true" signature="2609:9902" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="2609:9917" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="6936:6950" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7042:7055" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7544:7558" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="7650:7663" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8143:8157" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8249:8262" ph="..." />
-            <marker date="1521762889725" expanded="true" signature="8718:8751" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="1093:1117" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1119" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1147" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1148" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1093:1153" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="1800:1860" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="2507:2567" ph="UPDATE user... " />
+            <marker date="1521770895327" expanded="true" signature="2711:10021" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="2711:10036" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7086:7100" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7192:7205" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7705:7719" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="7811:7824" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8315:8329" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8421:8434" ph="..." />
+            <marker date="1521770895327" expanded="true" signature="8837:8870" ph="..." />
           </folding>
         </state>
       </provider>
