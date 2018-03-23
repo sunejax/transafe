@@ -19,6 +19,9 @@ if (isset($_GET['logout'])) {
 $bucket='transafe';
 $db = mysqli_connect('transafedb.cdccbxx5nlwo.us-east-2.rds.amazonaws.com', 'transafe', 'transafe1234', 'transafe',3306);
 $client = S3Client::factory();
+$url_rc=$_SESSION['r']['doc_rc'];
+$url_li=$_SESSION['r']['doc_li'];
+$url_aa=$_SESSION['r']['doc_aa'];
 if(isset($_POST['uploadFile_rc'])) {
     try {
         $pathToFile = $_FILES["fileToUpload_rc"]['name'];
@@ -173,7 +176,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                     echo "<input type='file' name='fileToUpload_rc'>
               <input type='submit' name='uploadFile_rc' value='Upload'>
-            ";else echo "<img src =$_SESSION['r']['doc_rc']>";
+            ";else echo "<img src ='$url_rc'>\";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                ?>
@@ -183,7 +186,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
                     echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
-            "; else echo "<img src =$_SESSION['r']['doc_li']>";
+            "; else echo "<img src ='$url_li'>\"";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
                 ?>
@@ -193,7 +196,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
                     echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
-            ";else echo "<img src =$_SESSION['r']['doc_aa']>";
+            ";else echo ("<img src ='$url_aa'>");
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
 
