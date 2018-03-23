@@ -1,7 +1,7 @@
 <?php
 include('login/server.php');
 
-$q="Select (name,email,em_no,doc_rc,doc_li,doc_aa) from user";
+$q="Select name,email,em_no,doc_rc,doc_li,doc_aa from user";
 $results=mysqli_query($db,$q);
 echo "<table>";
 
