@@ -123,7 +123,6 @@ $results=mysqli_query($db,$q);
                         <li><a href="home.php" >Home</a></li>
                         <li><a href="profile.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
                         <li><a href="rto.php?logout='1'">Logout</a></li>
-                        <li><a href="http://driving-tests.in/learners-licence-practice-test-1/" >Take a Test</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
