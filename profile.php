@@ -164,7 +164,7 @@ if(isset($_POST['uploadFile_aa'])) {
 </div>
 <div class="row dis ">
     <div class="col-sm-6">
-        <ul class="list-group">
+        <ul class="list-group" style="color: #000000">
             <li class="list-group-item">Name: <?echo$_SESSION['r']['name']?></li>
             <li class="list-group-item">Email: <?echo$_SESSION['r']['email']?></li>
             <li class="list-group-item">Emergency Contact: <?echo$_SESSION['r']['em_no']?></li>
