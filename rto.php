@@ -16,6 +16,14 @@ if (isset($_GET['logout'])) {
 }
 $q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
+if (isset($_POST['accept'])) {
+    $postid = $_POST['postid'];
+    if($_POST['accept']==1)
+        $result = mysqli_query($con, "UPDATE user SET doc_rc_s=2,doc_li_s=2,doc_aa_s=2  WHERE uid=$postid");
+    else if($_POST['accept']==2)
+        $result = mysqli_query($con, "UPDATE user SET doc_rc_s=3,doc_li_s=3,doc_aa_s=3  WHERE uid=$postid");
+    exit();
+}
 ?>
 <html>
 <head>
@@ -68,6 +76,8 @@ $results=mysqli_query($db,$q);
     <link rel="stylesheet" href="css/lightbox.css">
     <!-- //light-box -->
     <script src="js/SmoothScroll.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
     <!--search jQuery-->
     <script src="js/main.js"></script>
     <!--//search jQuery-->
@@ -136,58 +146,47 @@ $results=mysqli_query($db,$q);
 
 </div>
 <table>
-   <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
-    //output a row here
-       $rc=$row_users['doc_rc'];
-       $li=$row_users['doc_li'];
-       $aa=$row_users['doc_aa'];
-       $uid=$row_users['uid'];
+    <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
+        //output a row here
+        $rc=$row_users['doc_rc'];
+        $li=$row_users['doc_li'];
+        $aa=$row_users['doc_aa'];
+        $uid=$row_users['uid'];
 
-    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><td><input id=$uid data-toggle='toggle' data-on='Accept' data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td></tr>";
-    ;}
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><td><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td></tr>";
+        ;}
     ?>
 </table>
 <script>
     $(document).ready(function(){
         // when the user clicks on like
-        $('.like').on('click', function(){
+        $('.switcher').change(function(){
             var postid = $(this).data('id');
             $post = $(this);
+            if($(this).is(":checked")) {
+                $.ajax({
+                    url: 'rto.php',
+                    type: 'post',
+                    data: {
+                        'accept': 1,
+                        'postid': postid
+                    },
+                    success: function (response) {//do something with success response maybe hide some elements
 
-            $.ajax({
+                    });
+            }
+            else{$.ajax({
                 url: 'rto.php',
                 type: 'post',
                 data: {
-                    'liked': 1,
+                    'accept': 2,
                     'postid': postid
                 },
-                success: function(response){
-                    $post.parent().find('span.likes_count').text(response + " likes");
-                    $post.addClass('hide');
-                    $post.siblings().removeClass('hide');
+                success: function (response) {
                 }
             });
-        });
-
-        // when the user clicks on unlike
-        $('.unlike').on('click', function(){
-            var postid = $(this).data('id');
-            $post = $(this);
-
-            $.ajax({
-                url: 'rto.php',
-                type: 'post',
-                data: {
-                    'unliked': 1,
-                    'postid': postid
-                },
-                success: function(response){
-                    $post.parent().find('span.likes_count').text(response + " likes");
-                    $post.addClass('hide');
-                    $post.siblings().removeClass('hide');
-                }
-            });
-        });
+            }
+        }
     });
 </script>
 </body>

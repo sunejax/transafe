@@ -191,6 +191,7 @@ if(isset($_POST['uploadFile_aa'])) {
             ";else echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
                ?>
             </div>
         </form>
@@ -201,6 +202,7 @@ if(isset($_POST['uploadFile_aa'])) {
             "; else echo "<a target='_blank' href='$url_li'><img src ='$url_li' class='proimage'></a>";
                 if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";
                 ?>
             </div>
         </form>
@@ -211,6 +213,7 @@ if(isset($_POST['uploadFile_aa'])) {
             ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
                 if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
 
                 ?>
 
