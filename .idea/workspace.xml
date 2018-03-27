@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/quiz.php" afterPath="$PROJECT_DIR$/quiz.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,15 +100,11 @@
       <file leaf-file-name="quiz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+            <state relative-caret-position="252">
+              <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
               <folding>
-                <element signature="e#977#981#0#HTML" expanded="true" />
-                <element signature="e#1604#1608#0#HTML" expanded="true" />
-                <element signature="e#1800#1804#0#HTML" expanded="true" />
-                <element signature="e#1888#1892#0#HTML" expanded="true" />
-                <element signature="e#2014#2018#0#HTML" expanded="true" />
-                <element signature="e#2100#2104#0#HTML" expanded="true" />
+                <element signature="e#1917#1921#0#HTML" expanded="true" />
+                <element signature="e#2003#2007#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -321,12 +319,12 @@
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
       <workItem from="1521621342443" duration="45636000" />
-      <workItem from="1522149262299" duration="2564000" />
+      <workItem from="1522149262299" duration="3000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89550000" />
+    <option name="totallyTimeSpent" value="89986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -817,15 +815,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        <state relative-caret-position="252">
+          <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
           <folding>
-            <element signature="e#977#981#0#HTML" expanded="true" />
-            <element signature="e#1604#1608#0#HTML" expanded="true" />
-            <element signature="e#1800#1804#0#HTML" expanded="true" />
-            <element signature="e#1888#1892#0#HTML" expanded="true" />
-            <element signature="e#2014#2018#0#HTML" expanded="true" />
-            <element signature="e#2100#2104#0#HTML" expanded="true" />
+            <element signature="e#1917#1921#0#HTML" expanded="true" />
+            <element signature="e#2003#2007#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
