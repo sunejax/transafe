@@ -69,7 +69,7 @@ if (isset($_POST['accept'])) {
     <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <!-- //font -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <!-- light-box -->
     <link rel="stylesheet" href="css/lightbox.css">
@@ -160,10 +160,9 @@ if (isset($_POST['accept'])) {
 </table>
 <script>
     $(document).ready(function(){
-        // when the user clicks on like
-        $('.switcher').change(function(){
-            var postid = $(this).data('id');
-            $post = $(this);
+        // when the user clicks on switch
+        $(".switcher").live("click",function(){
+            var postid = $(this).attr('id');
             if($(this).is(":checked")) {
                 $.ajax({
                     url: 'rto.php',
@@ -171,23 +170,20 @@ if (isset($_POST['accept'])) {
                     data: {
                         'accept': 1,
                         'postid': postid
-                    },
-                    success: function (response) {//do something with success response maybe hide some elements
-
-                    });
+                    }
+                });
             }
-            else{$.ajax({
+            else
+            {$.ajax({
                 url: 'rto.php',
                 type: 'post',
                 data: {
                     'accept': 2,
                     'postid': postid
-                },
-                success: function (response) {
                 }
             });
             }
-        }
+        });
     });
 </script>
 </body>
