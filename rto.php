@@ -27,7 +27,7 @@ $results=mysqli_query($db,$q);
 
         th, td {
             padding: 8px;
-            text-align: left;
+            text-align: center;
             /*border-bottom: 1px solid #ddd;*/
             border: 1px solid #dddddd;
         }
