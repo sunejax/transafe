@@ -161,7 +161,7 @@ if (isset($_POST['accept'])) {
 <script>
     $(document).ready(function(){
         // when the user clicks on switch
-        $(".switcher").live("click",function(){
+        $(".switcher").change(function(){
             var postid = $(this).attr('id');
             if($(this).is(":checked")) {
                 $.ajax({
