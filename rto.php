@@ -19,9 +19,9 @@ $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
     if($_POST['accept']==1)
-        $result = mysqli_query($con, "UPDATE user SET doc_rc_s=2,doc_li_s=2,doc_aa_s=2  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET doc_rc_s=2,doc_li_s=2,doc_aa_s=2  WHERE uid=$postid");
     else if($_POST['accept']==2)
-        $result = mysqli_query($con, "UPDATE user SET doc_rc_s=3,doc_li_s=3,doc_aa_s=3  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET doc_rc_s=3,doc_li_s=3,doc_aa_s=3  WHERE uid=$postid");
     exit();
 }
 ?>
