@@ -142,7 +142,7 @@ $results=mysqli_query($db,$q);
        $aa=$row_users['doc_aa'];
        $uid=$row_users['uid'];
 
-    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td id='".($uid)."'><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><input data-toggle='toggle' data-on='Accept' data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></tr>";
+    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><td><input id=$uid data-toggle='toggle' data-on='Accept' data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td></tr>";
     ;}
     ?>
 </table>
