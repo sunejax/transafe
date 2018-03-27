@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa from user WHERE ad_rights is NULL ";
+$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
@@ -155,9 +155,11 @@ if (isset($_POST['accept'])) {
         $li=$row_users['doc_li'];
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
-
+        $rc_s=$row_users['doc_rc_s'];
+        $str='';
+        if($rc_s==2)$str='checked';
         echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td>
-<td align='center'><a target='_blank' href=$rc><img src =$rc></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
+<td><a target='_blank' href=$rc><img style=\"display:inline-block; horizontal-align:center; margin-top:5px;\" src =$rc></a><input class='switcher' $str id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td><a target='_blank' href=$li><img src =$li></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td><a target='_blank' href=$aa><img src =$aa></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td></td></tr>";
