@@ -62,8 +62,7 @@ if (isset($_POST['accept'])) {
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <!--// css -->
     <!-- font-awesome icons -->
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap2-toggle.min.css" rel="stylesheet">
-    <script type='text/javascript' src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap2-toggle.min.js"></script>
+
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome icons -->
     <!-- font -->
@@ -114,6 +113,8 @@ if (isset($_POST['accept'])) {
             box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
     </style>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap2-toggle.min.css" rel="stylesheet">
+    <script type='text/javascript' src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap2-toggle.min.js"></script>
 </head>
 <body>
 <div class="banner">
