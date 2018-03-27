@@ -163,7 +163,7 @@ if(isset($_POST['uploadFile_aa'])) {
                         <li><a href="home.php" >Home</a></li>
                         <li><a href="profile.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
                         <li><a href="profile.php?logout='1'">Logout</a></li>
-                        <li><a href="http://driving-tests.in/learners-licence-practice-test-1/" >Take a Test</a></li>
+                        <li><a href="quiz.php" >Take a Test</a></li>
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
