@@ -112,10 +112,7 @@ if (isset($_POST['accept'])) {
         img:hover {
             box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
-        .toggle{
-            width:100px;
-            height:34px;
-        }
+
     </style>
 
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap2-toggle.min.css" rel="stylesheet">
@@ -159,7 +156,7 @@ if (isset($_POST['accept'])) {
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
 
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><td><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td></tr>";
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href=$li><img src =$li></a></td><td><a target='_blank' href=$aa><img src =$aa></a></td><td><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td></tr>";
         ;}
     ?>
 </table>
