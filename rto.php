@@ -138,10 +138,54 @@ $results=mysqli_query($db,$q);
        $rc=$row_users['doc_rc'];
        $li=$row_users['doc_li'];
        $aa=$row_users['doc_aa'];
+       $uid=$row_users['uid'];
 
-    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href='$li'><img src =$li></a></td><td><a target='_blank' href='$aa'><img src =$aa></a></td></tr>";
+    echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td id=$uid><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href='$li'><img src =$li></a></td><td><a target='_blank' href='$aa'><img src =$aa></a></td></tr>";
     }?>
 </table>
+<script>
+    $(document).ready(function(){
+        // when the user clicks on like
+        $('.like').on('click', function(){
+            var postid = $(this).data('id');
+            $post = $(this);
+
+            $.ajax({
+                url: 'rto.php',
+                type: 'post',
+                data: {
+                    'liked': 1,
+                    'postid': postid
+                },
+                success: function(response){
+                    $post.parent().find('span.likes_count').text(response + " likes");
+                    $post.addClass('hide');
+                    $post.siblings().removeClass('hide');
+                }
+            });
+        });
+
+        // when the user clicks on unlike
+        $('.unlike').on('click', function(){
+            var postid = $(this).data('id');
+            $post = $(this);
+
+            $.ajax({
+                url: 'rto.php',
+                type: 'post',
+                data: {
+                    'unliked': 1,
+                    'postid': postid
+                },
+                success: function(response){
+                    $post.parent().find('span.likes_count').text(response + " likes");
+                    $post.addClass('hide');
+                    $post.siblings().removeClass('hide');
+                }
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

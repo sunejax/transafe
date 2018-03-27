@@ -75,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2310">
-              <caret line="170" column="14" lean-forward="true" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
+              <caret line="170" column="14" lean-forward="false" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
               <folding>
                 <marker date="1522154463596" expanded="true" signature="1195:1219" ph="UPDATE user... " />
                 <marker date="1522154463596" expanded="true" signature="1195:1221" ph="UPDATE user... " />
@@ -98,7 +98,7 @@
       <file leaf-file-name="quiz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="1062">
               <caret line="59" column="129" lean-forward="false" selection-start-line="59" selection-start-column="129" selection-end-line="59" selection-end-column="129" />
               <folding />
             </state>
@@ -314,12 +314,12 @@
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
       <workItem from="1521621342443" duration="45636000" />
-      <workItem from="1522149262299" duration="3278000" />
+      <workItem from="1522149262299" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90264000" />
+    <option name="totallyTimeSpent" value="91013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -765,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2310">
-          <caret line="170" column="14" lean-forward="true" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
+          <caret line="170" column="14" lean-forward="false" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
           <folding>
             <marker date="1522154463596" expanded="true" signature="1195:1219" ph="UPDATE user... " />
             <marker date="1522154463596" expanded="true" signature="1195:1221" ph="UPDATE user... " />
@@ -809,7 +809,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="1062">
           <caret line="59" column="129" lean-forward="false" selection-start-line="59" selection-start-column="129" selection-end-line="59" selection-end-column="129" />
           <folding />
         </state>
