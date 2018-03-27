@@ -157,7 +157,7 @@ if (isset($_POST['accept'])) {
         $uid=$row_users['uid'];
 
         echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td>
-<td><a target='_blank' href=$rc><img src =$rc></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
+<td align='center'><a target='_blank' href=$rc><img src =$rc></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td><a target='_blank' href=$li><img src =$li></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td><a target='_blank' href=$aa><img src =$aa></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td></td></tr>";
