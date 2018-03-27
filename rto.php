@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select name,email,em_no,doc_rc,doc_li,doc_aa from user WHERE ad_rights is NULL ";
+$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 ?>
 <html>
@@ -141,7 +141,8 @@ $results=mysqli_query($db,$q);
        $uid=$row_users['uid'];
 
     echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td id='".($uid)."'><a target='_blank' href=$rc><img src =$rc></a></td><td><a target='_blank' href='$li'><img src =$li></a></td><td><a target='_blank' href='$aa'><img src =$aa></a></td></tr>";
-    }?>
+    ;}
+    ?>
 </table>
 <script>
     $(document).ready(function(){
