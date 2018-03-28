@@ -18,10 +18,11 @@ $q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s 
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
+    $name=$_POST['name'];
     if($_POST['accept']==1)
-        $result = mysqli_query($db, "UPDATE user SET doc_rc_s=2,doc_li_s=2,doc_aa_s=2  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET $name=2  WHERE uid=$postid");
     else if($_POST['accept']==2)
-        $result = mysqli_query($db, "UPDATE user SET doc_rc_s=3,doc_li_s=3,doc_aa_s=3  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET $name=3  WHERE uid=$postid");
     exit();
 }
 ?>
@@ -156,12 +157,16 @@ if (isset($_POST['accept'])) {
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
         $rc_s=$row_users['doc_rc_s'];
-        $str='';
-        if($rc_s==2)$str='checked';
+        $str_rc='';
+        $str_li='';
+        $str_aa='';
+        if($rc_s==2)$str_rc='checked';
+        if($rc_s==2)$str_li='checked';
+        if($rc_s==2)$str_aa='checked';
         echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td>
-<td><a target='_blank' href=$rc><img style=\"display:inline-block; horizontal-align:center; margin-top:5px;\" src =$rc></a><input class='switcher' $str id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
-<td><a target='_blank' href=$li><img src =$li></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
-<td><a target='_blank' href=$aa><img src =$aa></a><input class='switcher' id=$uid data-toggle='toggle' data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
+<td><a target='_blank' href=$rc><img src =$rc></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
+<td><a target='_blank' href=$li><img src =$li></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
+<td><a target='_blank' href=$aa><img src =$aa></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td></td></tr>";
         ;}
     ?>
@@ -171,13 +176,15 @@ if (isset($_POST['accept'])) {
         // when the user clicks on switch
         $(".switcher").change(function(){
             var postid = $(this).attr('id');
+            var na=$(this).attr('name');
             if($(this).is(":checked")) {
                 $.ajax({
                     url: 'rto.php',
                     type: 'post',
                     data: {
                         'accept': 1,
-                        'postid': postid
+                        'postid': postid,
+                        'name':na
                     }
                 });
             }

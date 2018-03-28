@@ -129,7 +129,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user" pinned="false" current-in-tab="false">
         <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -162,39 +162,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rto.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rto.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="160" column="168" lean-forward="false" selection-start-line="160" selection-start-column="168" selection-end-line="160" selection-end-column="168" />
-              <folding>
-                <marker date="1522185571642" expanded="true" signature="302:387" ph="Select (name... user" />
-                <marker date="1522185571642" expanded="true" signature="302:411" ph="Select name,... user" />
-                <marker date="1522185571642" expanded="true" signature="574:634" ph="UPDATE user... " />
-                <marker date="1522185571642" expanded="true" signature="624:634" ph="SELECT * FRO... posts" />
-                <marker date="1522185571642" expanded="true" signature="715:775" ph="UPDATE user... " />
-                <marker date="1522185571642" expanded="true" signature="5522:5770" ph="..." />
-                <marker date="1522185571642" expanded="true" signature="5522:5772" ph="..." />
-                <marker date="1522185571642" expanded="true" signature="5522:6456" ph="..." />
-                <marker date="1522185571642" expanded="true" signature="5670:5732" ph="..." />
-                <marker date="1522185571642" expanded="true" signature="6494:6921" ph="..." />
-                <marker date="1522185571642" expanded="true" signature="6528:6582" ph="{...}" />
-                <marker date="1522185571642" expanded="true" signature="6528:6921" ph="{...}" />
-                <marker date="1522185571642" expanded="true" signature="6612:6652" ph="{...}" />
-                <marker date="1522185571642" expanded="true" signature="6612:6921" ph="{...}" />
-                <marker date="1522185571642" expanded="true" signature="6723:6921" ph="{&quot;url&quot;: 'rto.php'...}" />
-                <marker date="1522185571642" expanded="true" signature="6821:6921" ph="{&quot;postid&quot;: postid...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
               <caret line="86" column="50" lean-forward="false" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rto.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+              <folding>
+                <marker date="1522239389025" expanded="true" signature="302:387" ph="Select (name... user" />
+                <marker date="1522239389025" expanded="true" signature="302:411" ph="Select name,... user" />
+                <marker date="1522239389025" expanded="true" signature="600:637" ph="UPDATE user... " />
+                <marker date="1522239389025" expanded="true" signature="627:637" ph="SELECT * FRO... posts" />
+                <marker date="1522239389025" expanded="true" signature="718:755" ph="UPDATE user... " />
+                <marker date="1522239389025" expanded="true" signature="5678:5869" ph="..." />
+                <marker date="1522239389025" expanded="true" signature="5678:5870" ph="..." />
+                <marker date="1522239389025" expanded="true" signature="5678:6577" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -352,12 +344,12 @@
       <workItem from="1521539578826" duration="9081000" />
       <workItem from="1521554774705" duration="16881000" />
       <workItem from="1521621342443" duration="45636000" />
-      <workItem from="1522149262299" duration="16441000" />
+      <workItem from="1522149262299" duration="19101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103427000" />
+    <option name="totallyTimeSpent" value="106087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -372,7 +364,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19855596" sideWeight="0.4939394" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19855596" sideWeight="0.4939394" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -435,22 +427,14 @@
         <state relative-caret-position="2196">
           <caret line="122" column="44" lean-forward="false" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
           <folding>
-            <marker date="1522185571642" expanded="true" signature="302:387" ph="Select (name... user" />
-            <marker date="1522185571642" expanded="true" signature="302:411" ph="Select name,... user" />
-            <marker date="1522185571642" expanded="true" signature="574:634" ph="UPDATE user... " />
-            <marker date="1522185571642" expanded="true" signature="624:634" ph="SELECT * FRO... posts" />
-            <marker date="1522185571642" expanded="true" signature="715:775" ph="UPDATE user... " />
-            <marker date="1522185571642" expanded="true" signature="5522:5770" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5522:5772" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5522:6456" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5670:5732" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="6494:6921" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="6528:6582" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6528:6921" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6612:6652" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6612:6921" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6723:6921" ph="{&quot;url&quot;: 'rto.php'...}" />
-            <marker date="1522185571642" expanded="true" signature="6821:6921" ph="{&quot;postid&quot;: postid...}" />
+            <marker date="1522239389025" expanded="true" signature="302:387" ph="Select (name... user" />
+            <marker date="1522239389025" expanded="true" signature="302:411" ph="Select name,... user" />
+            <marker date="1522239389025" expanded="true" signature="600:637" ph="UPDATE user... " />
+            <marker date="1522239389025" expanded="true" signature="627:637" ph="SELECT * FRO... posts" />
+            <marker date="1522239389025" expanded="true" signature="718:755" ph="UPDATE user... " />
+            <marker date="1522239389025" expanded="true" signature="5678:5869" ph="..." />
+            <marker date="1522239389025" expanded="true" signature="5678:5870" ph="..." />
+            <marker date="1522239389025" expanded="true" signature="5678:6577" ph="..." />
           </folding>
         </state>
       </provider>
@@ -805,31 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-534">
-          <caret line="193" column="47" lean-forward="false" selection-start-line="193" selection-start-column="47" selection-end-line="193" selection-end-column="47" />
-          <folding>
-            <marker date="1522171084695" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-            <marker date="1522171084695" expanded="true" signature="7577:7591" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="7683:7696" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="7784:7795" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="8335:8349" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="8441:8454" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="8542:8553" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="9084:9098" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="9190:9203" ph="..." />
-            <marker date="1522171084695" expanded="true" signature="9291:9302" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
@@ -863,27 +822,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rto.php">
+    <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="160" column="168" lean-forward="false" selection-start-line="160" selection-start-column="168" selection-end-line="160" selection-end-column="168" />
+        <state relative-caret-position="-534">
+          <caret line="193" column="47" lean-forward="false" selection-start-line="193" selection-start-column="47" selection-end-line="193" selection-end-column="47" />
           <folding>
-            <marker date="1522185571642" expanded="true" signature="302:387" ph="Select (name... user" />
-            <marker date="1522185571642" expanded="true" signature="302:411" ph="Select name,... user" />
-            <marker date="1522185571642" expanded="true" signature="574:634" ph="UPDATE user... " />
-            <marker date="1522185571642" expanded="true" signature="624:634" ph="SELECT * FRO... posts" />
-            <marker date="1522185571642" expanded="true" signature="715:775" ph="UPDATE user... " />
-            <marker date="1522185571642" expanded="true" signature="5522:5770" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5522:5772" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5522:6456" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="5670:5732" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="6494:6921" ph="..." />
-            <marker date="1522185571642" expanded="true" signature="6528:6582" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6528:6921" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6612:6652" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6612:6921" ph="{...}" />
-            <marker date="1522185571642" expanded="true" signature="6723:6921" ph="{&quot;url&quot;: 'rto.php'...}" />
-            <marker date="1522185571642" expanded="true" signature="6821:6921" ph="{&quot;postid&quot;: postid...}" />
+            <marker date="1522171084695" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1522171084695" expanded="true" signature="7577:7591" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="7683:7696" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="7784:7795" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="8335:8349" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="8441:8454" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="8542:8553" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="9084:9098" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="9190:9203" ph="..." />
+            <marker date="1522171084695" expanded="true" signature="9291:9302" ph="..." />
           </folding>
         </state>
       </provider>
@@ -892,6 +851,23 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding>
+            <marker date="1522239389025" expanded="true" signature="302:387" ph="Select (name... user" />
+            <marker date="1522239389025" expanded="true" signature="302:411" ph="Select name,... user" />
+            <marker date="1522239389025" expanded="true" signature="600:637" ph="UPDATE user... " />
+            <marker date="1522239389025" expanded="true" signature="627:637" ph="SELECT * FRO... posts" />
+            <marker date="1522239389025" expanded="true" signature="718:755" ph="UPDATE user... " />
+            <marker date="1522239389025" expanded="true" signature="5678:5869" ph="..." />
+            <marker date="1522239389025" expanded="true" signature="5678:5870" ph="..." />
+            <marker date="1522239389025" expanded="true" signature="5678:6577" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
