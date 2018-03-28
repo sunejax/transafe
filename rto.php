@@ -20,9 +20,9 @@ if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
     $name=$_POST['name'];
     if($_POST['accept']==1)
-        $result = mysqli_query($db, "UPDATE user SET $name=2  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET ".$name." =2  WHERE uid=$postid");
     else if($_POST['accept']==2)
-        $result = mysqli_query($db, "UPDATE user SET $name=3  WHERE uid=$postid");
+        $result = mysqli_query($db, "UPDATE user SET ".$name." =3  WHERE uid=$postid");
     exit();
 }
 ?>
