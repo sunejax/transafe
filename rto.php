@@ -197,6 +197,7 @@ if (isset($_POST['accept'])) {
                 data: {
                     'accept': 2,
                     'postid': postid
+                    'name':na
                 }
             });
             }
