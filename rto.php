@@ -157,8 +157,8 @@ if (isset($_POST['accept'])) {
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
         $rc_s=$row_users['doc_rc_s'];
-        $li_s=$row_users['doc_rc_s'];
-        $aa_s=$row_users['doc_rc_s'];
+        $li_s=$row_users['doc_li_s'];
+        $aa_s=$row_users['doc_aa_s'];
         $str_rc='';
         $str_li='';
         $str_aa='';
