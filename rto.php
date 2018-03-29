@@ -177,7 +177,7 @@ if (isset($_POST['accept'])) {
             <div class="navbar-header">
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="index.html">Transafe</a>
+                <a class="navbar-brand" href="rto.php">Transafe</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -205,32 +205,8 @@ if (isset($_POST['accept'])) {
                 </div>
             </div>
         </div>
-        <!-- You may change the background color here.  -->
-        <div class="item" style="background: #38569f;">
-            <div class="container" style="position: relative;">
-                <div class="row">
-                    <div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
-                        <div class="fh5co-owl-text-wrap">
 
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-
-        <div class="item" style="background-image:url(images/slide_5.jpg)">
-            <div class="overlay"></div>
-            <div class="container" style="position: relative;">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <div class="fh5co-owl-text-wrap">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 </div>
