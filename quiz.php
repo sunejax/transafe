@@ -18,7 +18,7 @@ if (isset($_GET['logout'])) {
 <!DOCTYPE html>
 <html>
    <head>
-      <title>C Programming Language Output this code Quizzes 1</title>
+      <title>Driving and Road Safety Proficiency Test</title>
     
                 <link rel="stylesheet" type="text/css" href="./css/qstyle.css" />
                 
