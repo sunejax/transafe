@@ -80,6 +80,8 @@ if (isset($_POST['accept'])) {
 
     <!--search jQuery-->
     <script src="js/main.js"></script>
+    <script src="js/main_old.js"></script>
+
     <!--//search jQuery-->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
