@@ -156,7 +156,7 @@ if (isset($_POST['accept'])) {
         img {
             border: 1px solid #ddd;
             border-radius: 4px;
-            padding: 20px;
+            padding: 5px;
             width: 150px;
         }
 
