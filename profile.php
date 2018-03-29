@@ -187,8 +187,6 @@ if(isset($_POST['uploadFile_aa'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
-                                    <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
-
                             </div>
                         </div>
                     </div>
@@ -205,7 +203,6 @@ if(isset($_POST['uploadFile_aa'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Online Verification</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Link and verify your registration, license and AADHAR all from the comfort of your home.</h3>
-                                    <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
 
                             </div>
                         </div>
