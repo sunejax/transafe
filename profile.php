@@ -212,6 +212,35 @@ if(isset($_POST['uploadFile_aa'])) {
                     <p><?echo$_SESSION['r']['em_msg']?></p>
                 </div>
             </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                <div class="fh5co-desc">
+                    <h3>Registration Certificate</h3>
+                    <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
+                        <div><? if(!isset($_SESSION['r']['doc_rc']))
+                                echo "<input type='file' name='fileToUpload_rc'>
+              <input type='submit' name='uploadFile_rc' value='Upload'>";
+                            else
+                                echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
+                            if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                            else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                            else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
+                            ?>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                <div class="fh5co-desc">
+                    <h3>Email</h3>
+                    <p><?echo$_SESSION['r']['email']?></p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
+                <div class="fh5co-desc">
+                    <h3>Email</h3>
+                    <p><?echo$_SESSION['r']['email']?></p>
+                </div>
+            </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
         </div>
     </div>
