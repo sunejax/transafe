@@ -158,6 +158,7 @@ if (isset($_POST['accept'])) {
             border-radius: 4px;
             padding: 5px;
             width: 150px;
+            height:75px;
         }
 
         img:hover {
