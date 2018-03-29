@@ -166,9 +166,7 @@ if(isset($_POST['uploadFile_aa'])) {
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-nav-section="home"><span>Home</span></a></li>
-                    <li><a href="#" data-nav-section="about"><span>Team</span></a></li>
-                    <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
+                    <li><a href="home.php" data-nav-section="home"><span>Home</span></a></li>
                     <li><a href="quiz.php"><span>Practice</span></a></li>
                     <li class="active"><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
                     <li><a href="profile.php?logout='1'">Sign out</a></li>
@@ -204,7 +202,6 @@ if(isset($_POST['uploadFile_aa'])) {
                     <p><?echo$_SESSION['r']['em_no']?></p>
                 </div>
             </div>
-
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-icon"><i class="icon-crop"></i></div>
                 <div class="fh5co-desc">
