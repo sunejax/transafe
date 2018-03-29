@@ -40,10 +40,9 @@ if (isset($_POST['accept'])) {
             /*border-bottom: 1px solid #ddd;*/
             border-bottom: 1px solid #6173f4;
             padding-bottom: 2px ;
+            max-width: 200px;
         }
-        td{
-            max-width: 150px;
-        }
+
         img {
             border: 1px solid #ddd;
             border-radius: 4px;
