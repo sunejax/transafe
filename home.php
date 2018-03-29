@@ -192,7 +192,7 @@ if (isset($_GET['logout'])) {
                     <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
                     <li><a href="#" data-nav-section="about"><span>Team</span></a></li>
                     <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
-                    <li><a href="#" data-nav-section="practice"><span>Practice</span></a></li>
+                    <li><a href="quiz.php"><span>Practice</span></a></li>
                     <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
                 </ul>
             </div>
@@ -402,7 +402,6 @@ if (isset($_GET['logout'])) {
                     <div class="col-md-8 col-md-offset-2 subtext to-animate">
                         <h3>Too tired to go to your nearest RTO, practice with mock tests online record your score and compare how you are preparing, access the library to learn more or schedule a test if you're feeling confident. </h3>
                     </div>
-                    <p class="to-animate-2"><a href="quiz.php" target="_blank" class="btn btn-primary btn-lg">Take a test</a></p>
                 </div>
             </div>
         </div>
