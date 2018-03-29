@@ -204,7 +204,7 @@ if(isset($_POST['uploadFile_aa'])) {
                     <p><?echo$_SESSION['r']['em_no']?></p>
                 </div>
             </div>
-            <div class="clearfix visible-sm-block visible-xs-block"></div>
+
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-icon"><i class="icon-crop"></i></div>
                 <div class="fh5co-desc">
@@ -212,6 +212,7 @@ if(isset($_POST['uploadFile_aa'])) {
                     <p><?echo$_SESSION['r']['em_msg']?></p>
                 </div>
             </div>
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-desc">
                     <h3>Registration Certificate</h3>
