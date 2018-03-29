@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/rto.php" beforeDir="false" afterPath="$PROJECT_DIR$/rto.php" afterDir="false" />
-    </list>
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,10 +178,8 @@
       <file leaf-file-name="rto.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="226" column="58" selection-start-line="226" selection-start-column="58" selection-end-line="226" selection-end-column="58" />
-              <caret line="227" column="58" selection-start-line="227" selection-start-column="58" selection-end-line="227" selection-end-column="58" />
-              <caret line="228" column="57" lean-forward="true" selection-start-line="228" selection-start-column="57" selection-end-line="228" selection-end-column="57" />
+            <state relative-caret-position="318">
+              <caret line="230" column="10" lean-forward="true" selection-start-line="230" selection-start-column="10" selection-end-line="230" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -191,13 +187,13 @@
                 <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
-                <marker date="1522365809150" expanded="true" signature="302:387" ph="Select (name... user" />
-                <marker date="1522365809150" expanded="true" signature="302:411" ph="Select name,... user" />
-                <marker date="1522365809150" expanded="true" signature="590:630" ph="UPDATE user... " />
-                <marker date="1522365809150" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
-                <marker date="1522365809150" expanded="true" signature="701:716" ph="UPDATE user... " />
-                <marker date="1522365809150" expanded="true" signature="701:741" ph="UPDATE user... " />
-                <marker date="1522365809150" expanded="true" signature="8037:8993" ph="..." />
+                <marker date="1522366006309" expanded="true" signature="302:387" ph="Select (name... user" />
+                <marker date="1522366006309" expanded="true" signature="302:411" ph="Select name,... user" />
+                <marker date="1522366006309" expanded="true" signature="590:630" ph="UPDATE user... " />
+                <marker date="1522366006309" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
+                <marker date="1522366006309" expanded="true" signature="701:716" ph="UPDATE user... " />
+                <marker date="1522366006309" expanded="true" signature="701:741" ph="UPDATE user... " />
+                <marker date="1522366006309" expanded="true" signature="8037:8993" ph="..." />
               </folding>
             </state>
           </provider>
@@ -361,16 +357,15 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="11719000" />
-      <workItem from="1522331405877" duration="13585000" />
+      <workItem from="1522331405877" duration="13922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135615000" />
+    <option name="totallyTimeSpent" value="135952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" sideWeight="0.4969697" weight="0.32851985" />
@@ -829,10 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="226" column="58" selection-start-line="226" selection-start-column="58" selection-end-line="226" selection-end-column="58" />
-          <caret line="227" column="58" selection-start-line="227" selection-start-column="58" selection-end-line="227" selection-end-column="58" />
-          <caret line="228" column="57" lean-forward="true" selection-start-line="228" selection-start-column="57" selection-end-line="228" selection-end-column="57" />
+        <state relative-caret-position="318">
+          <caret line="230" column="10" lean-forward="true" selection-start-line="230" selection-start-column="10" selection-end-line="230" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -840,13 +833,13 @@
             <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
-            <marker date="1522365809150" expanded="true" signature="302:387" ph="Select (name... user" />
-            <marker date="1522365809150" expanded="true" signature="302:411" ph="Select name,... user" />
-            <marker date="1522365809150" expanded="true" signature="590:630" ph="UPDATE user... " />
-            <marker date="1522365809150" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
-            <marker date="1522365809150" expanded="true" signature="701:716" ph="UPDATE user... " />
-            <marker date="1522365809150" expanded="true" signature="701:741" ph="UPDATE user... " />
-            <marker date="1522365809150" expanded="true" signature="8037:8993" ph="..." />
+            <marker date="1522366006309" expanded="true" signature="302:387" ph="Select (name... user" />
+            <marker date="1522366006309" expanded="true" signature="302:411" ph="Select name,... user" />
+            <marker date="1522366006309" expanded="true" signature="590:630" ph="UPDATE user... " />
+            <marker date="1522366006309" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
+            <marker date="1522366006309" expanded="true" signature="701:716" ph="UPDATE user... " />
+            <marker date="1522366006309" expanded="true" signature="701:741" ph="UPDATE user... " />
+            <marker date="1522366006309" expanded="true" signature="8037:8993" ph="..." />
           </folding>
         </state>
       </provider>
