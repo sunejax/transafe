@@ -194,6 +194,7 @@ if (isset($_GET['logout'])) {
                     <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
                     <li><a href="quiz.php"><span>Practice</span></a></li>
                     <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+                    <li><a href=home.php?logout='1'>Sign out</a></li>
                 </ul>
             </div>
         </nav>
