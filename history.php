@@ -198,7 +198,7 @@ if (isset($_POST['accept'])) {
         <div class="container" style="position: relative;">
             <div class="row">
                 <div class="col-md-7 col-sm-7">
-                    <div class="fh5co-owl-text-wrap" style="height: 72px">
+                    <div class="fh5co-owl-text-wrap" style="height: 144px">
 
                     </div>
                 </div>
