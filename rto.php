@@ -227,7 +227,7 @@ if (isset($_POST['accept'])) {
 <td style='width: 200px'><a target='_blank' href=$rc><img src =$rc></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td style='width: 200px'><a target='_blank' href=$li><img src =$li></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
 <td style='width: 200px'><a target='_blank' href=$aa><img src =$aa></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox'></td>
-<td style='width: 200px'></td></tr>";
+</tr>";
         ;}
     ?>
 </table>
