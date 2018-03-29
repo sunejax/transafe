@@ -79,7 +79,7 @@ if (isset($_POST['accept'])) {
     <script src="js/jquery.min.js"></script>
 
     <!--search jQuery-->
-    <script src="js/main.js"></script>
+
     <script src="js/main_old.js"></script>
 
     <!--//search jQuery-->
