@@ -286,7 +286,7 @@ if (isset($_GET['logout'])) {
                     <div class="col-md-3 text-center to-animate">
                         <div class="person">
                             <img src="images/t2.jpg" class="img-responsive img-rounded" alt="Person">
-                            <h3 class="name">John Doe</h3>
+                            <h3 class="name">Saad</h3>
                             <div class="position">Web Developer</div>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
@@ -300,7 +300,7 @@ if (isset($_GET['logout'])) {
                     <div class="col-md-3 text-center to-animate">
                         <div class="person">
                             <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
-                            <h3 class="name">Rob Smith</h3>
+                            <h3 class="name">Bhoomika</h3>
                             <div class="position">Web Designer</div>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
@@ -314,7 +314,7 @@ if (isset($_GET['logout'])) {
                     <div class="col-md-3 text-center to-animate">
                         <div class="person">
                             <img src="images/t4.jpg" class="img-responsive img-rounded" alt="Person">
-                            <h3 class="name">John Doe</h3>
+                            <h3 class="name">Megha</h3>
                             <div class="position">Photographer</div>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
