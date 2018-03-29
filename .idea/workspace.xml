@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/quiz.php" afterPath="$PROJECT_DIR$/quiz.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,12 +56,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="quiz.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quiz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="2119">
+              <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+              <folding>
+                <marker date="1522331176818" expanded="true" signature="2528:2708" ph="..." />
+                <marker date="1522331176818" expanded="true" signature="2888:3033" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +72,7 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-594">
+            <state relative-caret-position="1512">
               <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
               <folding>
                 <marker date="1522171084695" expanded="true" signature="1195:1219" ph="UPDATE user... " />
@@ -91,7 +96,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-504">
@@ -153,16 +158,16 @@
       <file leaf-file-name="rto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="140" column="66" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="66" />
+            <state relative-caret-position="-591">
+              <caret line="133" column="29" lean-forward="true" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
               <folding>
-                <marker date="1522316544173" expanded="true" signature="302:387" ph="Select (name... user" />
-                <marker date="1522316544173" expanded="true" signature="302:411" ph="Select name,... user" />
-                <marker date="1522316544173" expanded="true" signature="590:630" ph="UPDATE user... " />
-                <marker date="1522316544173" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
-                <marker date="1522316544173" expanded="true" signature="701:716" ph="UPDATE user... " />
-                <marker date="1522316544173" expanded="true" signature="701:741" ph="UPDATE user... " />
-                <marker date="1522316544173" expanded="true" signature="5813:6712" ph="..." />
+                <marker date="1522328382040" expanded="true" signature="302:387" ph="Select (name... user" />
+                <marker date="1522328382040" expanded="true" signature="302:411" ph="Select name,... user" />
+                <marker date="1522328382040" expanded="true" signature="590:630" ph="UPDATE user... " />
+                <marker date="1522328382040" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
+                <marker date="1522328382040" expanded="true" signature="701:716" ph="UPDATE user... " />
+                <marker date="1522328382040" expanded="true" signature="701:741" ph="UPDATE user... " />
+                <marker date="1522328382040" expanded="true" signature="5812:6711" ph="..." />
               </folding>
             </state>
           </provider>
@@ -213,6 +218,7 @@
       <find>trans</find>
       <find>free ht</find>
       <find>joh</find>
+      <find>transa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -232,11 +238,11 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/console.sql" />
         <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/rto.php" />
         <option value="$PROJECT_DIR$/history.php" />
-        <option value="$PROJECT_DIR$/quiz.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/rto.php" />
+        <option value="$PROJECT_DIR$/quiz.php" />
       </list>
     </option>
   </component>
@@ -328,9 +334,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -346,12 +349,12 @@
       <workItem from="1521554774705" duration="16881000" />
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
-      <workItem from="1522312020901" duration="10427000" />
+      <workItem from="1522312020901" duration="11719000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120738000" />
+    <option name="totallyTimeSpent" value="122030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -757,22 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="140" column="66" lean-forward="false" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="66" />
-          <folding>
-            <marker date="1522316544173" expanded="true" signature="302:387" ph="Select (name... user" />
-            <marker date="1522316544173" expanded="true" signature="302:411" ph="Select name,... user" />
-            <marker date="1522316544173" expanded="true" signature="590:630" ph="UPDATE user... " />
-            <marker date="1522316544173" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
-            <marker date="1522316544173" expanded="true" signature="701:716" ph="UPDATE user... " />
-            <marker date="1522316544173" expanded="true" signature="701:741" ph="UPDATE user... " />
-            <marker date="1522316544173" expanded="true" signature="5813:6712" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/history.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -817,17 +804,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz.php">
+    <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="-504">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
+        <state relative-caret-position="1512">
           <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
           <folding>
             <marker date="1522171084695" expanded="true" signature="1195:1219" ph="UPDATE user... " />
@@ -850,11 +837,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
+    <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="-591">
+          <caret line="133" column="29" lean-forward="true" selection-start-line="133" selection-start-column="29" selection-end-line="133" selection-end-column="29" />
+          <folding>
+            <marker date="1522328382040" expanded="true" signature="302:387" ph="Select (name... user" />
+            <marker date="1522328382040" expanded="true" signature="302:411" ph="Select name,... user" />
+            <marker date="1522328382040" expanded="true" signature="590:630" ph="UPDATE user... " />
+            <marker date="1522328382040" expanded="true" signature="620:630" ph="SELECT * FRO... posts" />
+            <marker date="1522328382040" expanded="true" signature="701:716" ph="UPDATE user... " />
+            <marker date="1522328382040" expanded="true" signature="701:741" ph="UPDATE user... " />
+            <marker date="1522328382040" expanded="true" signature="5812:6711" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2119">
+          <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+          <folding>
+            <marker date="1522331176818" expanded="true" signature="2528:2708" ph="..." />
+            <marker date="1522331176818" expanded="true" signature="2888:3033" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
