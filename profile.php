@@ -187,7 +187,7 @@ if(isset($_POST['uploadFile_aa'])) {
                     <div class="fh5co-owl-text-wrap">
                         <div class="fh5co-owl-text">
                             <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
-                            <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
+                            <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h2>
                                 <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
 
                         </div>
@@ -236,14 +236,7 @@ if(isset($_POST['uploadFile_aa'])) {
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-12">
-        <ul class="list-group" style="color: #000000">
-            <li class="list-group-item">Name: <?echo$_SESSION['r']['name']?></li>
-            <li class="list-group-item">Email: <?echo$_SESSION['r']['email']?></li>
-            <li class="list-group-item">Emergency Contact: <?echo$_SESSION['r']['em_no']?></li>
-            <li class="list-group-item">Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
-        </ul>
-    </div>
+
     <div class ="col-sm-12 input-group">
         <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
