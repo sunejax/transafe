@@ -183,7 +183,7 @@ if (isset($_POST['accept'])) {
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="history.php"><span>History</span></a></li>
                     <li class="active" ><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
-                    <li><a href="rto.php?logout='1'">Sign out</a></li>
+                    <li><a href="history.php?logout='1'">Sign out</a></li>
                 </ul>
             </div>
         </nav>
