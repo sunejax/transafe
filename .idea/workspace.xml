@@ -175,10 +175,10 @@
       <file leaf-file-name="history.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="227" column="67" selection-start-line="227" selection-start-column="67" selection-end-line="227" selection-end-column="67" />
-              <caret line="228" column="67" selection-start-line="228" selection-start-column="67" selection-end-line="228" selection-end-column="67" />
-              <caret line="229" column="67" selection-start-line="229" selection-start-column="67" selection-end-line="229" selection-end-column="67" />
+            <state relative-caret-position="157">
+              <caret line="229" column="75" selection-start-line="229" selection-start-column="75" selection-end-line="229" selection-end-column="75" />
+              <caret line="228" column="75" selection-start-line="228" selection-start-column="75" selection-end-line="228" selection-end-column="75" />
+              <caret line="227" column="75" selection-start-line="227" selection-start-column="75" selection-end-line="227" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -186,9 +186,9 @@
                 <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
-                <marker date="1522366656063" expanded="true" signature="302:411" ph="Select uid,n... user" />
-                <marker date="1522366656063" expanded="true" signature="590:630" ph="UPDATE user... " />
-                <marker date="1522366656063" expanded="true" signature="701:741" ph="UPDATE user... " />
+                <marker date="1522366912358" expanded="true" signature="302:411" ph="Select uid,n... user" />
+                <marker date="1522366912358" expanded="true" signature="590:630" ph="UPDATE user... " />
+                <marker date="1522366912358" expanded="true" signature="701:741" ph="UPDATE user... " />
               </folding>
             </state>
           </provider>
@@ -376,12 +376,12 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="11719000" />
-      <workItem from="1522331405877" duration="14431000" />
+      <workItem from="1522331405877" duration="14688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136461000" />
+    <option name="totallyTimeSpent" value="136718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -853,10 +853,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="227" column="67" selection-start-line="227" selection-start-column="67" selection-end-line="227" selection-end-column="67" />
-          <caret line="228" column="67" selection-start-line="228" selection-start-column="67" selection-end-line="228" selection-end-column="67" />
-          <caret line="229" column="67" selection-start-line="229" selection-start-column="67" selection-end-line="229" selection-end-column="67" />
+        <state relative-caret-position="157">
+          <caret line="229" column="75" selection-start-line="229" selection-start-column="75" selection-end-line="229" selection-end-column="75" />
+          <caret line="228" column="75" selection-start-line="228" selection-start-column="75" selection-end-line="228" selection-end-column="75" />
+          <caret line="227" column="75" selection-start-line="227" selection-start-column="75" selection-end-line="227" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -864,9 +864,9 @@
             <element signature="n#style#0;n#td#3;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#5;n#tr#0;n#!!top" expanded="true" />
-            <marker date="1522366656063" expanded="true" signature="302:411" ph="Select uid,n... user" />
-            <marker date="1522366656063" expanded="true" signature="590:630" ph="UPDATE user... " />
-            <marker date="1522366656063" expanded="true" signature="701:741" ph="UPDATE user... " />
+            <marker date="1522366912358" expanded="true" signature="302:411" ph="Select uid,n... user" />
+            <marker date="1522366912358" expanded="true" signature="590:630" ph="UPDATE user... " />
+            <marker date="1522366912358" expanded="true" signature="701:741" ph="UPDATE user... " />
           </folding>
         </state>
       </provider>
