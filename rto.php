@@ -193,11 +193,11 @@ if (isset($_POST['accept'])) {
 <div id="slider" data-section="home">
 
         <!-- You may change the background color here. -->
-        <div class="item" style="background: #352f44;">
+        <div class="item" style="background: #6173f4;">
             <div class="container" style="position: relative;">
                 <div class="row">
                     <div class="col-md-7 col-sm-7">
-                        <div class="fh5co-owl-text-wrap">
+                        <div class="fh5co-owl-text-wrap" style="height: 72px">
 
                         </div>
                     </div>
