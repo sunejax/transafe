@@ -1,202 +1,223 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Quiz</title>
-    <!-- Quiz Written By Jeremy Rue, UC Berkeley Graduate School of Journalism -->
+    <script src="js/jquery-1.11.1.min.js"></script>
     <style>
-        /*css reset */
-        html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}
-        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
-        body{line-height:1; font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;}
-        ol,ul{list-style:none;}
-        #frame{max-width:620px;width:100%;border:1px solid #ccc;background:#eee;padding:10px;}
-        #content{font:normal normal 1em/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;margin:0 40px 10px;}
-        h1{font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;text-align:left;background:#ccc;padding:0 15px;width:auto}
-        h2{font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 15px 15px;}
-        input[type=radio]{margin:0 10px 5px -22px;} label{margin:0 0 5px;}
-        #score p{font-size:0.95em; font-style:italic; color:#666; float:right;margin:5px 5px 0 0;}
-        #score:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
-        #response{min-height:70px; margin:10px; }
-        #response h3{font:normal bold 1.2em/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif; margin:5px 0;}
+        @import url(http://fonts.googleapis.com/css?family=Rokkitt);
+        h1 {
+            font-family: 'Rokkitt', serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-family: 'Rokkitt', serif;
+            font-size: 2em;
+        }
+
+        input[type=radio] {
+            border: 0px;
+            width: 20px;
+            height: 2em;
+        }
+
+        p {
+            font-family: 'Rokkitt', serif;
+        }
+
+        /* Quiz Classes */
+
+        .quizContainer {
+            background-color: lightgoldenrodyellow;
+            border-radius: 6px;
+            width: 75%;
+            margin: auto;
+            padding-top: 5px;
+            -moz-box-shadow: 10px 10px 5px #888;
+            -webkit-box-shadow: 10px 10px 5px #888;
+            box-shadow: 10px 10px 5px #888;
+            position: relative;
+        }
+
+        .nextButton {
+            box-shadow: 3px 3px 5px #888;
+            border-radius: 6px;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            background-color: lightgrey;
+            /*clear: both;*/
+            color: red;
+            font-family: 'Rokkitt', serif;
+            position: relative;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .question {
+            font-family: 'Rokkitt', serif;
+            font-size: 2em;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            border-radius: 6px;
+            background-color: lightgrey;
+            text-align: center;
+        }
+
+        .quizMessage {
+            background-color: peachpuff;
+            border-radius: 6px;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            padding: 2px;
+            font-family: 'Rokkitt', serif;
+            color: red;
+        }
+
+        .choiceList {
+            font-family: Courier, serif;
+            color: blueviolet;
+        }
+
+        .result {
+            width: 30%;
+            height: auto;
+            border-radius: 6px;
+            background-color: linen;
+            margin: auto;
+            text-align: center;
+            font-family: 'Rokkitt', serif;
+        }
+
+        /* End of Quiz Classes */
+
     </style>
     <script>
+        /**
+         * Created with JetBrains WebStorm.
+         * User: pwanwu
+         * Date: 18/09/2013
+         * Time: 17:41
+         * To change this template use File | Settings | File Templates.
+         */
 
-        var quiz = [
-            {
-                "question"		: 	"Q1: Who came up with theory of relativity?",
-                "choices"		: 	[
-                    "Sir Isaac Newton",
-                    "Nicolaus Copernicus",
-                    "Albert Einstein",
-                    "Ralph Waldo Emmerson"
-                ],
-                "correct"		: 	"Albert Einstein",
-                "explanation"	: 	"Albert Einstein drafted the special theory of relativity in 1905.",
-
-            },
-            {
-                "question"		: 	"Q2: Who is on the two dollar bill?",
-                "choices"		: 	[
-                    "Thomas Jefferson",
-                    "Dwight D. Eisenhower",
-                    "Benjamin Franklin",
-                    "Abraham Lincoln"
-                ],
-                "correct"		: 	"Thomas Jefferson",
-                "explanation"	: 	"The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
-            },
-            {
-                "question"		: 	"Q3: What event began on April 12, 1861?",
-                "choices"		: 	[
-                    "First manned flight",
-                    "California became a state",
-                    "American Civil War began",
-                    "Declaration of Independence"
-                ],
-                "correct"		: 	"American Civil War began",
-                "explanation"	: 	"South Carolina came under attack when Confederate soldiers attacked Fort Sumter. The war lasted until April 9th 1865.",
-            },
-
-        ];
+        var questions = [{
+            question: "What is the population of Brazil?",
+            choices: ["145 million", "199 million", "182 million", "205 million"],
+            correctAnswer: 1
+        }, {
+            question: "What is 27*14?",
+            choices: ["485", "634", "408", "528"],
+            correctAnswer: 2
+        }, {
+            question: "What is the busiest train station in the world?",
+            choices: ["Grand Central, NY", "Shibuya, Tokyo", "Beijing Central, Chine", "Gard du Nord, Paris"],
+            correctAnswer: 1
+        }, {
+            question: "What is the longest river?",
+            choices: ["Nile", "Amazon", "Mississippi", "Yangtze"],
+            correctAnswer: 0
+        }, {
+            question: "What is the busiest tube station in the London?",
+            choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
+            correctAnswer: 0
+        }];
 
         var currentQuestion = 0;
-        var score = 0;
-        var askingQuestion = true;
+        var correctAnswers = 0;
+        var quizOver = false;
 
-        function loadQuestion(){
+        $(document).ready(function() {
 
-            //set temporary variable for creating radio buttons
-            var radioButton;
+            // Display the first question
+            displayCurrentQuestion();
+            $(this).find(".quizMessage").hide();
 
-            //clear out radio buttons from previous question
-            document.getElementById('content').innerHTML = "";
+            // On clicking next, display the next question
+            $(this).find(".nextButton").on("click", function() {
+                if (!quizOver) {
 
-            //loop through choices, and create radio buttons
-            for(var i=0; i < quiz[currentQuestion]["choices"].length; i++){
+                    value = $("input[type='radio']:checked").val();
 
-                radioButton  = document.createElement('input');
-                radioButton.type = 'radio';
-                radioButton.name = 'quiz';
-                radioButton.id = 'choice'+ (i+1);
-                radioButton.value = quiz[currentQuestion]["choices"][i];
+                    if (value == undefined) {
+                        $(document).find(".quizMessage").text("Please select an answer");
+                        $(document).find(".quizMessage").show();
+                    } else {
+                        // TODO: Remove any message -> not sure if this is efficient to call this each time....
+                        $(document).find(".quizMessage").hide();
 
-                //create label tag, which hold the actual text of the choices
-                var label = document.createElement('label');
-                label.setAttribute('for','choice'+ (i+1));
-                label.innerHTML = quiz[currentQuestion]["choices"][i];
+                        if (value == questions[currentQuestion].correctAnswer) {
+                            correctAnswers++;
+                        }
 
-                //create a <br> tag to separate options
-                var br = document.createElement('br');
-
-                //attach them to content. Attach br tag, then label, then radio button
-                document.getElementById('content').insertBefore(br);
-                document.getElementById('content').insertBefore(label, br);
-                document.getElementById('content').insertBefore(radioButton, label);
-            }
-
-            //load the question
-            document.getElementById('question').innerHTML = quiz[currentQuestion]["question"];
-
-            //setup score for first time
-            if(currentQuestion == 0){
-                document.getElementById('score').innerHTML = '<p>score: 0 right answers out of ' + quiz.length +' possible</p>';
-            }
-        }
-
-        function checkAnswer(){
-
-            //are we asking a question, or proceeding to next question?
-            if(askingQuestion){
-
-                //change button text to next question, so next time they click it, it goes to next question
-                document.getElementById('check').innerHTML = 'Next Question';
-                askingQuestion = false;
-
-                //determine which radio button they clicked
-                var userpick;
-                var correctIndex;
-                var radios = document.getElementsByName('quiz');
-                for(var i=0; i < radios.length; i++){
-                    if(radios[i].checked){ //if this radio button is checked
-                        userpick = radios[i].value;
+                        currentQuestion++; // Since we have already displayed the first question on DOM ready
+                        if (currentQuestion < questions.length) {
+                            displayCurrentQuestion();
+                        } else {
+                            displayScore();
+                            //                    $(document).find(".nextButton").toggle();
+                            //                    $(document).find(".playAgainButton").toggle();
+                            // Change the text in the next button to ask if user wants to play again
+                            $(document).find(".nextButton").text("Play Again?");
+                            quizOver = true;
+                        }
                     }
-                    //get index of correct answer
-                    if(radios[i].value == quiz[currentQuestion]["correct"]){
-                        correctIndex = i;
-                    }
+                } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
+                    quizOver = false;
+                    $(document).find(".nextButton").text("Next Question");
+                    resetQuiz();
+                    displayCurrentQuestion();
+                    hideScore();
                 }
+            });
 
-                //set the color if they got it right, or wrong
-                if(userpick == quiz[currentQuestion]["correct"]){
-                    score++;
-                    document.getElementsByTagName('label')[correctIndex].style.color = "green";
-                    document.getElementsByTagName('label')[correctIndex].style.fontWeight = "bold";
-                    document.getElementById('explanation').innerHTML = "<h3>Correct!</h3>";
-                } else {
-                    document.getElementsByTagName('label')[correctIndex].style.color = "red";
-                    document.getElementsByTagName('label')[correctIndex].style.fontWeight = "bold";
-                    document.getElementById('explanation').innerHTML = "<h3>Incorrect</h3>";
-                }
+        });
 
-                document.getElementById('explanation').innerHTML += '<p>' + quiz[currentQuestion]["explanation"] + '</p>';
-                document.getElementById('score').innerHTML = '<p>score: '+ score +' right answers out of ' + quiz.length +' possible</p>';
+        // This displays the current question AND the choices
+        function displayCurrentQuestion() {
 
+            console.log("In display current Question");
 
-            } else { //reset form and move to next question
+            var question = questions[currentQuestion].question;
+            var questionClass = $(document).find(".quizContainer > .question");
+            var choiceList = $(document).find(".quizContainer > .choiceList");
+            var numChoices = questions[currentQuestion].choices.length;
 
-                //setting up so user can ask a question
-                askingQuestion = true;
+            // Set the questionClass text to the current question
+            $(questionClass).text(question);
 
-                //change button text back to 'submit answer'
-                document.getElementById('check').innerHTML = 'Submit Answer';
+            // Remove all current <li> elements (if any)
+            $(choiceList).find("li").remove();
 
-                document.getElementById('explanation').innerHTML = "";
-
-                //if we're not on last question, increase question number
-                if(currentQuestion < quiz.length - 1){
-                    currentQuestion++;
-                    loadQuestion();
-                } else {
-                    showFinalResults();
-                }
-
+            var choice;
+            for (i = 0; i < numChoices; i++) {
+                choice = questions[currentQuestion].choices[i];
+                $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(choiceList);
             }
         }
 
-        function showFinalResults(){
-
-            document.getElementById('content').innerHTML = '<h2>You Completed The Quiz</h2>';
-            document.getElementById('content').innerHTML += '<p>Below are your results:</p>';
-            document.getElementById('content').innerHTML += '<h2>' + score + ' out of ' + quiz.length + ' questions, ' + Math.round(score/quiz.length * 100) + '%</h2>';
-
-            //delete the button
-            var button = document.getElementById('check');
-            button.parentNode.removeChild(button); //js requires you to delete elements from the parent
-
-            //remove question
-            document.getElementById('question').innerHTML = "";
-
+        function resetQuiz() {
+            currentQuestion = 0;
+            correctAnswers = 0;
+            hideScore();
         }
-
-
-        window.onload = loadQuestion;
-
     </script>
 
 </head>
 <body>
-<div id="frame">
-    <h1>Quiz Title Here</h1>
-    <div id="score"><p>score: 0 right answers out of 0 possible</p></div>
-    <h2 id="question">Question here</h2>
-    <div id="content">
+<div class="quizContainer">
+    <h1>Hello! Welcome to the JS Dynamic Quiz!</h1>
 
-    </div>
-    <button id="check" onclick="checkAnswer()">Submit Answer</button>
-    <div id="response">
-        <div id="explanation"></div>
-    </div>
+    <div class="question"></div>
+    <ul class="choiceList"></ul>
+    <div class="quizMessage"></div>
+    <div class="result"></div>
+    <div class="nextButton">Next Question</div>
+    <br>
 </div>
 </body>
 </html>
