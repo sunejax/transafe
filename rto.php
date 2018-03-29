@@ -38,7 +38,8 @@ if (isset($_POST['accept'])) {
             padding: 8px;
             text-align: center;
             /*border-bottom: 1px solid #ddd;*/
-            border: 1px solid #dddddd;
+            border-bottom: 2px solid #6173f4;
+            padding-bottom: 2px ;
         }
 
         img {
@@ -142,9 +143,7 @@ if (isset($_POST['accept'])) {
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
-        #map {
-            height: 100%;
-        }
+
         /* Optional: Makes the sample page fill the window. */
         html, body {
             height: 100%;
@@ -206,6 +205,7 @@ if (isset($_POST['accept'])) {
             </div>
         </div>
 </div>
+<br>
 <table>
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
