@@ -277,7 +277,7 @@ if(isset($_POST['uploadFile_aa'])) {
                                 echo "<input type='file' name='fileToUpload_rc'>
               <input type='submit' name='uploadFile_rc' value='Upload'>";
                             else
-                                echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'></a>";
+                                echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
                             if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                             else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
@@ -304,16 +304,16 @@ if(isset($_POST['uploadFile_aa'])) {
                 <div class="fh5co-desc">
                     <h3>AADHAR</h3>
                     <div><? if(!isset($_SESSION['r']['doc_aa']))
-                        echo "<input type='file' name='fileToUpload_aa'>
+                            echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
             ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
-                    if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                    else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                    else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
+                        if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                        else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                        else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
 
-                    ?>
+                        ?>
 
-                </div>
+                    </div>
                 </div>
             </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
