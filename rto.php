@@ -199,10 +199,7 @@ if (isset($_POST['accept'])) {
                 <div class="row">
                     <div class="col-md-7 col-sm-7">
                         <div class="fh5co-owl-text-wrap">
-                            <div class="fh5co-owl-text">
-                                <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
-                                <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
-                            </div>
+
                         </div>
                     </div>
 
@@ -215,11 +212,7 @@ if (isset($_POST['accept'])) {
                 <div class="row">
                     <div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
                         <div class="fh5co-owl-text-wrap">
-                            <div class="fh5co-owl-text">
-                                <h1 class="fh5co-lead to-animate">Online Verification</h1>
-                                <h2 class="fh5co-sub-lead to-animate">Link and verify your registration, license and AADHAR all from the comfort of your home.</h3>
 
-                            </div>
                         </div>
                     </div>
 
@@ -233,11 +226,7 @@ if (isset($_POST['accept'])) {
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <div class="fh5co-owl-text-wrap">
-                            <div class="fh5co-owl-text">
-                                <h1 class="fh5co-lead to-animate">Practice</h1>
-                                <h2 class="fh5co-sub-lead to-animate">Too tired to go to your nearest RTO, practice with mock tests online or schedule a test if you're feeling confident.</h3>
-                                    <p class="to-animate-2"><a href="quiz.php" target="_blank" class="btn btn-primary btn-lg">Take a test</a></p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
