@@ -124,7 +124,7 @@ if(isset($_POST['uploadFile_aa'])) {
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-        <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Icomoon Icon Fonts-->
@@ -178,28 +178,27 @@ if(isset($_POST['uploadFile_aa'])) {
     </div>
 </header>
 <div id="slider" data-section="home">
-    <div class="owl-carousel owl-carousel-fullwidth">
-        <!-- You may change the background color here. -->
-        <div class="item" style="background: #352f44;">
-            <div class="container" style="position: relative;">
-                <div class="row">
-                    <div class="col-md-7 col-sm-7">
-                        <div class="fh5co-owl-text-wrap">
-                            <div class="fh5co-owl-text">
-                                <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
-                                <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
-                                    <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
 
-                            </div>
+    <!-- You may change the background color here. -->
+    <div class="item" style="background: #352f44;">
+        <div class="container" style="position: relative;">
+            <div class="row">
+                <div class="col-md-7 col-sm-7">
+                    <div class="fh5co-owl-text-wrap">
+                        <div class="fh5co-owl-text">
+                            <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
+                            <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
+                                <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
+
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
-
-
     </div>
+
+
 </div>
 
 <div class="row dis ">
@@ -220,7 +219,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                 else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                 else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
-               ?>
+                ?>
             </div>
         </form>
         <form method="post" action="profile.php" enctype="multipart/form-data">
