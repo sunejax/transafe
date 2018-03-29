@@ -202,7 +202,6 @@ if(isset($_POST['uploadFile_aa'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-12 section-heading text-center">
-                <h2 class="single-animate animate-features-1">Features</h2>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
                         <h3><b>Hey! </b><?echo$_SESSION['r']['name']?></h3>
