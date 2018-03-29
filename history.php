@@ -137,8 +137,8 @@ if (isset($_POST['accept'])) {
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="rto.php" class="active"><?php echo $_SESSION['username']; ?></a></li>
-                        <li><a href="history.php">History</a></li>
+                        <li><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
+                        <li><a href="history.php" class="active">History</a></li>
                         <li><a href="rto.php?logout='1'">Logout</a></li>
                     </ul>
                     <div class="clearfix"> </div>
