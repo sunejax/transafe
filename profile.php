@@ -91,6 +91,7 @@ if(isset($_POST['uploadFile_aa'])) {
             height: 100%;
             margin: 0;
             padding: 0;
+            background: #352f44;
         }
         img {
             border: 1px solid #ddd;
