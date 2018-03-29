@@ -202,8 +202,8 @@ if(isset($_POST['uploadFile_aa'])) {
 
 </div>
 
-<div class="row dis ">
-    <div class="col-sm-6">
+<div class="row">
+    <div class="col-sm-12">
         <ul class="list-group" style="color: #000000">
             <li class="list-group-item">Name: <?echo$_SESSION['r']['name']?></li>
             <li class="list-group-item">Email: <?echo$_SESSION['r']['email']?></li>
@@ -211,8 +211,8 @@ if(isset($_POST['uploadFile_aa'])) {
             <li class="list-group-item">Emergency Message: <?echo$_SESSION['r']['em_msg']?></li>
         </ul>
     </div>
-    <div class ="col-sm-6 input-group">
-        <form method="post" action="profile.php" enctype="multipart/form-data">
+    <div class ="col-sm-12 input-group">
+        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
             <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
                     echo "<input type='file' name='fileToUpload_rc'>
               <input type='submit' name='uploadFile_rc' value='Upload'>
@@ -223,7 +223,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 ?>
             </div>
         </form>
-        <form method="post" action="profile.php" enctype="multipart/form-data">
+        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
             <div><p>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
                     echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
@@ -234,7 +234,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 ?>
             </div>
         </form>
-        <form method="post" action="profile.php" enctype="multipart/form-data">
+        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
             <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
                     echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
