@@ -181,21 +181,7 @@ if(isset($_POST['uploadFile_aa'])) {
 <div id="slider" data-section="home">
     <!-- You may change the background color here. -->
     <div class="item" style="background: #352f44;">
-        <div class="container" style="position: relative;">
-            <div class="row">
-                <div class="col-md-7 col-sm-7">
-                    <div class="fh5co-owl-text-wrap">
-                        <div class="fh5co-owl-text">
-                            <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
-                            <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h2>
-                                <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
 
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
 </div>
 <div id="fh5co-features" data-section="features">
