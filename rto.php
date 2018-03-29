@@ -38,10 +38,12 @@ if (isset($_POST['accept'])) {
             padding: 8px;
             text-align: center;
             /*border-bottom: 1px solid #ddd;*/
-            border-bottom: 2px solid #6173f4;
+            border-bottom: 1px solid #6173f4;
             padding-bottom: 2px ;
         }
-
+        td{
+            max-width: 150px;
+        }
         img {
             border: 1px solid #ddd;
             border-radius: 4px;
