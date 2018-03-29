@@ -64,8 +64,8 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="359" column="74" lean-forward="true" selection-start-line="359" selection-start-column="74" selection-end-line="360" selection-end-column="88" />
+            <state relative-caret-position="142">
+              <caret line="194" column="94" lean-forward="false" selection-start-line="194" selection-start-column="94" selection-end-line="194" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -74,8 +74,8 @@
       <file leaf-file-name="home_old.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home_old.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="36">
+              <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -323,12 +323,12 @@
       <workItem from="1521554774705" duration="16881000" />
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
-      <workItem from="1522312020901" duration="6977000" />
+      <workItem from="1522312020901" duration="7168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117288000" />
+    <option name="totallyTimeSpent" value="117479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -810,14 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home_old.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -826,10 +818,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home_old.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="86" column="24" lean-forward="false" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="359" column="74" lean-forward="true" selection-start-line="359" selection-start-column="74" selection-end-line="360" selection-end-column="88" />
+        <state relative-caret-position="142">
+          <caret line="194" column="94" lean-forward="false" selection-start-line="194" selection-start-column="94" selection-end-line="194" selection-end-column="94" />
           <folding />
         </state>
       </provider>

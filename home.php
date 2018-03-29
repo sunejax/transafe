@@ -212,7 +212,6 @@ if (isset($_GET['logout'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
-                                    <p class="to-animate-2"><a href="login/register.php" class="btn btn-primary btn-lg">Sign Up For Free</a></p>
                             </div>
                         </div>
                     </div>
@@ -229,7 +228,7 @@ if (isset($_GET['logout'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Online Verification</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Link and verify your registration, license and AADHAR all from the comfort of your home.</h3>
-                                    <p class="to-animate-2"><a href="login/register.php" class="btn btn-primary btn-lg">Sign Up For Free</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -387,11 +386,6 @@ if (isset($_GET['logout'])) {
                 </div>
             </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
-                <a href="login/register.php" class="btn btn-primary btn-block">Sign Up for free</a>
-            </div>
         </div>
     </div>
 </div>
