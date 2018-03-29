@@ -211,24 +211,24 @@ if(isset($_POST['uploadFile_aa'])) {
         </div>
         <div class="row row-bottom-padded-sm">
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-icon"><i class="icon-present"></i></div>
                 <div class="fh5co-desc">
-                    <h3>Email: <?echo$_SESSION['r']['email']?></h3>
+                    <h3>Email</h3>
+                    <p><?echo$_SESSION['r']['email']?></p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-icon"><i class="icon-eye"></i></div>
                 <div class="fh5co-desc">
-                    <h3>Retina Ready</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <h3>Emergency Contact</h3>
+                    <p><?echo$_SESSION['r']['em_no']?></p>
                 </div>
             </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-icon"><i class="icon-crop"></i></div>
                 <div class="fh5co-desc">
-                    <h3>Fully Responsive</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <h3>Emergency Message</h3>
+                    <p><?echo$_SESSION['r']['em_msg']?></p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
