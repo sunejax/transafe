@@ -119,7 +119,7 @@ if(isset($_POST['uploadFile_aa'])) {
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
-
+    <script src
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
 
@@ -143,113 +143,6 @@ if(isset($_POST['uploadFile_aa'])) {
     <link rel="stylesheet" id="theme-switch" href="css/style.css">
     <!-- End demo purposes only -->
 
-
-    <style>
-        /* For demo purpose only */
-
-        /* For Demo Purposes Only ( You can delete this anytime :-) */
-        #colour-variations {
-            padding: 10px;
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s;
-            width: 140px;
-            position: fixed;
-            left: 0;
-            top: 100px;
-            z-index: 999999;
-            background: #fff;
-            /*border-radius: 4px;*/
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-            -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            -ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-        }
-        #colour-variations.sleep {
-            margin-left: -140px;
-        }
-        #colour-variations h3 {
-            text-align: center;;
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #777;
-            margin: 0 0 10px 0;
-            padding: 0;;
-        }
-        #colour-variations ul,
-        #colour-variations ul li {
-            padding: 0;
-            margin: 0;
-        }
-        #colour-variations li {
-            list-style: none;
-            display: inline;
-        }
-        #colour-variations li a {
-            width: 20px;
-            height: 20px;
-            position: relative;
-            float: left;
-            margin: 5px;
-        }
-        #colour-variations li a[data-theme="style"] {
-            background: #6173f4;
-        }
-        #colour-variations li a[data-theme="pink"] {
-            background: #f64662;
-        }
-        #colour-variations li a[data-theme="blue"] {
-            background: #2185d5;
-        }
-        #colour-variations li a[data-theme="turquoise"] {
-            background: #00b8a9;
-        }
-        #colour-variations li a[data-theme="orange"] {
-            background: #ff6600;
-        }
-        #colour-variations li a[data-theme="lightblue"] {
-            background: #5585b5;
-        }
-        #colour-variations li a[data-theme="brown"] {
-            background: #a03232;
-        }
-        #colour-variations li a[data-theme="green"] {
-            background: #65d269;
-        }
-
-        .option-toggle {
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin-top: 5px;
-            margin-right: -30px;
-            width: 30px;
-            height: 30px;
-            background: #f64662;
-            text-align: center;
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-            -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            -ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-            box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-        }
-        .option-toggle i {
-            top: 2px;
-            position: relative;
-        }
-        .option-toggle:hover, .option-toggle:focus, .option-toggle:active {
-            color:  #fff;
-            text-decoration: none;
-            outline: none;
-        }
-    </style>
-    <!-- End demo purposes only -->
 
 
     <!-- Modernizr JS -->
@@ -422,22 +315,39 @@ if(isset($_POST['uploadFile_aa'])) {
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <!-- here stars scrolling icon -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-        */
-
-        $().UItoTop({ easingType: 'easeOutQuart' });
-
-    });
-</script>
 <!-- //here ends scrolling icon -->
 
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+<script src="js/jquery.style.switcher.js"></script>
+<script>
+    $(function(){
+        $('#colour-variations ul').styleSwitcher({
+            defaultThemeId: 'theme-switch',
+            hasPreview: false,
+            cookie: {
+                expires: 30,
+                isManagingLoad: true
+            }
+        });
+        $('.option-toggle').click(function() {
+            $('#colour-variations').toggleClass('sleep');
+        });
+    });
+</script>
+<!-- End demo purposes only -->
+
+<!-- Main JS (Do not remove) -->
+<script src="js/main.js"></script>
 </body>
 </html>
