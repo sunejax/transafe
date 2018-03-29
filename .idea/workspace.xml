@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="279" column="113" selection-start-line="279" selection-start-column="113" selection-end-line="279" selection-end-column="113" />
+            <state relative-caret-position="143">
+              <caret line="188" column="274" selection-start-line="188" selection-start-column="274" selection-end-line="188" selection-end-column="274" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -86,22 +86,22 @@
                 <element signature="e#11541#11580#0#PHP" expanded="true" />
                 <element signature="e#12354#12393#0#PHP" expanded="true" />
                 <element signature="e#13166#13205#0#PHP" expanded="true" />
-                <marker date="1522356713092" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-                <marker date="1522356713092" expanded="true" signature="14854:14868" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="14962:14975" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="15065:15076" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="15672:15686" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="15780:15793" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="15883:15894" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="16483:16497" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="16591:16604" ph="..." />
-                <marker date="1522356713092" expanded="true" signature="16694:16705" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+                <marker date="1522356849887" expanded="true" signature="14573:14587" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="14681:14694" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="14784:14795" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="15391:15405" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="15499:15512" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="15602:15613" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="16202:16216" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="16310:16323" ph="..." />
+                <marker date="1522356849887" expanded="true" signature="16413:16424" ph="..." />
               </folding>
             </state>
           </provider>
@@ -154,7 +154,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user" pinned="false" current-in-tab="true">
         <entry file="das://25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/schema/transafe/table/user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -229,6 +229,8 @@
       <find>quiz t</find>
       <find>active</find>
       <find>profile</find>
+      <find>center</find>
+      <find>go to</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,15 +352,16 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="11719000" />
-      <workItem from="1522331405877" duration="8912000" />
+      <workItem from="1522331405877" duration="9192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130942000" />
+    <option name="totallyTimeSpent" value="131222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" sideWeight="0.4969697" weight="0.32851985" />
@@ -366,7 +369,8 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4909091" visible="true" weight="0.20458554" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4909091" weight="0.20458554" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="8" visible="true" weight="0.32804233" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
@@ -379,30 +383,30 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32851985" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32851985" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24646781" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="7" sideWeight="0.4969697" weight="0.32851985" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32864675" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4909091" visible="true" weight="0.20397112" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5090909" side_tool="true" visible="true" weight="0.20397112" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="9" sideWeight="0.4969697" weight="0.32851985" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4909091" visible="true" weight="0.20458554" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32851985" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32864675" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32954547" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +420,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/profile.php</url>
-          <line>275</line>
+          <line>272</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -497,22 +501,22 @@
             <element signature="e#11541#11580#0#PHP" expanded="true" />
             <element signature="e#12354#12393#0#PHP" expanded="true" />
             <element signature="e#13166#13205#0#PHP" expanded="true" />
-            <marker date="1522356713092" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="14854:14868" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="14962:14975" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15065:15076" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15672:15686" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15780:15793" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15883:15894" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16483:16497" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16591:16604" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16694:16705" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="14573:14587" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="14681:14694" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="14784:14795" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15391:15405" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15499:15512" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15602:15613" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16202:16216" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16310:16323" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16413:16424" ph="..." />
           </folding>
         </state>
       </provider>
@@ -767,13 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ep.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2901">
@@ -794,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="279" column="113" selection-start-line="279" selection-start-column="113" selection-end-line="279" selection-end-column="113" />
+        <state relative-caret-position="143">
+          <caret line="188" column="274" selection-start-line="188" selection-start-column="274" selection-end-line="188" selection-end-column="274" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -814,23 +811,30 @@
             <element signature="e#11541#11580#0#PHP" expanded="true" />
             <element signature="e#12354#12393#0#PHP" expanded="true" />
             <element signature="e#13166#13205#0#PHP" expanded="true" />
-            <marker date="1522356713092" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-            <marker date="1522356713092" expanded="true" signature="14854:14868" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="14962:14975" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15065:15076" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15672:15686" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15780:15793" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="15883:15894" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16483:16497" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16591:16604" ph="..." />
-            <marker date="1522356713092" expanded="true" signature="16694:16705" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1522356849887" expanded="true" signature="14573:14587" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="14681:14694" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="14784:14795" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15391:15405" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15499:15512" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="15602:15613" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16202:16216" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16310:16323" ph="..." />
+            <marker date="1522356849887" expanded="true" signature="16413:16424" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>

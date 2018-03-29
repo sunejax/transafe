@@ -286,31 +286,35 @@ if(isset($_POST['uploadFile_aa'])) {
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-desc">
                     <h3>Driving License</h3>
-                    <div><? if(!isset($_SESSION['r']['doc_li']))
-                            echo "<input type='file' name='fileToUpload_li'>
+                    <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
+                        <div><? if(!isset($_SESSION['r']['doc_li']))
+                                echo "<input type='file' name='fileToUpload_li'>
               <input type='submit' name='uploadFile_li' value='Upload'>
             "; else echo "<a target='_blank' href='$url_li'><img src ='$url_li' class='proimage'></a>";
-                        if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                        else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                        else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";
-                        ?>
-                    </div>
+                            if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                            else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                            else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";
+                            ?>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-desc">
                     <h3>AADHAR</h3>
-                    <div><? if(!isset($_SESSION['r']['doc_aa']))
-                        echo "<input type='file' name='fileToUpload_aa'>
+                    <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
+                        <div><? if(!isset($_SESSION['r']['doc_aa']))
+                                echo "<input type='file' name='fileToUpload_aa'>
               <input type='submit' name='uploadFile_aa' value='Upload'>
             ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
-                    if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                    else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                    else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
+                            if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+                            else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
+                            else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
 
-                    ?>
+                            ?>
 
-                </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
