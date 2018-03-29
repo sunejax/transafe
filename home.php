@@ -22,7 +22,7 @@ if (isset($_GET['logout'])) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Transafe - <? $_SESSION['username'] ?></title>
+    <title>Transafe - <? echo $_SESSION['username'] ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Transafe - Your Personal Travel Safety Manager" />
 
@@ -212,6 +212,8 @@ if (isset($_GET['logout'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
+                                    <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
+
                             </div>
                         </div>
                     </div>
@@ -228,6 +230,7 @@ if (isset($_GET['logout'])) {
                             <div class="fh5co-owl-text">
                                 <h1 class="fh5co-lead to-animate">Online Verification</h1>
                                 <h2 class="fh5co-sub-lead to-animate">Link and verify your registration, license and AADHAR all from the comfort of your home.</h3>
+                                    <p class="to-animate-2"><a href="profile.php" class="btn btn-primary btn-lg">Go to your profile</a></p>
 
                             </div>
                         </div>
