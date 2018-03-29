@@ -166,9 +166,9 @@ if(isset($_POST['uploadFile_aa'])) {
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home.php" data-nav-section="home"><span>Home</span></a></li>
+                    <li><a href="home.php"><span>Home</span></a></li>
                     <li><a href="quiz.php"><span>Practice</span></a></li>
-                    <li class="active"><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+                    <li class="active" data-nav-section="home"><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
                     <li><a href="profile.php?logout='1'">Sign out</a></li>
                 </ul>
             </div>
