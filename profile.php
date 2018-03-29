@@ -119,12 +119,12 @@ if(isset($_POST['uploadFile_aa'])) {
     <meta name="twitter:image" content="" />
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
-    <script src
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-
+        <script src="js/jquery.min.js"></script>
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Icomoon Icon Fonts-->
@@ -318,7 +318,7 @@ if(isset($_POST['uploadFile_aa'])) {
 <!-- //here ends scrolling icon -->
 
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
