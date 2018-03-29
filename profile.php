@@ -213,6 +213,8 @@ if(isset($_POST['uploadFile_aa'])) {
                 </div>
             </div>
             <div class="clearfix visible-sm-block visible-xs-block"></div>
+        </div>
+        <div class="row row-bottom-padded-sm">
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-desc">
                     <h3>Registration Certificate</h3>
@@ -264,49 +266,49 @@ if(isset($_POST['uploadFile_aa'])) {
         </div>
     </div>
 </div>
-<div class="row">
-
-    <div class ="col-sm-12 input-group">
-        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
-            <div>Registration Certificate:<? if(!isset($_SESSION['r']['doc_rc']))
-                    echo "<input type='file' name='fileToUpload_rc'>
-              <input type='submit' name='uploadFile_rc' value='Upload'>
-            ";else echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
-                if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
-                ?>
-            </div>
-        </form>
-        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
-            <div>Driving License:</p><? if(!isset($_SESSION['r']['doc_li']))
-                    echo "<input type='file' name='fileToUpload_li'>
-              <input type='submit' name='uploadFile_li' value='Upload'>
-            "; else echo "<a target='_blank' href='$url_li'><img src ='$url_li' class='proimage'></a>";
-                if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";
-                ?>
-            </div>
-        </form>
-        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
-            <div><p>AADHAR:</p><? if(!isset($_SESSION['r']['doc_aa']))
-                    echo "<input type='file' name='fileToUpload_aa'>
-              <input type='submit' name='uploadFile_aa' value='Upload'>
-            ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
-                if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
-                else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
-
-                ?>
-
-            </div>
-        </form>
-        <form method="get" action="qr.php">
-            <button type="submit">Generate QR Code</button>
-        </form>
-    </div>
-</div>
+<!--<div class="row">-->
+<!---->
+<!--    <div class ="col-sm-12 input-group">-->
+<!--        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">-->
+<!--            <div>Registration Certificate:--><?// if(!isset($_SESSION['r']['doc_rc']))
+//                    echo "<input type='file' name='fileToUpload_rc'>
+//              <input type='submit' name='uploadFile_rc' value='Upload'>
+//            ";else echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'>";
+//                if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+//                else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
+//                else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
+//                ?>
+<!--            </div>-->
+<!--        </form>-->
+<!--        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">-->
+<!--            <div>Driving License:</p>--><?// if(!isset($_SESSION['r']['doc_li']))
+//                    echo "<input type='file' name='fileToUpload_li'>
+//              <input type='submit' name='uploadFile_li' value='Upload'>
+//            "; else echo "<a target='_blank' href='$url_li'><img src ='$url_li' class='proimage'></a>";
+//                if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+//                else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
+//                else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";
+//                ?>
+<!--            </div>-->
+<!--        </form>-->
+<!--        <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">-->
+<!--            <div><p>AADHAR:</p>--><?// if(!isset($_SESSION['r']['doc_aa']))
+//                    echo "<input type='file' name='fileToUpload_aa'>
+//              <input type='submit' name='uploadFile_aa' value='Upload'>
+//            ";else echo "<a target='_blank' href='$url_aa'><img src ='$url_aa' class='proimage'></a>";
+//                if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
+//                else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
+//                else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";
+//
+//                ?>
+<!---->
+<!--            </div>-->
+<!--        </form>-->
+<!--        <form method="get" action="qr.php">-->
+<!--            <button type="submit">Generate QR Code</button>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
 <!-- //banner -->
 <!-- footer -->
 <footer id="footer" role="contentinfo">
