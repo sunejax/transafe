@@ -191,7 +191,7 @@ if (isset($_POST['accept'])) {
     </div>
 </header>
 <div id="slider" data-section="home">
-    <div class="owl-carousel owl-carousel-fullwidth">
+
         <!-- You may change the background color here. -->
         <div class="item" style="background: #352f44;">
             <div class="container" style="position: relative;">
@@ -205,10 +205,6 @@ if (isset($_POST['accept'])) {
                 </div>
             </div>
         </div>
-
-
-
-    </div>
 </div>
 <table>
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
