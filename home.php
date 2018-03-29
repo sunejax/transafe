@@ -193,8 +193,7 @@ if (isset($_GET['logout'])) {
                     <li><a href="#" data-nav-section="about"><span>Team</span></a></li>
                     <li><a href="#" data-nav-section="features"><span>Features</span></a></li>
                     <li><a href="#" data-nav-section="practice"><span>Practice</span></a></li>
-                    <li><a href="login/login.php" data-nav-section="login"><span>Login</span></a></li>
-                    <li><a href="login/register.php" data-nav-section="signup"><span>SignUp</span></a></li>
+                    <li><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
                 </ul>
             </div>
         </nav>
