@@ -205,7 +205,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 <h2 class="single-animate animate-features-1">Features</h2>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
-                        <h3><b>Name</b><?echo$_SESSION['r']['name']?></h3>
+                        <h3><b>Hey! </b><?echo$_SESSION['r']['name']?></h3>
                     </div>
                 </div>
             </div>
@@ -214,8 +214,7 @@ if(isset($_POST['uploadFile_aa'])) {
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
                 <div class="fh5co-icon"><i class="icon-present"></i></div>
                 <div class="fh5co-desc">
-                    <h3>100% Free</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <h3>Email: <?echo$_SESSION['r']['email']?></h3>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
