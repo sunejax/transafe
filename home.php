@@ -401,6 +401,8 @@ if (isset($_GET['logout'])) {
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 subtext to-animate">
                         <h3>Too tired to go to your nearest RTO, practice with mock tests online record your score and compare how you are preparing, access the library to learn more or schedule a test if you're feeling confident. </h3>
+                        <p class="to-animate-2"><a href="quiz.php" target="_blank" class="btn btn-primary btn-lg">Take a test</a></p>
+
                     </div>
                 </div>
             </div>
