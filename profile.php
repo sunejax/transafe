@@ -178,12 +178,7 @@ if(isset($_POST['uploadFile_aa'])) {
         <!-- </div> -->
     </div>
 </header>
-<div id="slider" data-section="home">
-    <!-- You may change the background color here. -->
-    <div class="item" style="background: #352f44;">
 
-    </div>
-</div>
 <div id="fh5co-features" data-section="features">
     <div class="container">
         <div class="row">
