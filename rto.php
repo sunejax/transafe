@@ -132,7 +132,7 @@ if (isset($_POST['accept'])) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="home.php">Transafe</a></h1>
+                    <h1><a  href="rto.php">Transafe</a></h1>
                 </div>
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
