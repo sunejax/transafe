@@ -134,7 +134,45 @@
         </div>
     </div>
 </div>
+<div>
+    <ul>
+        <li>
+            <h3>You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side, you</h3>
+            <input type="radio" name="question0" value="A">A. Increase the speed and try to cross the bridge as fast as possible <br>
+            <input type="radio" name="question0" value="B">B. Put on the headlight and pass the bridge <br>
+            <input type="radio" name="question0" value="C">C. Wait till the other vehicle crosses the bridge and then proceed<br>
+        </li>
+        <li>
+            <h3>Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should</h3>
+            <input type="radio" name="question1" value="A">Sound horn and proceed. <br>
+            <input type="radio" name="question1" value="B">Slow down, sound horn and pass.<br>
+            <input type="radio" name="question1" value="C">Stop the vehicle and wait till the pedestrians cross the road and then proceed.<br>
+        </li>
+        <li>
+            <h3>In case of an accident to seek a medical help, you should dial.</h3>
+            <input type="radio" name="question2" value="A">A. 108 or 102.<br>
+            <input type="radio" name="question2" value="B">B. 101. <br>
+            <input type="radio" name="question2" value="C">C. Any of these.<br>
+        </li>
+        <li>
+            <h3>What does following sign represent?</h3>
+            <img class="size-full wp-image-11" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q3.jpg" alt="q3" width="75" height="75">
+            <input type="radio" name="question3" value="A">A. Keep left.<br>
+            <input type="radio" name="question3" value="B">B. There is no road on the left.<br>
+            <input type="radio" name="question3" value="C">C. Compulsory keep left.<br>
+        </li>
+        <li>
+            <h3>What does following sign represent?</h3>
+            <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65">
+            <input type="radio" name="question4" value="A">A. Loose gravel. <br>
+            <input type="radio" name="question4" value="B">B. Slippery road. <br>
+            <input type="radio" name="question4" value="C">C. Slippery road.<br>
+        </li>
 
+    </ul>
+
+    <button onclick="returnScore()">View Results</button>
+</div>
 
 <footer id="footer" role="contentinfo">
     <div class="container">
@@ -155,6 +193,29 @@
 </footer>
 <!-- //footer -->
 <script src="js/jarallax.js"></script>
+<script type="text/javascript">
+
+    var answers = ["A","C","B"],
+        tot = answers.length;
+
+    function getCheckedValue( radioName ){
+        var radios = document.getElementsByName( radioName ); // Get radio group by-name
+        for(var y=0; y<radios.length; y++)
+            if(radios[y].checked) return radios[y].value; // return the checked value
+    }
+
+    function getScore(){
+        var score = 0;
+        for (var i=0; i<tot; i++)
+            if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
+        return score;
+    }
+
+    function returnScore(){
+        alert("Your score is "+ getScore() +"/"+ tot);
+    }
+</script>
+
 <script type="text/javascript">
     /* init Jarallax */
     $('.jarallax').jarallax({
