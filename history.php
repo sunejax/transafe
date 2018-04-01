@@ -19,10 +19,11 @@ $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
     $name=$_POST['name'];
+    $point=$_POST['point'];
     if($_POST['accept']==1)
-        mysqli_query($db, "UPDATE user SET ".$name." =2  WHERE uid=$postid");
+        mysqli_query($db, "UPDATE user SET ".$name." =2, ".$point."=1  WHERE uid=$postid");
     else if($_POST['accept']==2)
-        mysqli_query($db, "UPDATE user SET ".$name." =3  WHERE uid=$postid");
+        mysqli_query($db, "UPDATE user SET ".$name." =3,".$point."=1  WHERE uid=$postid");
     exit();
 }
 ?>
@@ -230,9 +231,9 @@ if (isset($_POST['accept'])) {
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
         echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td>
-<td style='width: 200px;height:200px;'>";if(isset($rc)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";if(isset($rc)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 </tr>";
         ;}
     ?>
@@ -242,6 +243,7 @@ if (isset($_POST['accept'])) {
         // when the user clicks on switch
         $(".switcher").change(function(){
             var postid = $(this).attr('id');
+            var point=$(this).attr('data-point');
             var na=$(this).attr('name');
             if($(this).is(":checked")) {
                 $.ajax({
@@ -250,7 +252,8 @@ if (isset($_POST['accept'])) {
                     data: {
                         'accept': 1,
                         'postid': postid,
-                        'name':na
+                        'name':na,
+                        'point':point
                     }
                 });
             }
@@ -261,7 +264,8 @@ if (isset($_POST['accept'])) {
                 data: {
                     'accept': 2,
                     'postid': postid,
-                    'name':na
+                    'name':na,
+                    'point':point
                 }
             });
             }
