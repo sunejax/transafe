@@ -276,7 +276,6 @@ if(isset($_POST['uploadFile_aa'])) {
                             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                             else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";}
                             echo "<input type='file' name='fileToUpload_rc'><input type='submit' name='uploadFile_rc' value='Upload'>";
-
                             ?>
                         </div>
                     </form>
