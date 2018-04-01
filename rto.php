@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s from user WHERE ad_rights is NULL ";
+$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, score from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
@@ -209,6 +209,11 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
+    <tr><td>Name</td><td>Email</td><td>Emergency Contact</td><td>Test Score</td>
+        <td style='width: 200px;height:200px;'>Registration Certificate</td>
+        <td style='width: 200px;height:200px;'>License</td>
+        <td style='width: 200px;height:200px;'>AADHAR</td>
+    </tr>"
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
         $rc=$row_users['doc_rc'];
@@ -224,7 +229,7 @@ if (isset($_POST['accept'])) {
         if($rc_s=='2')$str_rc='checked';
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td>
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td>
 <td style='width: 200px;height:200px;'>";if(isset($rc)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>

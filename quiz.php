@@ -181,7 +181,7 @@ if(isset($_POST['score'])) {
 
     </ul>
 
-    <button class="btn btn-primary btn-lg" onclick="returnScore()">Submit</button>
+    <button class="btn btn-primary btn-lg " onclick="returnScore()">Submit</button>
 </div>
 
 <footer id="footer" role="contentinfo">
