@@ -1,223 +1,135 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <title>Transafe - <?php echo $_SESSION['r']['name']?></title>
+
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Rokkitt);
-        h1 {
-            font-family: 'Rokkitt', serif;
-            text-align: center;
+        /* Always set the map height explicitly to define the size of the div
+
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
         }
-
-        ul {
-            list-style: none;
-        }
-
-        li {
-            font-family: 'Rokkitt', serif;
-            font-size: 2em;
-        }
-
-        input[type=radio] {
-            border: 0px;
-            width: 20px;
-            height: 2em;
-        }
-
-        p {
-            font-family: 'Rokkitt', serif;
-        }
-
-        /* Quiz Classes */
-
-        .quizContainer {
-            background-color: lightgoldenrodyellow;
-            border-radius: 6px;
-            width: 75%;
-            margin: auto;
-            padding-top: 5px;
-            -moz-box-shadow: 10px 10px 5px #888;
-            -webkit-box-shadow: 10px 10px 5px #888;
-            box-shadow: 10px 10px 5px #888;
-            position: relative;
-        }
-
-        .nextButton {
-            box-shadow: 3px 3px 5px #888;
-            border-radius: 6px;
+        img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
             width: 150px;
-            height: 40px;
-            text-align: center;
-            background-color: lightgrey;
-            /*clear: both;*/
-            color: red;
-            font-family: 'Rokkitt', serif;
-            position: relative;
-            margin: auto;
-            padding-top: 20px;
         }
 
-        .question {
-            font-family: 'Rokkitt', serif;
-            font-size: 2em;
-            width: 90%;
-            height: auto;
-            margin: auto;
-            border-radius: 6px;
-            background-color: lightgrey;
-            text-align: center;
+        img:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
-
-        .quizMessage {
-            background-color: peachpuff;
-            border-radius: 6px;
-            width: 30%;
-            margin: auto;
-            text-align: center;
-            padding: 2px;
-            font-family: 'Rokkitt', serif;
-            color: red;
-        }
-
-        .choiceList {
-            font-family: Courier, serif;
-            color: blueviolet;
-        }
-
-        .result {
-            width: 30%;
-            height: auto;
-            border-radius: 6px;
-            background-color: linen;
-            margin: auto;
-            text-align: center;
-            font-family: 'Rokkitt', serif;
-        }
-
-        /* End of Quiz Classes */
-
     </style>
-    <script>
-        /**
-         * Created with JetBrains WebStorm.
-         * User: pwanwu
-         * Date: 18/09/2013
-         * Time: 17:41
-         * To change this template use File | Settings | File Templates.
-         */
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transafe - <? echo $_SESSION['username'] ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transafe - Your Personal Travel Safety Manager" />
 
-        var questions = [{
-            question: "What is the population of Brazil?",
-            choices: ["145 million", "199 million", "182 million", "205 million"],
-            correctAnswer: 1
-        }, {
-            question: "What is 27*14?",
-            choices: ["485", "634", "408", "528"],
-            correctAnswer: 2
-        }, {
-            question: "What is the busiest train station in the world?",
-            choices: ["Grand Central, NY", "Shibuya, Tokyo", "Beijing Central, Chine", "Gard du Nord, Paris"],
-            correctAnswer: 1
-        }, {
-            question: "What is the longest river?",
-            choices: ["Nile", "Amazon", "Mississippi", "Yangtze"],
-            correctAnswer: 0
-        }, {
-            question: "What is the busiest tube station in the London?",
-            choices: ["Waterloo", "Baker Street", "Kings Cross", "Victoria"],
-            correctAnswer: 0
-        }];
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-        var currentQuestion = 0;
-        var correctAnswers = 0;
-        var quizOver = false;
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-        $(document).ready(function() {
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-            // Display the first question
-            displayCurrentQuestion();
-            $(this).find(".quizMessage").hide();
+    <link rel="stylesheet" href="css/style.css">
 
-            // On clicking next, display the next question
-            $(this).find(".nextButton").on("click", function() {
-                if (!quizOver) {
+    <!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+    <link rel="stylesheet" id="theme-switch" href="css/style.css">
+    <!-- End demo purposes only -->
 
-                    value = $("input[type='radio']:checked").val();
 
-                    if (value == undefined) {
-                        $(document).find(".quizMessage").text("Please select an answer");
-                        $(document).find(".quizMessage").show();
-                    } else {
-                        // TODO: Remove any message -> not sure if this is efficient to call this each time....
-                        $(document).find(".quizMessage").hide();
 
-                        if (value == questions[currentQuestion].correctAnswer) {
-                            correctAnswers++;
-                        }
-
-                        currentQuestion++; // Since we have already displayed the first question on DOM ready
-                        if (currentQuestion < questions.length) {
-                            displayCurrentQuestion();
-                        } else {
-                            displayScore();
-                            //                    $(document).find(".nextButton").toggle();
-                            //                    $(document).find(".playAgainButton").toggle();
-                            // Change the text in the next button to ask if user wants to play again
-                            $(document).find(".nextButton").text("Play Again?");
-                            quizOver = true;
-                        }
-                    }
-                } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
-                    quizOver = false;
-                    $(document).find(".nextButton").text("Next Question");
-                    resetQuiz();
-                    displayCurrentQuestion();
-                    hideScore();
-                }
-            });
-
-        });
-
-        // This displays the current question AND the choices
-        function displayCurrentQuestion() {
-
-            console.log("In display current Question");
-
-            var question = questions[currentQuestion].question;
-            var questionClass = $(document).find(".quizContainer > .question");
-            var choiceList = $(document).find(".quizContainer > .choiceList");
-            var numChoices = questions[currentQuestion].choices.length;
-
-            // Set the questionClass text to the current question
-            $(questionClass).text(question);
-
-            // Remove all current <li> elements (if any)
-            $(choiceList).find("li").remove();
-
-            var choice;
-            for (i = 0; i < numChoices; i++) {
-                choice = questions[currentQuestion].choices[i];
-                $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(choiceList);
-            }
-        }
-
-        function resetQuiz() {
-            currentQuestion = 0;
-            correctAnswers = 0;
-            hideScore();
-        }
-    </script>
-
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<div class="quizContainer">
-    <h1>Hello! Welcome to the JS Dynamic Quiz!</h1>
+<!-- banner -->
+<header role="banner" id="fh5co-header">
+    <div class="container">
+        <!-- <div class="row"> -->
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html">Transafe</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.php"><span>Home</span></a></li>
+                    <li><a href="quiz.php"><span>Practice</span></a></li>
+                    <li class="active" data-nav-section="home"><a href="profile.php"><?php echo $_SESSION['username']; ?></a></li>
+                    <li><a href="profile.php?logout='1'">Sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- </div> -->
+    </div>
+</header>
+<div id="slider" data-section="home">
+    <div class="owl-carousel owl-carousel-fullwidth">
+        <!-- You may change the background color here. -->
+        <div class="item" style="background: #352f44;">
+            <div class="container" style="position: relative;">
+                <div class="row">
+                    <div class="col-md-7 col-sm-7">
+                        <div class="fh5co-owl-text-wrap">
+                            <div class="fh5co-owl-text">
+                                <h1 class="fh5co-lead to-animate">Travel with assurance</h1>
+                                <h2 class="fh5co-sub-lead to-animate">Associate your emergency information like allergies, previous medical data, insurance details and emergency contact accessible only to registered professionals and medical staff in case of accidents.</h3>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="question"></div>
-    <ul class="choiceList"></ul>
-    <div class="quizMessage"></div>
-    <div class="result"></div>
-    <div class="nextButton">Next Question</div>
-    <br>
+                </div>
+            </div>
+        </div>
+        <!-- You may change the background color here.  -->
+        <div class="item" style="background: #38569f;">
+            <div class="container" style="position: relative;">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-1 col-md-push-5 col-sm-7 col-sm-push-1 col-sm-push-5">
+                        <div class="fh5co-owl-text-wrap">
+                            <div class="fh5co-owl-text">
+                                <h1 class="fh5co-lead to-animate">Online Verification</h1>
+                                <h2 class="fh5co-sub-lead to-animate">Link and verify your registration, license and AADHAR all from the comfort of your home.</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
