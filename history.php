@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s from user WHERE ad_rights is NULL ";
+$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, score from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
@@ -184,7 +184,7 @@ if (isset($_POST['accept'])) {
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="history.php"><span>History</span></a></li>
                     <li class="active" ><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
-                    <li><a href="history.php?logout='1'">Sign out</a></li>
+                    <li><a href="rto.php?logout='1'">Sign out</a></li>
                 </ul>
             </div>
         </nav>
@@ -209,6 +209,11 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
+    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score</b></td>
+        <td style='width: 200px;'><b>Registration Certificate</b></td>
+        <td style='width: 200px;'><b>License</b></td>
+        <td style='width: 200px;'><b>AADHAR</b></td>
+    </tr>"
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
         $rc=$row_users['doc_rc'];
@@ -223,11 +228,11 @@ if (isset($_POST['accept'])) {
         $str_aa='';
         if($rc_s=='2')$str_rc='checked';
         if($li_s=='2')$str_li='checked';
-        if($aa_s=='2')$str_aa='checked';
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td>
-<td style='width: 200px'><a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px'><a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px'><a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+        if($aa_s=='2')$str_aa='checked';;
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td>
+<td style='width: 200px;height:200px;'>";if(isset($rc)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input name='doc_rc_s' class='switcher' id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 </tr>";
         ;}
     ?>
@@ -240,7 +245,7 @@ if (isset($_POST['accept'])) {
             var na=$(this).attr('name');
             if($(this).is(":checked")) {
                 $.ajax({
-                    url: 'rto.php',
+                    url: 'history.php',
                     type: 'post',
                     data: {
                         'accept': 1,
@@ -251,7 +256,7 @@ if (isset($_POST['accept'])) {
             }
             else
             {$.ajax({
-                url: 'rto.php',
+                url: 'history.php',
                 type: 'post',
                 data: {
                     'accept': 2,
