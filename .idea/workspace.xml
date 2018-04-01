@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rto.php" beforeDir="false" afterPath="$PROJECT_DIR$/rto.php" afterDir="false" />
-    </list>
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +66,8 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="185" column="57" selection-start-line="185" selection-start-column="57" selection-end-line="185" selection-end-column="57" />
+            <state relative-caret-position="234">
+              <caret line="277" column="135" selection-start-line="277" selection-start-column="135" selection-end-line="277" selection-end-column="135" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -81,13 +78,13 @@
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <marker date="1522363874346" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-                <marker date="1522363874346" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+                <marker date="1522580709202" expanded="true" signature="2613:2673" ph="UPDATE user... " />
               </folding>
             </state>
           </provider>
@@ -231,12 +228,12 @@
         <option value="$PROJECT_DIR$/login/server.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/console.sql" />
-        <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/history.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/quiz.php" />
         <option value="$PROJECT_DIR$/rto.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
       </list>
     </option>
   </component>
@@ -257,7 +254,7 @@
       <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="683" />
     <option name="height" value="700" />
@@ -337,16 +334,15 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="12724000" />
-      <workItem from="1522494386551" duration="1178000" />
+      <workItem from="1522494386551" duration="1998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124213000" />
+    <option name="totallyTimeSpent" value="125033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="700" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="700" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -543,13 +539,13 @@
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1522363874346" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="2613:2673" ph="UPDATE user... " />
           </folding>
         </state>
       </provider>
@@ -796,8 +792,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="185" column="57" selection-start-line="185" selection-start-column="57" selection-end-line="185" selection-end-column="57" />
+        <state relative-caret-position="234">
+          <caret line="277" column="135" selection-start-line="277" selection-start-column="135" selection-end-line="277" selection-end-column="135" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -808,13 +804,13 @@
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1522363874346" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522363874346" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522580709202" expanded="true" signature="2613:2673" ph="UPDATE user... " />
           </folding>
         </state>
       </provider>
