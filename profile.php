@@ -270,14 +270,13 @@ if(isset($_POST['uploadFile_aa'])) {
                 <div class="fh5co-desc">
                     <h3>Registration Certificate</h3>
                     <form class ="col-sm-4" method="post" action="profile.php" enctype="multipart/form-data">
-                        <div><? if(!isset($_SESSION['r']['doc_rc']))
-                                echo "<input type='file' name='fileToUpload_rc'>
-              <input type='submit' name='uploadFile_rc' value='Upload'>";
-                            else
-                                echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'></a>";
+                        <div><?if(isset($_SESSION['r']['doc_rc'])){
+                            echo "<a target='_blank' href='$url_rc'><img src ='$url_rc' class='proimage'></a>";
                             if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
-                            else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";
+                            else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";}
+                            echo "<input type='file' name='fileToUpload_rc'><input type='submit' name='uploadFile_rc' value='Upload'>";
+
                             ?>
                         </div>
                     </form>
