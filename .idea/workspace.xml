@@ -57,8 +57,8 @@
       <file leaf-file-name="quiz.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="230" column="25" lean-forward="true" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -78,7 +78,7 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1499">
+            <state relative-caret-position="3573">
               <caret line="223" column="95" lean-forward="true" selection-start-line="223" selection-start-column="95" selection-end-line="223" selection-end-column="124" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -220,8 +220,8 @@
       <find>joh</find>
       <find>transa</find>
       <find>db</find>
-      <find>btnn</find>
       <find>sessio</find>
+      <find>btnn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,12 +350,12 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="12724000" />
-      <workItem from="1522494386551" duration="9233000" />
+      <workItem from="1522494386551" duration="9527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132268000" />
+    <option name="totallyTimeSpent" value="132562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -369,7 +369,7 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32804233" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.25454545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32954547" />
@@ -772,31 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1499">
-          <caret line="223" column="95" lean-forward="true" selection-start-line="223" selection-start-column="95" selection-end-line="223" selection-end-column="124" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1522580964410" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4266">
@@ -836,10 +811,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3573">
+          <caret line="223" column="95" lean-forward="true" selection-start-line="223" selection-start-column="95" selection-end-line="223" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1522580964410" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1522580964410" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/quiz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="230" column="25" lean-forward="true" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
