@@ -175,7 +175,7 @@ if(isset($_POST['score'])) {
             <h3>5. What does following sign represent?</h3>
             <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65"><br>
             <input type="radio" name="question4" value="A">A. Loose gravel. <br>
-            <input type="radio" name="question4" value="B">B. Slippery road. <br>
+            <input type="radio" name="question4" value="B">B. Wet road. <br>
             <input type="radio" name="question4" value="C">C. Slippery road.<br>
         </li>
 
