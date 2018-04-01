@@ -209,10 +209,10 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
-    <tr><td>Name</td><td>Email</td><td>Emergency Contact</td><td>Test Score</td>
-        <td style='width: 200px;'>Registration Certificate</td>
-        <td style='width: 200px;'>License</td>
-        <td style='width: 200px;'>AADHAR</td>
+    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score</b></td>
+        <td style='width: 200px;'><b>Registration Certificate</b></td>
+        <td style='width: 200px;'><b>License</b></td>
+        <td style='width: 200px;'><b>AADHAR</b></td>
     </tr>"
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
