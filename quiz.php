@@ -135,7 +135,7 @@
     </div>
 </div>
 <div>
-    <ul>
+    <ul style="list-style: none">
         <li>
             <h3>You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side, you</h3>
             <input type="radio" name="question0" value="A">A. Increase the speed and try to cross the bridge as fast as possible <br>
