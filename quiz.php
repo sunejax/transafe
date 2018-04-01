@@ -195,7 +195,7 @@
 <script src="js/jarallax.js"></script>
 <script type="text/javascript">
 
-    var answers = ["A","C","B"],
+    var answers = ["C","C","A","C","C"],
         tot = answers.length;
 
     function getCheckedValue( radioName ){
