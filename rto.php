@@ -210,9 +210,9 @@ if (isset($_POST['accept'])) {
 <br>
 <table>
     <tr><td>Name</td><td>Email</td><td>Emergency Contact</td><td>Test Score</td>
-        <td style='width: 200px;height:200px;'>Registration Certificate</td>
-        <td style='width: 200px;height:200px;'>License</td>
-        <td style='width: 200px;height:200px;'>AADHAR</td>
+        <td style='width: 200px;'>Registration Certificate</td>
+        <td style='width: 200px;'>License</td>
+        <td style='width: 200px;'>AADHAR</td>
     </tr>"
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
