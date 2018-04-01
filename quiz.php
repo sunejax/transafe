@@ -10,7 +10,13 @@ if (isset($_GET['logout'])) {
 session_destroy();
 unset($_SESSION['username']);
 header("location: login/login.php");
-}?>
+}
+
+if(isset($_POST['score']))
+    $sc=$_POST['score'];
+    $uid=$_SESSION['r']['uid'];
+    mysqli_query($db,"UPDATE user SET score =$sc WHERE uid=$uid");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -183,7 +189,7 @@ header("location: login/login.php");
 
     </ul>
 
-    <button onclick="returnScore()">View Results</button>
+    <button class="btn btn-primary btn-lg" onclick="returnScore()">Submit</button>
 </div>
 
 <footer id="footer" role="contentinfo">
@@ -220,6 +226,13 @@ header("location: login/login.php");
         var score = 0;
         for (var i=0; i<tot; i++)
             if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
+        $.ajax({
+            url: 'rto.php',
+            type: 'post',
+            data: {
+                'score': 1
+            }
+        });
         return score;
     }
 
