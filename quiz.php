@@ -1,4 +1,14 @@
+<?if (!isset($_SESSION['username'])) {
+$_SESSION['msg'] = "You must log in first";
+header('location: login/login.php');
 
+}
+
+if (isset($_GET['logout'])) {
+session_destroy();
+unset($_SESSION['username']);
+header("location: login/login.php");
+}?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -137,32 +147,32 @@
 <div>
     <ul style="list-style: none">
         <li>
-            <h3>You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side, you</h3>
+            <h3>1. You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side, you</h3>
             <input type="radio" name="question0" value="A">A. Increase the speed and try to cross the bridge as fast as possible <br>
             <input type="radio" name="question0" value="B">B. Put on the headlight and pass the bridge <br>
             <input type="radio" name="question0" value="C">C. Wait till the other vehicle crosses the bridge and then proceed<br>
         </li>
         <li>
-            <h3>Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should</h3>
+            <h3>2. Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should</h3>
             <input type="radio" name="question1" value="A">Sound horn and proceed. <br>
             <input type="radio" name="question1" value="B">Slow down, sound horn and pass.<br>
             <input type="radio" name="question1" value="C">Stop the vehicle and wait till the pedestrians cross the road and then proceed.<br>
         </li>
         <li>
-            <h3>In case of an accident to seek a medical help, you should dial.</h3>
+            <h3>3. In case of an accident to seek a medical help, you should dial.</h3>
             <input type="radio" name="question2" value="A">A. 108 or 102.<br>
             <input type="radio" name="question2" value="B">B. 101. <br>
             <input type="radio" name="question2" value="C">C. Any of these.<br>
         </li>
         <li>
-            <h3>What does following sign represent?</h3>
+            <h3>4. What does following sign represent?</h3>
             <img class="size-full wp-image-11" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q3.jpg" alt="q3" width="75" height="75"><br>
             <input type="radio" name="question3" value="A">A. Keep left.<br>
             <input type="radio" name="question3" value="B">B. There is no road on the left.<br>
             <input type="radio" name="question3" value="C">C. Compulsory keep left.<br>
         </li>
         <li>
-            <h3>What does following sign represent?</h3>
+            <h3>5. What does following sign represent?</h3>
             <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65"><br>
             <input type="radio" name="question4" value="A">A. Loose gravel. <br>
             <input type="radio" name="question4" value="B">B. Slippery road. <br>
