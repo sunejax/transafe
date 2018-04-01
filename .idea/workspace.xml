@@ -120,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user" pinned="false" current-in-tab="true">
         <entry file="das://25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/schema/transafe/table/user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -138,11 +138,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="history.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="history.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/history.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+            <state relative-caret-position="288">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+              <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#5;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -152,7 +153,7 @@
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <marker date="1522605566026" expanded="true" signature="302:377" ph="Select uid,n... user" />
+                <marker date="1522607468399" expanded="true" signature="302:377" ph="Select uid,n... user" />
               </folding>
             </state>
           </provider>
@@ -352,12 +353,12 @@
       <workItem from="1521621342443" duration="45636000" />
       <workItem from="1522149262299" duration="23325000" />
       <workItem from="1522312020901" duration="12724000" />
-      <workItem from="1522494386551" duration="13338000" />
+      <workItem from="1522494386551" duration="14376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136373000" />
+    <option name="totallyTimeSpent" value="137411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -470,7 +471,7 @@
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1522605566026" expanded="true" signature="302:377" ph="Select uid,n... user" />
+            <marker date="1522607468399" expanded="true" signature="302:377" ph="Select uid,n... user" />
           </folding>
         </state>
       </provider>
@@ -810,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -847,8 +841,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state relative-caret-position="288">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <caret line="25" column="68" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#5;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -858,8 +853,15 @@
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1522605566026" expanded="true" signature="302:377" ph="Select uid,n... user" />
+            <marker date="1522607468399" expanded="true" signature="302:377" ph="Select uid,n... user" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
