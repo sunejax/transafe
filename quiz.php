@@ -156,14 +156,14 @@
         </li>
         <li>
             <h3>What does following sign represent?</h3>
-            <img class="size-full wp-image-11" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q3.jpg" alt="q3" width="75" height="75">
+            <img class="size-full wp-image-11" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q3.jpg" alt="q3" width="75" height="75"><br>
             <input type="radio" name="question3" value="A">A. Keep left.<br>
             <input type="radio" name="question3" value="B">B. There is no road on the left.<br>
             <input type="radio" name="question3" value="C">C. Compulsory keep left.<br>
         </li>
         <li>
             <h3>What does following sign represent?</h3>
-            <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65">
+            <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65"><br>
             <input type="radio" name="question4" value="A">A. Loose gravel. <br>
             <input type="radio" name="question4" value="B">B. Slippery road. <br>
             <input type="radio" name="question4" value="C">C. Slippery road.<br>
