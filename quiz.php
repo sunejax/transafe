@@ -12,10 +12,12 @@ unset($_SESSION['username']);
 header("location: login/login.php");
 }
 
-if(isset($_POST['score']))
-    $sc=$_POST['score'];
-    $uid=$_SESSION['r']['uid'];
-    mysqli_query($db,"UPDATE user SET score =$sc WHERE uid=$uid");
+if(isset($_POST['score'])) {
+        $sc=$_POST['score'];
+        $uid=$_SESSION['r']['uid'];
+        $q="UPDATE user SET score ='$sc' WHERE uid='$uid'"
+        mysqli_query($db,$q);
+    }
 ?>
 <!DOCTYPE html>
 <html>
