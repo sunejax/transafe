@@ -1,4 +1,6 @@
-<?if (!isset($_SESSION['username'])) {
+<?
+include('login/server.php');
+if (!isset($_SESSION['username'])) {
 $_SESSION['msg'] = "You must log in first";
 header('location: login/login.php');
 
