@@ -230,7 +230,7 @@ if(isset($_POST['score']))
             url: 'rto.php',
             type: 'post',
             data: {
-                'score': 1
+                'score': score
             }
         });
         return score;
