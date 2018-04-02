@@ -224,6 +224,11 @@ if (isset($_POST['accept'])) {
         $rc_s=$row_users['doc_rc_s'];
         $li_s=$row_users['doc_li_s'];
         $aa_s=$row_users['doc_aa_s'];
+        $rc_c=$row_users['doc_rc_c'];
+        $li_c=$row_users['doc_li_c'];
+        $aa_c=$row_users['doc_aa_c'];
+        if(isset($rc_c)&&isset($li_c)&&isset($aa_c))
+            continue;
         $str_rc='';
         $str_li='';
         $str_aa='';
@@ -231,9 +236,9 @@ if (isset($_POST['accept'])) {
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
         echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td>
-<td style='width: 200px;height:200px;'>";if(isset($rc)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";if(isset($rc)&&!isset($rc_c)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)&&!isset($li_c)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
+<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)&&!isset($aa_c)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 </tr>";
         ;}
     ?>
