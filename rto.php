@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, score from user WHERE ad_rights is NULL ";
+$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c, score from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
