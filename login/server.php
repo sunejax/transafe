@@ -71,6 +71,12 @@ if (isset($_POST['login_user'])) {
             $_SESSION['success'] = "You are now logged in";
             header('location: ../rto.php');
         }
+        else if (mysqli_num_rows($results) == 1 && $row['ad_rights']==2) {
+            $_SESSION['username'] = $row['name'];
+            $_SESSION['r']=$row;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: ../police.php');
+        }
         else if (mysqli_num_rows($results) == 1) {
             $_SESSION['username'] = $row['name'];
             $_SESSION['r']=$row;
