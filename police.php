@@ -16,16 +16,7 @@ if (isset($_GET['logout'])) {
 }
 $q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c, score from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
-if (isset($_POST['accept'])) {
-    $postid = $_POST['postid'];
-    $name=$_POST['name'];
-    $point=$_POST['point'];
-    if($_POST['accept']==1)
-        mysqli_query($db, "UPDATE user SET ".$name." =2, ".$point."=1  WHERE uid=$postid");
-    else if($_POST['accept']==2)
-        mysqli_query($db, "UPDATE user SET ".$name." =3,".$point."=1  WHERE uid=$postid");
-    exit();
-}
+
 ?>
 <html>
 <head>
@@ -54,6 +45,15 @@ if (isset($_POST['accept'])) {
         img:hover {
             box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         }
+
+
+        body, input {font-size:14pt}
+        input, label {vertical-align:middle}
+        .qrcode-text {padding-right:1.7em; margin-right:0}
+        .qrcode-text-btn {display:inline-block; background:url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat; height:1em; width:1.7em; margin-left:-1.7em; cursor:pointer}
+        .qrcode-text-btn > input[type=file] {position:absolute; overflow:hidden; width:1px; height:1px; opacity:0}
+
+
     </style>
     <title>Transafe - <?php echo $_SESSION['r']['name']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -84,6 +84,7 @@ if (isset($_POST['accept'])) {
     <!--search jQuery-->
 
     <script src="js/main_old.js"></script>
+    <script src="js/qr_packed.js"></script>
 
     <!--//search jQuery-->
     <script type="text/javascript">
@@ -185,7 +186,7 @@ if (isset($_POST['accept'])) {
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="history.php"><span>History</span></a></li>
                     <li class="active" ><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
-                    <li><a href="rto.php?logout='1'">Sign out</a></li>
+                    <li><a href="police.php?logout='1'">Sign out</a></li>
                 </ul>
             </div>
         </nav>
@@ -209,40 +210,8 @@ if (isset($_POST['accept'])) {
     </div>
 </div>
 <br>
-<table>
-    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score(5)</b></td>
-        <td style='width: 200px;'><b>Registration Certificate</b></td>
-        <td style='width: 200px;'><b>License</b></td>
-        <td style='width: 200px;'><b>AADHAR</b></td>
-    </tr>"
-    <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
-        //output a row here
-        $rc=$row_users['doc_rc'];
-        $li=$row_users['doc_li'];
-        $aa=$row_users['doc_aa'];
-        $uid=$row_users['uid'];
-        $rc_s=$row_users['doc_rc_s'];
-        $li_s=$row_users['doc_li_s'];
-        $aa_s=$row_users['doc_aa_s'];
-        $rc_c=$row_users['doc_rc_c'];
-        $li_c=$row_users['doc_li_c'];
-        $aa_c=$row_users['doc_aa_c'];
-        if(isset($rc_c)&&isset($li_c)&&isset($aa_c))
-            continue;
-        $str_rc='';
-        $str_li='';
-        $str_aa='';
-        if($rc_s=='2')$str_rc='checked';
-        if($li_s=='2')$str_li='checked';
-        if($aa_s=='2')$str_aa='checked';;
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td>
-<td style='width: 200px;height:200px;'>";if(isset($rc)&&!isset($rc_c)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)&&!isset($li_c)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-<td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)&&!isset($aa_c)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-</tr>";
-        ;}
-    ?>
-</table>
+<input type=text size=16 placeholder="Tracking Code" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
+<input type=button value="Go" disabled>
 <script>
     $(document).ready(function(){
         // when the user clicks on switch
@@ -289,19 +258,29 @@ if (isset($_POST['accept'])) {
 <!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
 <script src="js/jquery.style.switcher.js"></script>
 <script>
-    $(function(){
-        $('#colour-variations ul').styleSwitcher({
-            defaultThemeId: 'theme-switch',
-            hasPreview: false,
-            cookie: {
-                expires: 30,
-                isManagingLoad: true
-            }
-        });
-        $('.option-toggle').click(function() {
-            $('#colour-variations').toggleClass('sleep');
-        });
-    });
+
+
+    function openQRCamera(node) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            node.value = "";
+            qrcode.callback = function(res) {
+                if(res instanceof Error) {
+                    alert("No QR code found. Please make sure the QR code is within the camera's frame and try again.");
+                } else {
+                    node.parentNode.previousElementSibling.value = res;
+                }
+            };
+            qrcode.decode(reader.result);
+        };
+        reader.readAsDataURL(node.files[0]);
+    }
+
+    function showQRIntro() {
+        return confirm("Use your camera to take a picture of a QR code.");
+    }
+
+
 </script>
 <!-- End demo purposes only -->
 
