@@ -270,7 +270,7 @@ if (isset($_GET['logout'])) {
             </div>
             <div class="col-md-12">
                 <div class="row row-bottom-padded-lg">
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t1.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Richa</h3>
@@ -284,7 +284,7 @@ if (isset($_GET['logout'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t2.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Saad</h3>
@@ -298,7 +298,7 @@ if (isset($_GET['logout'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Bhoomika</h3>
@@ -312,7 +312,7 @@ if (isset($_GET['logout'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Bhoomika</h3>
@@ -326,7 +326,7 @@ if (isset($_GET['logout'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Bhoomika</h3>
@@ -340,7 +340,7 @@ if (isset($_GET['logout'])) {
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 text-center to-animate">
+                    <div class="col-md-2 text-center to-animate">
                         <div class="person">
                             <img src="images/t4.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Megha</h3>
