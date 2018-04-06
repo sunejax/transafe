@@ -238,6 +238,8 @@ if(isset($_POST['uploadFile_aa'])) {
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
                         <h3><b>Hey! </b><?echo$_SESSION['r']['name']?></h3>
+                        <h3><b>DL</b><?echo$_SESSION['r']['li_pl']?></h3>
+
                     </div>
                 </div>
             </div>
