@@ -210,8 +210,13 @@ $results=mysqli_query($db,$q);
     </div>
 </div>
 <br>
-<input type=text size=16 placeholder="Tracking Code" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
-<input type=button value="Go" disabled>
+<div class="row">
+    <div class="col-md-2 col-md-offset-5" >
+        <input type=text size=16 placeholder="License Plate" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
+        <input type=button value="Go" disabled>
+    </div>
+</div>
+
 <script>
     $(document).ready(function(){
         // when the user clicks on switch
