@@ -275,7 +275,6 @@ if (isset($_GET['logout'])) {
                             <img src="images/t1.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Richa</h3>
                             <div class="position">Web Developer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -289,7 +288,6 @@ if (isset($_GET['logout'])) {
                             <img src="images/t2.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Saad</h3>
                             <div class="position">Web Developer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -303,7 +301,6 @@ if (isset($_GET['logout'])) {
                             <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Bhoomika</h3>
                             <div class="position">Web Designer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -314,10 +311,9 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="col-md-2 text-center to-animate">
                         <div class="person">
-                            <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
-                            <h3 class="name">Bhoomika</h3>
+                            <img src="images/t5.jpg" class="img-responsive img-rounded" alt="Person">
+                            <h3 class="name">Astha</h3>
                             <div class="position">Web Designer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -328,10 +324,9 @@ if (isset($_GET['logout'])) {
                     </div>
                     <div class="col-md-2 text-center to-animate">
                         <div class="person">
-                            <img src="images/t3.jpg" class="img-responsive img-rounded" alt="Person">
-                            <h3 class="name">Bhoomika</h3>
+                            <img src="images/t6.jpg" class="img-responsive img-rounded" alt="Person">
+                            <h3 class="name">Disha</h3>
                             <div class="position">Web Designer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
@@ -345,7 +340,6 @@ if (isset($_GET['logout'])) {
                             <img src="images/t4.jpg" class="img-responsive img-rounded" alt="Person">
                             <h3 class="name">Megha</h3>
                             <div class="position">Photographer</div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
                             <ul class="social social-circle">
                                 <li><a href="#"><i class="icon-twitter"></i></a></li>
                                 <li><a href="#"><i class="icon-linkedin"></i></a></li>
