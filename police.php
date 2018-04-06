@@ -211,7 +211,7 @@ $results=mysqli_query($db,$q);
 </div>
 <br>
 <div class="row">
-    <div class="col-md-2 col-md-offset-5" >
+    <div class="col-md-3 col-md-offset-5" >
         <input type=text size=16 placeholder="License Plate" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
         <input type=button value="Go" disabled>
     </div>
