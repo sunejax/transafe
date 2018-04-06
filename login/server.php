@@ -19,12 +19,13 @@ if (isset($_POST['reg_user'])) {
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
     $em_no=mysqli_real_escape_string($db,$_POST['em_no']);
-
+    $li_pl=mysqli_real_escape_string($db,$_POST['li_pl']);
     // form validation: ensure that the form is correctly filled
     if (empty($name)) { array_push($errors, "Name is required"); }
     if (empty($email)) { array_push($errors, "Email is required"); }
     if (empty($password_1)) { array_push($errors, "Password is required"); }
     if (empty($em_no)) { array_push($errors, "Emergency Contact is required"); }
+    if (empty($li_pl)) { array_push($errors, "License Plate is required"); }
     if ($password_1 != $password_2) {array_push($errors, "The two passwords do not match");}
 
     $q="SELECT * FROM user WHERE email='$email'";
@@ -34,8 +35,8 @@ if (isset($_POST['reg_user'])) {
     // register user if there are no errors in the form
     if (count($errors) == 0) {
         $password = md5($password_1);//encrypt the password before saving in the database
-        $query = "INSERT INTO user (name, email, password,em_no) 
-					  VALUES('$name', '$email', '$password','$em_no')";
+        $query = "INSERT INTO user (name, email, password,em_no,li_pl) 
+					  VALUES('$name', '$email', '$password','$em_no','$li_pl')";
         mysqli_query($db, $query);
 
 

@@ -65,6 +65,10 @@
                     <input class="input100" type="text" name="em_no">
                     <span class="focus-input100" data-placeholder="Emergency Contact"></span>
                 </div>
+                <div class="wrap-input100 validate-input" data-validate="Enter License Plate">
+                    <input class="input100" type="text" name="li_pl">
+                    <span class="focus-input100" data-placeholder="License Plate"></span>
+                </div>
 
                 <div class="container-login100-form-btn">
                     <div class="wrap-login100-form-btn">
