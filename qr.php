@@ -6,6 +6,6 @@ if (!isset($_SESSION['username'])) {
     header('location: login/login.php');
 
 }
-$str=$_SESSION['r']['name'].' '.$_SESSION['r']['em_no'].' '.$_SESSION['r']['em_msg'];
+$str=$_SESSION['r']['pl_key'];
 QRcode::png($str);
 ?>
