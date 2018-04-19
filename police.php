@@ -184,8 +184,8 @@ $results=mysqli_query($db,$q);
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="history.php"><span>History</span></a></li>
-                    <li class="active" ><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
+<!--                    <li><a href="history.php"><span>History</span></a></li>-->
+                    <li class="active" ><a href="police.php"><?php echo $_SESSION['username']; ?></a></li>
                     <li><a href="police.php?logout='1'">Sign out</a></li>
                 </ul>
             </div>
@@ -217,40 +217,7 @@ $results=mysqli_query($db,$q);
     </div>
 </div>
 
-<script>
-    $(document).ready(function(){
-        // when the user clicks on switch
-        $(".switcher").change(function(){
-            var postid = $(this).attr('id');
-            var point=$(this).attr('data-point');
-            var na=$(this).attr('name');
-            if($(this).is(":checked")) {
-                $.ajax({
-                    url: 'rto.php',
-                    type: 'post',
-                    data: {
-                        'accept': 1,
-                        'postid': postid,
-                        'name':na,
-                        'point':point
-                    }
-                });
-            }
-            else
-            {$.ajax({
-                url: 'rto.php',
-                type: 'post',
-                data: {
-                    'accept': 2,
-                    'postid': postid,
-                    'name':na,
-                    'point':point
-                }
-            });
-            }
-        });
-    });
-</script>
+
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
