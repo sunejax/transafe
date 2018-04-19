@@ -8,14 +8,25 @@ if (!isset($_SESSION['username'])) {
 
 }
 
+if (isset($_POST['poli_sub'])) {
+
+
+}
+
+
 
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c, score from user WHERE ad_rights is NULL ";
-$results=mysqli_query($db,$q);
+
+
+if (isset($_POST['poli_sub'])) {
+    $q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c, score from user WHERE pl_key= ";
+    $results=mysqli_query($db,$q);
+
+}
 
 ?>
 <html>
@@ -211,10 +222,10 @@ $results=mysqli_query($db,$q);
 </div>
 <br>
 <div class="row">
-    <div class="col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-2" >
-        <input type=text size=16 placeholder="License Plate" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
-        <input type=button value="Go" disabled>
-    </div>
+    <form class="col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-2" method="post" action="police.php">
+        <input type=text size=16 placeholder="License Plate" class=qrcode-text name="li_id"><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
+        <input type=submit value="Go" name="poli_sub">
+    </form>
 </div>
 
 
