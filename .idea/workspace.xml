@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,28 +54,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/server.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="-568">
               <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="241" column="22" lean-forward="true" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
+            <state relative-caret-position="245">
+              <caret line="245" column="14" lean-forward="true" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="14" />
               <folding>
-                <marker date="1522580964410" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-                <marker date="1522580964410" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <marker date="1523019819543" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+                <marker date="1523019819543" expanded="true" signature="2613:2673" ph="UPDATE user... " />
               </folding>
             </state>
           </provider>
@@ -215,7 +222,6 @@
         <option value="$PROJECT_DIR$/qr.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/console.sql" />
-        <option value="$PROJECT_DIR$/profile.php" />
         <option value="25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/schema/transafe/table/user.sql" />
         <option value="$PROJECT_DIR$/quiz.php" />
         <option value="$PROJECT_DIR$/history.php" />
@@ -225,6 +231,7 @@
         <option value="$PROJECT_DIR$/police.php" />
         <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/login/server.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
       </list>
     </option>
   </component>
@@ -327,23 +334,22 @@
       <workItem from="1522494386551" duration="15291000" />
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
-      <workItem from="1522950316452" duration="9289000" />
+      <workItem from="1522950316452" duration="10049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149934000" />
+    <option name="totallyTimeSpent" value="150694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.329806" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4909091" visible="true" weight="0.20282187" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4909091" visible="true" weight="0.20282187" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32804233" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -509,13 +515,22 @@
         <state relative-caret-position="198">
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
-            <marker date="1522580964410" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1523019819543" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="2613:2673" ph="UPDATE user... " />
           </folding>
         </state>
       </provider>
@@ -738,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -761,17 +769,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="241" column="22" lean-forward="true" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
+        <state relative-caret-position="245">
+          <caret line="245" column="14" lean-forward="true" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="14" />
           <folding>
-            <marker date="1522580964410" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1522580964410" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1523019819543" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1523019819543" expanded="true" signature="2613:2673" ph="UPDATE user... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
         </state>
       </provider>
     </entry>
