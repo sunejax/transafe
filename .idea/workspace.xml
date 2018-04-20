@@ -102,8 +102,8 @@
       <file leaf-file-name="police.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/police.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="263" column="18" lean-forward="true" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+            <state relative-caret-position="262">
+              <caret line="273" column="18" lean-forward="true" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -347,15 +347,16 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="10148000" />
+      <workItem from="1524152205646" duration="10403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160842000" />
+    <option name="totallyTimeSpent" value="161097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
@@ -823,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/police.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="263" column="18" lean-forward="true" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
+        <state relative-caret-position="262">
+          <caret line="273" column="18" lean-forward="true" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
         </state>
       </provider>
     </entry>
