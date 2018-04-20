@@ -20,9 +20,10 @@ if (isset($_GET['logout'])) {
 if (isset($_POST['poli_sub'])) {
     $li_id=$_POST['li_id'];
     $q="Select * from user WHERE pl_key= '$li_id'";
-   // $q="UPDATE user set ad_rights=65465 WHERE pl_key= '$li_id'";
+    // $q="UPDATE user set ad_rights=65465 WHERE pl_key= '$li_id'";
     $results=mysqli_query($db,$q);
     $row = $results->fetch_array(MYSQLI_ASSOC);
+    $email=$row['email'];
 }
 
 ?>
@@ -192,7 +193,7 @@ if (isset($_POST['poli_sub'])) {
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-<!--                    <li><a href="history.php"><span>History</span></a></li>-->
+                    <!--                    <li><a href="history.php"><span>History</span></a></li>-->
                     <li class="active" ><a href="police.php"><?php echo $_SESSION['username']; ?></a></li>
                     <li><a href="police.php?logout='1'">Sign out</a></li>
                 </ul>
@@ -225,8 +226,37 @@ if (isset($_POST['poli_sub'])) {
     </form>
 </div>
 <div class="row">
-    <? echo $row['name'];
-        ?>
+    <?
+    if(isset($row))
+        echo "<div id=\"fh5co-features\" data-section=\"features\">
+    <div class=\"container\">
+        <div class=\"row row-bottom-padded-sm\">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
+                    <h3>Email</h3>
+                    <p>$email</p>
+                </div>
+            </div>
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-icon\"><i class=\"icon-eye\"></i></div>
+                <div class=\"fh5co-desc\">
+                    <h3>Emergency Contact</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
+                <div class=\"fh5co-desc\">
+                    <h3>Emergency Message</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class=\"clearfix visible-sm-block visible-xs-block\"></div>
+        </div>
+    </div>
+</div>";
+
+    ?>
 </div>
 
 
