@@ -210,7 +210,7 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
-    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score(5)</b></td>
+    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score(5)</b></td><td><b>License Plate</b></td>
         <td style='width: 200px;'><b>Registration Certificate</b></td>
         <td style='width: 200px;'><b>License</b></td>
         <td style='width: 200px;'><b>AADHAR</b></td>
