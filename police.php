@@ -249,21 +249,18 @@ if (isset($_POST['poli_sub'])) {
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
-                <div class=\"fh5co-icon\"><i class=\"icon-eye\"></i></div>
                 <div class=\"fh5co-desc\">
                     <h3>Emergency Contact</h3>
                     <p>$em_no</p>
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
-                <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
                 <div class=\"fh5co-desc\">
                     <h3>Emergency Message</h3>
                     <p>$em_msg</p>
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
-                <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
                 <div class=\"fh5co-desc\">
                     <h3>Score</h3>
                     <p>$score</p>

@@ -102,8 +102,8 @@
       <file leaf-file-name="police.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/police.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="254" column="14" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="14" />
+            <state relative-caret-position="352">
+              <caret line="263" column="18" lean-forward="true" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -347,12 +347,12 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="9775000" />
+      <workItem from="1524152205646" duration="10148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160469000" />
+    <option name="totallyTimeSpent" value="160842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -766,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -821,10 +814,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/police.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="254" column="14" selection-start-line="254" selection-start-column="14" selection-end-line="254" selection-end-column="14" />
+        <state relative-caret-position="352">
+          <caret line="263" column="18" lean-forward="true" selection-start-line="263" selection-start-column="18" selection-end-line="263" selection-end-column="18" />
         </state>
       </provider>
     </entry>
