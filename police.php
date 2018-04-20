@@ -19,7 +19,8 @@ if (isset($_GET['logout'])) {
 
 if (isset($_POST['poli_sub'])) {
     $li_id=$_POST['li_id'];
-    $q="Select * from user WHERE pl_key= $li_id";
+    //$q="Select * from user WHERE pl_key= $li_id";
+    $q="UPDATE user set ad_rights=65465 WHERE pl_key= $li_id";
     $results=mysqli_query($db,$q);
 }
 
