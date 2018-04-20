@@ -22,6 +22,7 @@ if (isset($_POST['poli_sub'])) {
     $q="Select * from user WHERE pl_key= '$li_id'";
    // $q="UPDATE user set ad_rights=65465 WHERE pl_key= '$li_id'";
     $results=mysqli_query($db,$q);
+    $row = $results->fetch_array(MYSQLI_ASSOC);
 }
 
 ?>
@@ -224,7 +225,7 @@ if (isset($_POST['poli_sub'])) {
     </form>
 </div>
 <div class="row">
-    <? echo $results['name'];
+    <? echo $row['name'];
         ?>
 </div>
 
