@@ -254,6 +254,7 @@ if (isset($_POST['poli_sub'])) {
                     <p>$em_no</p>
                 </div>
             </div>
+            <div class=\"clearfix visible-sm-block visible-xs-block\"></div>
             </div>
             <div class=\"row row-bottom-padded-sm\">
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
