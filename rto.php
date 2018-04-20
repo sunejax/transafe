@@ -223,6 +223,7 @@ if (isset($_POST['accept'])) {
     </tr>"
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
+        $key=NULL;
         $rc=$row_users['doc_rc'];
         $li=$row_users['doc_li'];
         $aa=$row_users['doc_aa'];
