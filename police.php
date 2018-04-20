@@ -236,7 +236,7 @@ if (isset($_POST['poli_sub'])) {
         echo "<div id=\"fh5co-features\" data-section=\"features\">
     <div class=\"container\">
         <div class=\"row row-bottom-padded-sm\">
-            <div class=\"col - md - 4 col - sm - 6 col - xs - 6 col - xxs - 12 fh5co - service to - animate\">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
                 <div class=\"fh5co - desc\">
                     <h3>Name</h3>
                     <p>$name</p>
