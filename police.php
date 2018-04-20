@@ -8,11 +8,6 @@ if (!isset($_SESSION['username'])) {
 
 }
 
-if (isset($_POST['poli_sub'])) {
-
-
-}
-
 
 
 if (isset($_GET['logout'])) {
@@ -23,9 +18,9 @@ if (isset($_GET['logout'])) {
 
 
 if (isset($_POST['poli_sub'])) {
-    $q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c, score from user WHERE pl_key= ";
+    $li_id=$_POST['li_id'];
+    $q="Select * from user WHERE pl_key= $li_id";
     $results=mysqli_query($db,$q);
-
 }
 
 ?>
@@ -227,6 +222,12 @@ if (isset($_POST['poli_sub'])) {
         <input type=submit value="Go" name="poli_sub">
     </form>
 </div>
+<div class="row">
+    <? if(isset($results))
+        echo $results['name'];
+        ?>
+</div>
+
 
 
 <!-- jQuery Easing -->
