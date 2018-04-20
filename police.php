@@ -223,8 +223,7 @@ if (isset($_POST['poli_sub'])) {
     </form>
 </div>
 <div class="row">
-    <? if(isset($results))
-        echo $results['name'];
+    <? echo $results['name'];
         ?>
 </div>
 
