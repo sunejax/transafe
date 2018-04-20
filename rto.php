@@ -16,6 +16,12 @@ if (isset($_GET['logout'])) {
 }
 $q="Select * from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
+$rtoq="Select * from rtotb";
+$rtor=mysqli_query($db,$rtoq);
+$rtorow=array();
+while($line = $rtor->fetch_array(MYSQLI_ASSOC)){
+    $rtorow[] = $line;
+}
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
     $name=$_POST['name'];
@@ -221,6 +227,8 @@ if (isset($_POST['accept'])) {
         $li=$row_users['doc_li'];
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
+        $li_pl=$row_users['li_pl'];
+        $key = array_search($li_pl, array_column($rtorow, 'li_pl'));
         $rc_s=$row_users['doc_rc_s'];
         $li_s=$row_users['doc_li_s'];
         $aa_s=$row_users['doc_aa_s'];
@@ -239,7 +247,9 @@ if (isset($_POST['accept'])) {
 <td style='width: 200px;height:200px;'>";if(isset($rc)&&!isset($rc_c)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)&&!isset($li_c)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)&&!isset($aa_c)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
-</tr>";
+</tr>
+";if(isset($key))echo"
+<tr><td>".($rtorow[$key]['name'])."</td><td>".($rtorow[$key]['email'])."</td><td>".($rtorow[$key]['em_no'])."</td><td>".($rtorow[$key]['score'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
         ;}
     ?>
 </table>
