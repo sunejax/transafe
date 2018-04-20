@@ -220,7 +220,7 @@ if (isset($_POST['accept'])) {
         <td style='width: 200px;'><b>Registration Certificate</b></td>
         <td style='width: 200px;'><b>License</b></td>
         <td style='width: 200px;'><b>AADHAR</b></td>
-    </tr>"
+    </tr>
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
         $key=NULL;
