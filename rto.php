@@ -229,7 +229,7 @@ if (isset($_POST['accept'])) {
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
         $li_pl=$row_users['li_pl'];
-        $key = array_search($li_pl, array_column($rtorow, 'li_pl'));
+        $key = array_search('$li_pl', array_column($rtorow, 'li_pl'));
         $rc_s=$row_users['doc_rc_s'];
         $li_s=$row_users['doc_li_s'];
         $aa_s=$row_users['doc_aa_s'];
