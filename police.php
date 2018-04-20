@@ -23,7 +23,12 @@ if (isset($_POST['poli_sub'])) {
     // $q="UPDATE user set ad_rights=65465 WHERE pl_key= '$li_id'";
     $results=mysqli_query($db,$q);
     $row = $results->fetch_array(MYSQLI_ASSOC);
+    $name=$row['name'];
     $email=$row['email'];
+    $em_no=$row['em_no'];
+    $em_msg=$row['em_msg'];
+    $score=$row['score'];
+    $li_pl=$row['li_pl'];
 }
 
 ?>
@@ -231,6 +236,12 @@ if (isset($_POST['poli_sub'])) {
         echo "<div id=\"fh5co-features\" data-section=\"features\">
     <div class=\"container\">
         <div class=\"row row-bottom-padded-sm\">
+            <div class=\"col - md - 4 col - sm - 6 col - xs - 6 col - xxs - 12 fh5co - service to - animate\">
+                <div class=\"fh5co - desc\">
+                    <h3>Name</h3>
+                    <p>$name</p>
+                </div>
+            </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
                 <div class=\"fh5co-desc\">
                     <h3>Email</h3>
@@ -241,14 +252,28 @@ if (isset($_POST['poli_sub'])) {
                 <div class=\"fh5co-icon\"><i class=\"icon-eye\"></i></div>
                 <div class=\"fh5co-desc\">
                     <h3>Emergency Contact</h3>
-                    <p></p>
+                    <p>$em_no</p>
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
                 <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
                 <div class=\"fh5co-desc\">
                     <h3>Emergency Message</h3>
-                    <p></p>
+                    <p>$em_msg</p>
+                </div>
+            </div>
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
+                <div class=\"fh5co-desc\">
+                    <h3>Score</h3>
+                    <p>$score</p>
+                </div>
+            </div>
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-icon\"><i class=\"icon-crop\"></i></div>
+                <div class=\"fh5co-desc\">
+                    <h3>License Plate</h3>
+                    <p>$li_pl</p>
                 </div>
             </div>
             <div class=\"clearfix visible-sm-block visible-xs-block\"></div>
