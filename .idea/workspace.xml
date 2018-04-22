@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/register.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,8 +104,8 @@
       <file leaf-file-name="police.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/police.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="123">
+              <caret line="196" column="56" selection-start-line="196" selection-start-column="56" selection-end-line="196" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -136,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -172,11 +174,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="76" column="35" lean-forward="true" selection-start-line="75" selection-start-column="58" selection-end-line="76" selection-end-column="35" />
+            <state relative-caret-position="364">
+              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -192,7 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>transp</find>
       <find>php</find>
       <find>sed</find>
       <find>work</find>
@@ -200,7 +201,6 @@
       <find>test.p</find>
       <find>te</find>
       <find>mysqli_</find>
-      <find>transafe</find>
       <find>take a tes</find>
       <find>data-theme</find>
       <find>title</find>
@@ -222,6 +222,8 @@
       <find>[r]</find>
       <find>index</find>
       <find>index.html</find>
+      <find>tra</find>
+      <find>transafe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,13 +243,13 @@
         <option value="$PROJECT_DIR$/quiz.php" />
         <option value="$PROJECT_DIR$/history.php" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/qr.php" />
         <option value="$PROJECT_DIR$/login/server.php" />
-        <option value="$PROJECT_DIR$/police.php" />
         <option value="$PROJECT_DIR$/rto.php" />
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/police.php" />
+        <option value="$PROJECT_DIR$/login/register.php" />
       </list>
     </option>
   </component>
@@ -349,15 +351,16 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="17503000" />
+      <workItem from="1524152205646" duration="18395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168197000" />
+    <option name="totallyTimeSpent" value="169089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
@@ -366,7 +369,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4909091" visible="true" weight="0.20282187" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32804233" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24621212" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32804233" />
@@ -740,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="76" column="35" lean-forward="true" selection-start-line="75" selection-start-column="58" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -791,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/police.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -827,6 +816,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="314" column="55" lean-forward="true" selection-start-line="314" selection-start-column="55" selection-end-line="314" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/police.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="196" column="56" selection-start-line="196" selection-start-column="56" selection-end-line="196" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
         </state>
       </provider>
     </entry>
