@@ -217,7 +217,7 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
-    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score(5)</b></td><td><b>License Plate</b></td>
+    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b>Result</b></td><td><b>License Plate</b></td>
         <td style='width: 200px;'><b>Registration Certificate</b></td>
         <td style='width: 200px;'><b>License</b></td>
         <td style='width: 200px;'><b>AADHAR</b></td>
@@ -245,7 +245,7 @@ if (isset($_POST['accept'])) {
         if($rc_s=='2')$str_rc='checked';
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>".($row_users['score'])."</td><td>".($row_users['li_pl'])."</td>
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td>".($row_users['em_no'])."</td><td>";if($row_users['score']>3)echo "Pass"; else echo "Fail"; echo "</td><td>".($row_users['li_pl'])."</td>
 <td style='width: 200px;height:200px;'>";if(isset($rc)&&!isset($rc_c)) echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a><input data-point='doc_rc_c' name='doc_rc_s' class='switcher'  id=$uid data-toggle='toggle' $str_rc data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px;height:200px;'>";if(isset($li)&&!isset($li_c)) echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a><input data-point='doc_li_c' name='doc_li_s' class='switcher' id=$uid data-toggle='toggle' $str_li data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)&&!isset($aa_c)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>

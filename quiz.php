@@ -229,7 +229,13 @@ if(isset($_POST['score'])) {
     }
 
     function returnScore(){
-        alert("Your score is "+ getScore() +"/"+ tot);
+        if(getScore()>3)
+            alert("Your result is: Pass");
+        else
+            alert("Your result is: Fail");
+
+
+
     }
 </script>
 

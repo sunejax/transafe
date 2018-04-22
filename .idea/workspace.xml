@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/genqr.php" beforeDir="false" afterPath="$PROJECT_DIR$/genqr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qr_rto.php" beforeDir="false" afterPath="$PROJECT_DIR$/qr_rto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rto.php" beforeDir="false" afterPath="$PROJECT_DIR$/rto.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,15 +57,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/server.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="40" column="99" selection-start-line="40" selection-start-column="99" selection-end-line="40" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="qr.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qr.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,19 +120,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rto.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rto.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="193" column="20" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="70" />
+            <state relative-caret-position="72">
+              <caret line="247" column="182" selection-start-line="247" selection-start-column="182" selection-end-line="247" selection-end-column="182" />
               <folding>
                 <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <marker date="1524433524410" expanded="true" signature="302:320" ph="Select (name... user" />
-                <marker date="1524433524410" expanded="true" signature="302:344" ph="Select name,... user" />
+                <marker date="1524436190644" expanded="true" signature="302:320" ph="Select (name... user" />
+                <marker date="1524436190644" expanded="true" signature="302:344" ph="Select name,... user" />
               </folding>
             </state>
           </provider>
@@ -161,11 +152,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="genqr.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="genqr.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genqr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="236" column="164" selection-start-line="236" selection-start-column="164" selection-end-line="236" selection-end-column="164" />
+            <state relative-caret-position="324">
+              <caret line="240" column="8" lean-forward="true" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quiz.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="234" column="42" lean-forward="true" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -173,8 +173,8 @@
       <file leaf-file-name="qr_rto.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qr_rto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="198">
+              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -236,7 +236,6 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/console.sql" />
         <option value="25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/schema/transafe/table/user.sql" />
-        <option value="$PROJECT_DIR$/quiz.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/qr.php" />
         <option value="$PROJECT_DIR$/home.php" />
@@ -244,10 +243,11 @@
         <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/login/server.php" />
         <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/rto.php" />
         <option value="$PROJECT_DIR$/history.php" />
-        <option value="$PROJECT_DIR$/qr_rto.php" />
         <option value="$PROJECT_DIR$/genqr.php" />
+        <option value="$PROJECT_DIR$/qr_rto.php" />
+        <option value="$PROJECT_DIR$/quiz.php" />
+        <option value="$PROJECT_DIR$/rto.php" />
       </list>
     </option>
   </component>
@@ -349,12 +349,12 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="20879000" />
+      <workItem from="1524152205646" duration="22485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171573000" />
+    <option name="totallyTimeSpent" value="173179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -369,7 +369,7 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32804233" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.24621212" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.25454545" />
+      <window_info anchor="right" id="Database" order="3" weight="0.25454545" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32804233" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -441,8 +441,8 @@
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1524433524410" expanded="true" signature="302:320" ph="Select (name... user" />
-            <marker date="1524433524410" expanded="true" signature="302:344" ph="Select name,... user" />
+            <marker date="1524436190644" expanded="true" signature="302:320" ph="Select (name... user" />
+            <marker date="1524436190644" expanded="true" signature="302:344" ph="Select name,... user" />
           </folding>
         </state>
       </provider>
@@ -681,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3294">
-          <caret line="183" column="42" selection-start-line="183" selection-start-column="42" selection-end-line="183" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4500">
@@ -754,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -777,6 +763,13 @@
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <marker date="1524433524378" expanded="true" signature="302:377" ph="Select uid,n... user" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -807,31 +800,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qr_rto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genqr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="240" column="8" lean-forward="true" selection-start-line="240" selection-start-column="8" selection-end-line="240" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="234" column="42" lean-forward="true" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="193" column="20" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="70" />
+        <state relative-caret-position="72">
+          <caret line="247" column="182" selection-start-line="247" selection-start-column="182" selection-end-line="247" selection-end-column="182" />
           <folding>
             <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1524433524410" expanded="true" signature="302:320" ph="Select (name... user" />
-            <marker date="1524433524410" expanded="true" signature="302:344" ph="Select name,... user" />
+            <marker date="1524436190644" expanded="true" signature="302:320" ph="Select (name... user" />
+            <marker date="1524436190644" expanded="true" signature="302:344" ph="Select name,... user" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/genqr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="236" column="164" selection-start-line="236" selection-start-column="164" selection-end-line="236" selection-end-column="164" />
         </state>
       </provider>
     </entry>
