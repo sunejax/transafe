@@ -251,7 +251,7 @@ if (isset($_POST['accept'])) {
 <td style='width: 200px;height:200px;'>";else echo "<td style='width: 200px; height:200px;'>";if(isset($aa)&&!isset($aa_c)) echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a><input data-point='doc_aa_c' name='doc_aa_s' class='switcher' id=$uid data-toggle='toggle' $str_aa data-on='Accept' data-width=100 data-height=34 data-off='Decline' data-onstyle='success' data-offstyle='danger' type='checkbox' ></td>
 </tr>
 ";if(isset($key) && $key!==FALSE)echo"
-<tr><td>".($rtorow[$key]['name'])."</td><td>".($rtorow[$key]['email'])."</td><td>".($rtorow[$key]['em_no'])."</td><td>";if($row_users['score']>3)echo "Pass"; else echo "Fail"; echo"</td><td>".($rtorow[$key]['li_pl'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
+<tr><td>".($rtorow[$key]['name'])."</td><td>".($rtorow[$key]['email'])."</td><td>".($rtorow[$key]['em_no'])."</td><td>";if($rtorow[$key]['score']>3)echo "Pass"; else echo "Fail"; echo"</td><td>".($rtorow[$key]['li_pl'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
         }
     ?>
 </table>
