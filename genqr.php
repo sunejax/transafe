@@ -187,6 +187,7 @@ if (isset($_POST['accept'])) {
                     <li class="active" ><a href="rto.php"><?php echo $_SESSION['username']; ?></a></li>
                     <li><a href="genqr.php">Generate QR Codes</a></li>
                     <li><a href="rto.php?logout='1'">Sign out</a></li>
+
                 </ul>
             </div>
         </nav>
