@@ -120,16 +120,17 @@
       <file leaf-file-name="rto.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="261" column="41" lean-forward="true" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+            <state relative-caret-position="260">
+              <caret line="254" column="35" selection-start-line="254" selection-start-column="35" selection-end-line="254" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-                <marker date="1524436755846" expanded="true" signature="302:320" ph="Select (name... user" />
-                <marker date="1524436755846" expanded="true" signature="302:344" ph="Select name,... user" />
+                <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+                <marker date="1524438460716" expanded="true" signature="302:320" ph="Select (name... user" />
+                <marker date="1524438460716" expanded="true" signature="302:344" ph="Select name,... user" />
               </folding>
             </state>
           </provider>
@@ -243,8 +244,8 @@
         <option value="$PROJECT_DIR$/genqr.php" />
         <option value="$PROJECT_DIR$/qr_rto.php" />
         <option value="$PROJECT_DIR$/quiz.php" />
-        <option value="$PROJECT_DIR$/rto.php" />
         <option value="$PROJECT_DIR$/police.php" />
+        <option value="$PROJECT_DIR$/rto.php" />
       </list>
     </option>
   </component>
@@ -346,16 +347,15 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="24703000" />
+      <workItem from="1524152205646" duration="24969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175397000" />
+    <option name="totallyTimeSpent" value="175663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
@@ -438,8 +438,9 @@
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1524436755846" expanded="true" signature="302:320" ph="Select (name... user" />
-            <marker date="1524436755846" expanded="true" signature="302:344" ph="Select name,... user" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <marker date="1524438460716" expanded="true" signature="302:320" ph="Select (name... user" />
+            <marker date="1524438460716" expanded="true" signature="302:344" ph="Select name,... user" />
           </folding>
         </state>
       </provider>
@@ -818,16 +819,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="261" column="41" lean-forward="true" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+        <state relative-caret-position="260">
+          <caret line="254" column="35" selection-start-line="254" selection-start-column="35" selection-end-line="254" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#td#4;n#tr#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <marker date="1524436755846" expanded="true" signature="302:320" ph="Select (name... user" />
-            <marker date="1524436755846" expanded="true" signature="302:344" ph="Select name,... user" />
+            <element signature="n#style#0;n#tr#0;n#!!top" expanded="true" />
+            <marker date="1524438460716" expanded="true" signature="302:320" ph="Select (name... user" />
+            <marker date="1524438460716" expanded="true" signature="302:344" ph="Select name,... user" />
           </folding>
         </state>
       </provider>

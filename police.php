@@ -239,85 +239,85 @@ if (isset($_POST['poli_sub'])) {
 <div class="row">
     <?
     if(isset($row)){
-        echo '<div id="fh5co-features" data-section="features">
-    <div class="container">
-        <div class="row row-bottom-padded-sm">
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+        echo "<div id=\"fh5co-features\" data-section=\"features\">
+    <div class=\"container\">
+        <div class=\"row row-bottom-padded-sm\">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Name</h3>
                     <p>$name</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Email</h3>
                     <p>$email</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Emergency Contact</h3>
                     <p>$em_no</p>
                 </div>
             </div>
-            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class=\"clearfix visible-sm-block visible-xs-block\"></div>
             </div>
-            <div class="row row-bottom-padded-sm">
+            <div class=\"row row-bottom-padded-sm\">
             
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Score</h3>
                     <p>$score</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>License Plate</h3>
                     <p>$li_pl</p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Emergency Message</h3>
                     <p>$em_msg</p>
                 </div>
             </div>
             
-            <div class="clearfix visible-sm-block visible-xs-block"></div>
+            <div class=\"clearfix visible-sm-block visible-xs-block\"></div>
             </div>
-            <div class="row row-bottom-padded-sm">
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"row row-bottom-padded-sm\">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>Registration Certificate</h3>
-                    ';if($doc_rc_s==1) echo'<p>Unverified</p>';
-                    else if ($doc_rc_s==2)echo'<p>Accepted</p>';
-                    else if ($doc_rc_s==3)echo '<p>Declined</p>';
-                    echo'
+                    ";if($doc_rc_s==1) echo"<p>Unverified</p>";
+                    else if ($doc_rc_s==2)echo"<p>Accepted</p>";
+                    else if ($doc_rc_s==3)echo "<p>Declined</p>";
+                    echo"
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>License</h3>
-                    ';if($doc_li_s==1) echo'<p>Unverified</p>';
-                    else if ($doc_li_s==2)echo'<p>Accepted</p>';
-                    else if ($doc_li_s==3)echo '<p>Declined</p>';
-                    echo'
+                    ";if($doc_li_s==1) echo"<p>Unverified</p>";
+                    else if ($doc_li_s==2)echo"<p>Accepted</p>";
+                    else if ($doc_li_s==3)echo "<p>Declined</p>";
+                    echo"
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate">
-                <div class="fh5co-desc">
+            <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
+                <div class=\"fh5co-desc\">
                     <h3>AADHAR</h3>
-                    ';if($doc_aa_s==1) echo'<p>Unverified</p>';
+                    ";if($doc_aa_s==1) echo'<p>Unverified</p>';
                     else if ($doc_aa_s==2)echo'<p>Accepted</p>';
                     else if ($doc_aa_s==3)echo '<p>Declined</p>';
-                    echo'
+                    echo"
                 </div>
             </div>
             </div>
             
         </div>
     </div>
-</div>';}
+</div>";}
 
     ?>
 </div>
