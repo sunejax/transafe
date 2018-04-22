@@ -212,11 +212,7 @@ if (isset($_POST['accept'])) {
 </div>
 <br>
 <table>
-    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Emergency Contact</b></td><td><b> Score(5)</b></td>
-        <td style='width: 200px;'><b>Registration Certificate</b></td>
-        <td style='width: 200px;'><b>License</b></td>
-        <td style='width: 200px;'><b>AADHAR</b></td>
-    </tr>"
+    <tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Generate QR Code</b></td></tr>
     <? while ($row_users = $results->fetch_array(MYSQLI_ASSOC)) {
         //output a row here
         $rc=$row_users['doc_rc'];
