@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="9e62fa36-63b0-410c-a91a-5cc524b55690" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,8 +175,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+            <state relative-caret-position="202">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
@@ -351,16 +349,15 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="18395000" />
+      <workItem from="1524152205646" duration="18700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169089000" />
+    <option name="totallyTimeSpent" value="169394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5090909" side_tool="true" weight="0.20397112" />
@@ -828,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="202">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>

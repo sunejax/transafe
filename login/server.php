@@ -19,6 +19,7 @@ if (isset($_POST['reg_user'])) {
     $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
     $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
     $em_no=mysqli_real_escape_string($db,$_POST['em_no']);
+    $em_ms=mysqli_real_escape_string($db,$_POST['em_ms']);
     $li_pl=mysqli_real_escape_string($db,$_POST['li_pl']);
     // form validation: ensure that the form is correctly filled
     if (empty($name)) { array_push($errors, "Name is required"); }
@@ -36,8 +37,8 @@ if (isset($_POST['reg_user'])) {
     if (count($errors) == 0) {
         $activation = md5(uniqid(rand(), true));
         $password = md5($password_1);//encrypt the password before saving in the database
-        $query = "INSERT INTO user (name, email, password,em_no,li_pl,pl_key) 
-					  VALUES('$name', '$email', '$password','$em_no','$li_pl','$activation')";
+        $query = "INSERT INTO user (name, email, password,em_no,li_pl,pl_key,em_msg) 
+					  VALUES('$name', '$email', '$password','$em_no','$li_pl','$activation','$em_ms')";
         mysqli_query($db, $query);
 
 

@@ -70,7 +70,7 @@
                     <span class="focus-input100" data-placeholder="License Plate"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate="Enter the Emergency Message">
+                <div class="wrap-input100" data-validate="Enter the Emergency Message">
                     <textarea rows="4" cols="50" class="input100" type="text" name="em_ms"></textarea>
                     <span class="focus-input100" data-placeholder="Emergency Message"></span>
                 </div>
