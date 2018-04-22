@@ -252,7 +252,7 @@ if (isset($_POST['accept'])) {
 </tr>
 ";if(isset($key) && $key!==FALSE)echo"
 <tr><td>".($rtorow[$key]['name'])."</td><td>".($rtorow[$key]['email'])."</td><td>".($rtorow[$key]['em_no'])."</td><td>";if($row_users['score']>3)echo "Pass"; else echo "Fail"; echo"</td><td>".($rtorow[$key]['li_pl'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
-        ;}
+        }
     ?>
 </table>
 <script>
