@@ -14,7 +14,7 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: login/login.php");
 }
-$q="Select uid,name,email,em_no,doc_rc,doc_li,doc_aa,doc_rc_s,doc_li_s,doc_aa_s, doc_rc_c,doc_li_c,doc_aa_c,score from user WHERE ad_rights is NULL ";
+$q="Select * from user WHERE ad_rights is NULL ";
 $results=mysqli_query($db,$q);
 if (isset($_POST['accept'])) {
     $postid = $_POST['postid'];
@@ -219,6 +219,7 @@ if (isset($_POST['accept'])) {
         $li=$row_users['doc_li'];
         $aa=$row_users['doc_aa'];
         $uid=$row_users['uid'];
+        $pl_key=$row_users['pl_key'];
         $rc_s=$row_users['doc_rc_s'];
         $li_s=$row_users['doc_li_s'];
         $aa_s=$row_users['doc_aa_s'];
@@ -233,7 +234,7 @@ if (isset($_POST['accept'])) {
         if($rc_s=='2')$str_rc='checked';
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td><form method='post' action='qr_rto.php'><button type='submit'>Generate QR Code</button></form></td></tr>";
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td><form method='post' action='qr_rto.php'><input type='hidden' value='$pl_key' name='rto_pl_key' readonly ><button type='submit'>Generate QR Code</button></form></td></tr>";
         ;}
     ?>
 </table>

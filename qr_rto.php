@@ -6,6 +6,7 @@ if (!isset($_SESSION['username'])) {
     header('location: login/login.php');
 
 }
-$str=
+
+$str=$_POST['rto_pl_key'];
 QRcode::png($str);
 ?>
