@@ -149,14 +149,14 @@ if(isset($_POST['score'])) {
     <h2>Choose Vehicle Type</h2>
 </div>
 <div class="row" style="display:inline-block">
-    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
+    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12">
         <form method="post" action="quiz_2w.php">
             <button class="btn btn-primary btn-lg" type="submit">
                 Two Wheeler
             </button>
         </form>
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
+    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12">
         <form method="post" action="quiz_4w.php">
             <button class="btn btn-primary btn-lg " type="submit">
                 Four Wheeler
