@@ -54,11 +54,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="300" column="12" selection-start-line="300" selection-start-column="12" selection-end-line="300" selection-end-column="88" />
+            <state relative-caret-position="393">
+              <caret line="279" column="117" selection-start-line="279" selection-start-column="117" selection-end-line="279" selection-end-column="117" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -69,13 +69,13 @@
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <marker date="1524432976684" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-                <marker date="1524432976684" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+                <marker date="1524461006711" expanded="true" signature="2613:2673" ph="UPDATE user... " />
               </folding>
             </state>
           </provider>
@@ -135,8 +135,8 @@
       <file leaf-file-name="genqr.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genqr.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="239" column="8" selection-start-line="239" selection-start-column="8" selection-end-line="239" selection-end-column="8" />
+            <state relative-caret-position="108">
+              <caret line="236" column="202" selection-start-line="236" selection-start-column="202" selection-end-line="236" selection-end-column="236" />
             </state>
           </provider>
         </entry>
@@ -163,7 +163,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz_4w.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quiz_4w.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quiz_4w.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -243,7 +243,6 @@
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/login/server.php" />
-        <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/history.php" />
         <option value="$PROJECT_DIR$/qr_rto.php" />
         <option value="$PROJECT_DIR$/police.php" />
@@ -252,6 +251,7 @@
         <option value="$PROJECT_DIR$/rto.php" />
         <option value="$PROJECT_DIR$/quiz_2w.php" />
         <option value="$PROJECT_DIR$/quiz_4w.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
       </list>
     </option>
   </component>
@@ -353,12 +353,12 @@
       <workItem from="1522610491261" duration="681000" />
       <workItem from="1522626783744" duration="1638000" />
       <workItem from="1522950316452" duration="10049000" />
-      <workItem from="1524152205646" duration="29824000" />
+      <workItem from="1524152205646" duration="30169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180518000" />
+    <option name="totallyTimeSpent" value="180863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="700" extended-state="6" />
@@ -503,13 +503,13 @@
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1524432976684" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="2613:2673" ph="UPDATE user... " />
           </folding>
         </state>
       </provider>
@@ -759,31 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="300" column="12" selection-start-line="300" selection-start-column="12" selection-end-line="300" selection-end-column="88" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <marker date="1524432976684" expanded="true" signature="1195:1219" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1221" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1249" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1250" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1195:1255" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="1904:1966" ph="UPDATE user... " />
-            <marker date="1524432976684" expanded="true" signature="2613:2673" ph="UPDATE user... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -792,13 +767,6 @@
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/genqr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="239" column="8" selection-start-line="239" selection-start-column="8" selection-end-line="239" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -819,13 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quiz_2w.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -837,6 +798,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/16a8684/25b570c9-920d-4ba0-b8e7-ec4c2307f3ef/transafe.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genqr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="236" column="202" selection-start-line="236" selection-start-column="202" selection-end-line="236" selection-end-column="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="279" column="117" selection-start-line="279" selection-start-column="117" selection-end-line="279" selection-end-column="117" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <marker date="1524461006711" expanded="true" signature="1195:1219" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1221" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1249" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1250" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1195:1255" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="1904:1966" ph="UPDATE user... " />
+            <marker date="1524461006711" expanded="true" signature="2613:2673" ph="UPDATE user... " />
+          </folding>
         </state>
       </provider>
     </entry>
