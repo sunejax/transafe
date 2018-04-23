@@ -253,7 +253,7 @@ if (isset($_POST['accept'])) {
 ";
 if(isset($key) && $key!==FALSE){echo"
 <tr style='background-color: yellow'><td>".($rtorow[$key]['name'])."</td><td>".($rtorow[$key]['email'])."</td><td>".($rtorow[$key]['em_no'])."</td><td>";
-if($rtorow[$key]['score']>3)echo "Pass"; else echo "Fail"; echo"</td><td>".($rtorow[$key]['li_pl'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
+if($rtorow[$key]['score']>3)echo "Pass"; else echo "Fail"; echo"</td><td>";if($rtorow[$key]['score_4w']>3)echo "Pass"; else echo "Fail"; echo"</td><td>".($rtorow[$key]['li_pl'])."</td><td>".($rtorow[$key]['doc_rc'])."</td><td>".($rtorow[$key]['doc_li'])."</td><td>".($rtorow[$key]['doc_aa'])."</td></tr>";
         }}
     ?>
 </table>
