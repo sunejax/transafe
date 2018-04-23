@@ -233,7 +233,7 @@ if (isset($_POST['poli_sub'])) {
 <div class="row" style="text-align: center">
     <form class="col-md-3 col-md-offset-5 col-sm-3 col-sm-offset-2" method="post" action="police.php">
         <input type=text size=16 placeholder="License Plate" class=qrcode-text name="li_id"><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
-        <button class="btn btn-primary btn-lg" type=submit name="poli_sub">GO</button>
+        <button class="btn btn-primary btn-md" type=submit name="poli_sub">GO</button>
     </form>
 </div>
 <div class="row">
