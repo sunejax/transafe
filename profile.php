@@ -277,7 +277,7 @@ if(isset($_POST['uploadFile_aa'])) {
                             if($_SESSION['r']['doc_rc_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                             else if ($_SESSION['r']['doc_rc_s']==2)echo "<p style='color: green;'>Accepted</p>";
                             else if ($_SESSION['r']['doc_rc_s']==3)echo "<p style='color: Red;'>Declined</p>";}
-                            echo "<input type='file' name='fileToUpload_rc'><input type='submit' name='uploadFile_rc' value='Upload'>";
+                            echo "<input type='file' name='fileToUpload_rc'><input class=\"btn btn-primary btn-lg \"  type='submit' name='uploadFile_rc' value='Upload'>";
                             ?>
                         </div>
                     </form>
@@ -292,7 +292,7 @@ if(isset($_POST['uploadFile_aa'])) {
                             if($_SESSION['r']['doc_li_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                             else if ($_SESSION['r']['doc_li_s']==2)echo "<p style='color: green;'>Accepted</p>";
                             else if ($_SESSION['r']['doc_li_s']==3)echo "<p style='color: Red;'>Declined</p>";}
-                            echo "<input type='file' name='fileToUpload_li'><input type='submit' name='uploadFile_li' value='Upload'>";
+                            echo "<input type='file' name='fileToUpload_li'><input class=\"btn btn-primary btn-lg \" type='submit' name='uploadFile_li' value='Upload'>";
                             ?>
                         </div>
                     </form>
@@ -307,7 +307,7 @@ if(isset($_POST['uploadFile_aa'])) {
                             if($_SESSION['r']['doc_aa_s']==1)echo "<p style='color: yellow;'>Under Review</p>";
                             else if ($_SESSION['r']['doc_aa_s']==2)echo "<p style='color: green;'>Accepted</p>";
                             else if ($_SESSION['r']['doc_aa_s']==3)echo "<p style='color: Red;'>Declined</p>";}
-                            echo "<input type='file' name='fileToUpload_aa'><input type='submit' name='uploadFile_aa' value='Upload'>";
+                            echo "<input type='file' name='fileToUpload_aa'><input class=\"btn btn-primary btn-lg \"  type='submit' name='uploadFile_aa' value='Upload'>";
                             ?>
 
                         </div>
@@ -318,7 +318,7 @@ if(isset($_POST['uploadFile_aa'])) {
                 <div class="fh5co-desc">
                     <h3>Identification Sticker</h3>
                     <form class ="col-sm-4" method="get" action="qr.php">
-                        <button type="submit">Generate QR Code</button>
+                        <button class="btn btn-primary btn-lg "  type="submit">Generate QR Code</button>
                     </form>
                 </div>
             </div>
