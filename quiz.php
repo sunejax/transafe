@@ -150,10 +150,10 @@ if(isset($_POST['score'])) {
 </div>
 <div class="row" style="display:inline-block">
     <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
-        <a href="quiz_2w.php" class="btn btn-primary btn-lg ">Two Wheeler</a>
+        <a href="quiz_2w.php" class="btn btn-primary btn-lg "><button type="submit">Two Wheeler</button></a>
     </div>
     <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
-        <a href="quiz_4w.php" class="btn btn-primary btn-lg ">Four Wheeler</a>
+        <a href="quiz_4w.php" class="btn btn-primary btn-lg "><button type="submit">Four Wheeler</button></a>
     </div>
 </div>
 </div>
