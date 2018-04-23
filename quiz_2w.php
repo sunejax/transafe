@@ -205,7 +205,7 @@ if(isset($_POST['score'])) {
         for (var i=0; i<tot; i++)
             if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
         $.ajax({
-            url: 'quiz.php',
+            url: 'quiz_2w.php',
             type: 'post',
             data: {
                 'score': score
