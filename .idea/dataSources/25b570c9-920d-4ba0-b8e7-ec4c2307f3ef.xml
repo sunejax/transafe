@@ -1042,36 +1042,41 @@
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="228" name="li_pl">
+    <column id="255" parent="228" name="score_4w">
       <Position>19</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="228" name="li_pl">
+      <Position>20</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="228" name="pl_key">
-      <Position>20</Position>
+    <column id="257" parent="228" name="pl_key">
+      <Position>21</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="257" parent="228" name="user_uid_uindex">
+    <index id="258" parent="228" name="user_uid_uindex">
       <ColNames>uid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="258" parent="228" name="user_email_uindex">
+    <index id="259" parent="228" name="user_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="259" parent="228" name="PRIMARY">
+    <key id="260" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="260" parent="228" name="user_uid_uindex">
+    <key id="261" parent="228" name="user_uid_uindex">
       <ColNames>uid</ColNames>
       <UnderlyingIndexName>user_uid_uindex</UnderlyingIndexName>
     </key>
-    <key id="261" parent="228" name="user_email_uindex">
+    <key id="262" parent="228" name="user_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>user_email_uindex</UnderlyingIndexName>
     </key>

@@ -15,7 +15,7 @@ if (isset($_GET['logout'])) {
 if(isset($_POST['score'])) {
     $sc=$_POST['score'];
     $uid=$_SESSION['r']['uid'];
-    $q="UPDATE user SET score ='$sc' WHERE uid='$uid'";
+    $q="UPDATE user SET score_4w ='$sc' WHERE uid='$uid'";
     mysqli_query($db,$q);
 }
 ?>
