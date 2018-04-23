@@ -234,7 +234,7 @@ if (isset($_POST['accept'])) {
         if($rc_s=='2')$str_rc='checked';
         if($li_s=='2')$str_li='checked';
         if($aa_s=='2')$str_aa='checked';;
-        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td><form method='post' action='qr_rto.php'><input type='hidden' value='$pl_key' name='rto_pl_key' readonly ><button type='submit'>Generate QR Code</button></form></td></tr>";
+        echo "<tr><td>".($row_users['name'])."</td><td>".($row_users['email'])."</td><td><form method='post' action='qr_rto.php'><input type='hidden' value='$pl_key' name='rto_pl_key' readonly ><button class=\"btn btn-primary btn-lg \" type='submit'>Generate QR Code</button></form></td></tr>";
         ;}
     ?>
 </table>
