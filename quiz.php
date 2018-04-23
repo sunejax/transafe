@@ -144,44 +144,18 @@ if(isset($_POST['score'])) {
         </div>
     </div>
 </div>
-<div>
-    <ul style="list-style: none">
-        <li>
-            <h3>1. You are approaching a narrow bridge, another vehicle is about to enter the bridge from opposite side, you</h3>
-            <input type="radio" name="question0" value="A">A. Increase the speed and try to cross the bridge as fast as possible <br>
-            <input type="radio" name="question0" value="B">B. Put on the headlight and pass the bridge <br>
-            <input type="radio" name="question0" value="C">C. Wait till the other vehicle crosses the bridge and then proceed<br>
-        </li>
-        <li>
-            <h3>2. Near a pedestrian crossing, when the pedestrians are waiting to cross the road, you should</h3>
-            <input type="radio" name="question1" value="A">Sound horn and proceed. <br>
-            <input type="radio" name="question1" value="B">Slow down, sound horn and pass.<br>
-            <input type="radio" name="question1" value="C">Stop the vehicle and wait till the pedestrians cross the road and then proceed.<br>
-        </li>
-        <li>
-            <h3>3. In case of an accident to seek a medical help, you should dial.</h3>
-            <input type="radio" name="question2" value="A">A. 108 or 102.<br>
-            <input type="radio" name="question2" value="B">B. 101. <br>
-            <input type="radio" name="question2" value="C">C. Any of these.<br>
-        </li>
-        <li>
-            <h3>4. What does following sign represent?</h3>
-            <img class="size-full wp-image-11" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q3.jpg" alt="q3" width="75" height="75"><br>
-            <input type="radio" name="question3" value="A">A. Keep left.<br>
-            <input type="radio" name="question3" value="B">B. There is no road on the left.<br>
-            <input type="radio" name="question3" value="C">C. Compulsory keep left.<br>
-        </li>
-        <li>
-            <h3>5. What does following sign represent?</h3>
-            <img class="size-full wp-image-15" src="http://licencetest.in/question-bank/wp-content/uploads/sites/2/2015/03/q6.jpg" alt="q6" width="75" height="65"><br>
-            <input type="radio" name="question4" value="A">A. Loose gravel. <br>
-            <input type="radio" name="question4" value="B">B. Wet road. <br>
-            <input type="radio" name="question4" value="C">C. Slippery road.<br>
-        </li>
-
-    </ul>
-
-    <button class="btn btn-primary btn-lg " onclick="returnScore()">Submit</button>
+<div class="container">
+<div class="row">
+    <h2>Choose Vehicle Type</h2>
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
+        <a href="quiz_2w.php" class="btn btn-primary btn-lg ">Two Wheeler</a>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
+        <a href="quiz_4w.php" class="btn btn-primary btn-lg ">Four Wheeler</a>
+    </div>
+</div>
 </div>
 
 <footer id="footer" role="contentinfo">
