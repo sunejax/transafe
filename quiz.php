@@ -144,11 +144,11 @@ if(isset($_POST['score'])) {
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" style="text-align: center">
 <div class="row">
     <h2>Choose Vehicle Type</h2>
 </div>
-<div class="row">
+<div class="row" style="display:inline-block">
     <div class="col-md-6 col-sm-6 col-xs-12 col-xxs-12 fh5co-service to-animate">
         <a href="quiz_2w.php" class="btn btn-primary btn-lg ">Two Wheeler</a>
     </div>
