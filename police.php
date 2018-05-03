@@ -32,6 +32,9 @@ if (isset($_POST['poli_sub'])) {
     $doc_rc_s=$row['doc_rc_s'];
     $doc_li_s=$row['doc_li_s'];
     $doc_aa_s=$row['doc_aa_s'];
+    $rc=$row['doc_rc'];
+    $li=$row['doc_li'];
+    $aa=$row['doc_aa'];
 
 
 
@@ -290,27 +293,31 @@ if (isset($_POST['poli_sub'])) {
                 <div class=\"fh5co-desc\">
                     <h3>Registration Certificate</h3>
                     ";if($doc_rc_s==1) echo"<p>Unverified</p>";
-                    else if ($doc_rc_s==2)echo"<p>Accepted</p>";
-                    else if ($doc_rc_s==3)echo "<p>Declined</p>";
-                    echo"
+        else if ($doc_rc_s==2)echo"<p>Accepted</p>";
+        else if ($doc_rc_s==3)echo "<p>Declined</p>";
+        if(isset($doc_rc_s))echo"<a target='_blank' href=$rc><img onerror='this.style.height=0px' alt='No File Uploaded' src =$rc ></a>";
+        echo"
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
                 <div class=\"fh5co-desc\">
                     <h3>License</h3>
                     ";if($doc_li_s==1) echo"<p>Unverified</p>";
-                    else if ($doc_li_s==2)echo"<p>Accepted</p>";
-                    else if ($doc_li_s==3)echo "<p>Declined</p>";
-                    echo"
+        else if ($doc_li_s==2)echo"<p>Accepted</p>";
+        else if ($doc_li_s==3)echo "<p>Declined</p>";
+        if(isset($doc_rc_s))echo"<a target='_blank' href=$li><img onerror='this.style.height=0px' alt='No File Uploaded' src =$li ></a>";
+        echo"
                 </div>
             </div>
             <div class=\"col-md-4 col-sm-6 col-xs-6 col-xxs-12 fh5co-service to-animate\">
                 <div class=\"fh5co-desc\">
                     <h3>AADHAR</h3>
                     ";if($doc_aa_s==1) echo'<p>Unverified</p>';
-                    else if ($doc_aa_s==2)echo'<p>Accepted</p>';
-                    else if ($doc_aa_s==3)echo '<p>Declined</p>';
-                    echo"
+        else if ($doc_aa_s==2)echo'<p>Accepted</p>';
+        else if ($doc_aa_s==3)echo '<p>Declined</p>';
+        if(isset($doc_aa_s))echo"<a target='_blank' href=$aa><img onerror='this.style.height=0px' alt='No File Uploaded' src =$aa ></a>";
+
+        echo"
                 </div>
             </div>
             </div>
